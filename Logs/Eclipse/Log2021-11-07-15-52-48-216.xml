@@ -1,262 +1,0 @@
-<Events startTimestamp="1636318368216" logVersion="1.0.0.202108012048">
-  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Sun Nov 07 15:52:48 EST 2021" docASTNodeCount="183" docActiveCodeLength="1011" docExpressionCount="138" docLength="1293" projectName="Assignment5" starttimestamp="1636318368216" timestamp="130">
-    <filePath><![CDATA[/Users/milenpatel/Desktop/COMP524-Workspace/Assignment5/src/mainpack/CondEvaluator.java]]></filePath>
-    <diff><![CDATA[null]]></diff>
-    <snapshot><![CDATA[package mainpack;
-
-import main.lisp.evaluator.Environment;
-import main.lisp.evaluator.Evaluator;
-import main.lisp.parser.terms.Atom;
-import main.lisp.parser.terms.NilAtom;
-import main.lisp.parser.terms.SExpression;
-import main.lisp.parser.terms.TAtom;
-
-public class CondEvaluator implements Evaluator {
-
-	@Override
-	public SExpression eval(SExpression exp, Environment env) {
-
-		// Case: 0 Argument Call
-		if (exp.getTail() instanceof NilAtom) {
-			return main.lisp.parser.terms.NilAtomicExpressionFactory.newInstance();
-		}
-		
-		exp = exp.getTail();
-		while (!exp.isAtom()) {
-			//System.out.println("A");
-			//System.out.println(exp.getHead().toString());
-			if (exp.getHead().isAtom()) {
-				//System.out.println("oops");
-				return new NilAtom();
-			}
-			SExpression condition = exp.getHead().getHead();
-			
-			//System.out.println("\t" + condition.toString());
-			//System.out.println("\t" + result.toString());
-			SExpression conditionEvaluated = condition.eval(env);
-			//System.out.println("\t" + conditionEvaluated.toString());
-			if (conditionEvaluated instanceof TAtom) {
-				SExpression result = exp.getHead().getTail().getHead();
-				return result.eval(env);
-				
-			}
-			exp = exp.getTail();
-		}
-		
-		return main.lisp.parser.terms.NilAtomicExpressionFactory.newInstance();
-	}
-
-}
-]]></snapshot>
-  </Command>
-  <Command __id="1" _type="MoveCaretCommand" caretOffset="496" date="Sun Nov 07 15:52:48 EST 2021" docOffset="689" starttimestamp="1636318368216" timestamp="606" />
-  <Command __id="2" _type="DiffBasedFileOpenCommand" date="Sun Nov 07 15:52:49 EST 2021" docASTNodeCount="48" docActiveCodeLength="254" docExpressionCount="30" docLength="336" projectName="Assignment5" starttimestamp="1636318368216" timestamp="1490">
-    <filePath><![CDATA[/Users/milenpatel/Desktop/COMP524-Workspace/Assignment5/src/mainpack/Runner.java]]></filePath>
-    <diff><![CDATA[null]]></diff>
-    <snapshot><![CDATA[package mainpack;
-import main.Main;
-public class Runner {
-	public static void main(String[] args) {
-		main.lisp.parser.terms.ExpressionFactory.setClass(BetterSExpression.class);
-		(new OperatorRegistry()).registerOperations();
-		Main.main(args);
-		// (cons (cond ((< (+ (- 5 4) (+ 2 (+ 1 1)))) T) (T 1)) (eval(quote(list 2 3 4))))
-	}
-}
-]]></snapshot>
-  </Command>
-  <Command __id="3" _type="MoveCaretCommand" caretOffset="181" date="Sun Nov 07 15:52:49 EST 2021" docOffset="181" starttimestamp="1636318368216" timestamp="1727" />
-  <Command __id="7" _type="PauseCommand" date="Sun Nov 07 15:52:51 EST 2021" range="1s-2s" starttimestamp="1636318368216" timestamp="3726">
-    <prevType><![CDATA[Move Caret]]></prevType>
-    <prev><![CDATA[MoveCaretCommand]]></prev>
-    <pause><![CDATA[1355]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ProgramExecutionEvent]]></next>
-  </Command>
-  <Command __id="6" _type="ProgramExecutionEvent" className="/Assignment5/src/mainpack/Grader.java" date="Sun Nov 07 15:52:51 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1636318368216" timestamp="3722" type="Run" />
-  <Command __id="8" _type="RunCommand" className="/Assignment5/src/mainpack/Grader.java" date="Sun Nov 07 15:52:51 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1636318368216" timestamp="3728" type="Run" />
-  <Command __id="9" _type="ShellCommand" date="Sun Nov 07 15:52:52 EST 2021" starttimestamp="1636318368216" timestamp="4226" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="11" _type="PauseCommand" date="Sun Nov 07 15:53:00 EST 2021" range="5s-10s" starttimestamp="1636318368216" timestamp="11968">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[7742]]></pause>
-    <nextType><![CDATA[IO]]></nextType>
-    <next><![CDATA[ConsoleOutput]]></next>
-  </Command>
-  <Command __id="10" _type="ConsoleOutput" date="Sun Nov 07 15:53:00 EST 2021" overflow="false" starttimestamp="1636318368216" timestamp="11968" type="ConsoleOutput">
-    <outputString><![CDATA[Test execution time (ms):1
-Test execution time (ms):9
-Test execution time (ms):12
-]]></outputString>
-    <diff><![CDATA[null]]></diff>
-  </Command>
-  <Command __id="12" _type="ConsoleOutput" date="Sun Nov 07 15:53:00 EST 2021" overflow="false" starttimestamp="1636318368216" timestamp="12078" type="ConsoleOutput">
-    <outputString><![CDATA[Number of traces > 600  turning tracing off
-NIL
-T
-T
-T
-T
-T
-T
-NIL
-NIL
-NIL
-NIL
-NIL
-T
-T
-T
-T
-T
-NIL
-NIL
-NIL
-NIL
-3
-NIL
-(+ 3 4)
-(LIST 2 3 4 5)
-(+ 3)
-NIL
-3
-7
-8
-T
-5
-2
-1
-NIL
-NIL
-7
-NIL
-T
-1
-NIL
-3
-3
-T
-8
-NIL
-T
-NIL
-T
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):1¶Test execution time (ms):9¶Test execution time (ms):12"), Diff(INSERT,"Number of traces > 600  turning tracing off¶NIL¶T¶T¶T¶T¶T¶T¶NIL¶NIL¶NIL¶NIL¶NIL¶T¶T¶T¶T¶T¶NIL¶NIL¶NIL¶NIL¶3¶NIL¶(+ 3 4)¶(LIST 2 3 4 5)¶(+ 3)¶NIL¶3¶7¶8¶T¶5¶2¶1¶NIL¶NIL¶7¶NIL¶T¶1¶NIL¶3¶3¶T¶8¶NIL¶T¶NIL¶T"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="14" _type="PauseCommand" date="Sun Nov 07 15:53:02 EST 2021" range="2s-5s" starttimestamp="1636318368216" timestamp="14712">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[2634]]></pause>
-    <nextType><![CDATA[IO]]></nextType>
-    <next><![CDATA[ConsoleOutput]]></next>
-  </Command>
-  <Command __id="13" _type="ConsoleOutput" date="Sun Nov 07 15:53:02 EST 2021" overflow="false" starttimestamp="1636318368216" timestamp="14712" type="ConsoleOutput">
-    <outputString><![CDATA[Test execution time (ms):0
-Test execution time (ms):0
-Test execution time (ms):0
-Test execution time (ms):1
-Test execution time (ms):1
-Test execution time (ms):0
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"Number of traces > 600  turning tracing off¶NIL¶T¶T¶T¶T¶T¶T¶NIL¶NIL¶NIL¶NIL¶NIL¶T¶T¶T¶T¶T¶NIL¶NIL¶NIL¶NIL¶3¶NIL¶(+ 3 4)¶(LIST 2 3 4 5)¶(+ 3)¶NIL¶3¶7¶8¶T¶5¶2¶1¶NIL¶NIL¶7¶NIL¶T¶1¶NIL¶3¶3¶T¶8¶NIL¶T¶NIL¶T"), Diff(INSERT,"Test execution time (ms):0¶Test execution time (ms):0¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="16" _type="PauseCommand" date="Sun Nov 07 15:53:05 EST 2021" range="2s-5s" starttimestamp="1636318368216" timestamp="16907">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[2195]]></pause>
-    <nextType><![CDATA[IO]]></nextType>
-    <next><![CDATA[ConsoleOutput]]></next>
-  </Command>
-  <Command __id="15" _type="ConsoleOutput" date="Sun Nov 07 15:53:05 EST 2021" overflow="false" starttimestamp="1636318368216" timestamp="16907" type="ConsoleOutput">
-    <outputString><![CDATA[(5 . 2)
-(5 . 2)
-Test execution time (ms):3
-(5)
-(5)
-(5)
-Test execution time (ms):2
-(5 (("A" . "6")) (7))
-(5 (("A" . "6")) (7))
-(5 (("A" . "6")) (7))
-(5 (("A" . "6")) (7))
-Test execution time (ms):2
-(5 (("A" . "6")) (7))
-(5 (("A" . "6")) (7))
-(5 (("A" . "6")) (7))
-(5 (("A" . "6")) (7))
-(5 (("A" . "6")) (7))
-Test execution time (ms):3
-]]></outputString>
-    <diff><![CDATA[[Diff(INSERT,"(5 . 2)¶(5 . 2)¶"), Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"0"), Diff(INSERT,"3¶(5)¶(5)¶(5)"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"0"), Diff(INSERT,"2"), Diff(EQUAL,"¶"), Diff(DELETE,"Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1"), Diff(INSERT,"(5 (("A" . "6")) (7))¶(5 (("A" . "6")) (7))¶(5 (("A" . "6")) (7))¶(5 (("A" . "6")) (7))¶Test execution time (ms):2¶(5 (("A" . "6")) (7))¶(5 (("A" . "6")) (7))¶(5 (("A" . "6")) (7))¶(5 (("A" . "6")) (7))¶(5 (("A" . "6")) (7))"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"0"), Diff(INSERT,"3"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="18" _type="PauseCommand" date="Sun Nov 07 15:53:12 EST 2021" range="5s-10s" starttimestamp="1636318368216" timestamp="24777">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[7870]]></pause>
-    <nextType><![CDATA[Exception]]></nextType>
-    <next><![CDATA[ExceptionCommand]]></next>
-  </Command>
-  <Command __id="17" _type="ExceptionCommand" date="Sun Nov 07 15:53:12 EST 2021" starttimestamp="1636318368216" timestamp="24777" type="Exception">
-    <exceptionString><![CDATA[Test execution time (ms):0
-Test execution time (ms):1
-Test execution time (ms):0
-Test execution time (ms):0
-Test execution time (ms):0
-Test execution time (ms):1
-Test execution time (ms):0
-Test execution time (ms):0
-Test execution time (ms):0
-java.lang.UnsupportedOperationException: Instances of Atom do not have a tail
-	at main.lisp.parser.terms.Atom.getTail(Atom.java:36)
-	at gradingTools.comp524f19.assignment1.testcases.load.AbstractFunctionTestedCondChecker.test(AbstractFunctionTestedCondChecker.java:85)
-	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
-	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
-	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
-	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
-	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
-	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
-	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
-	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
-	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
-	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
-	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
-	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
-	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
-	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
-	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
-	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
-	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
-]]></exceptionString>
-    <language><![CDATA[java]]></language>
-  </Command>
-  <Command __id="20" _type="PauseCommand" date="Sun Nov 07 15:53:25 EST 2021" range="10s-20s" starttimestamp="1636318368216" timestamp="37105">
-    <prevType><![CDATA[Exception]]></prevType>
-    <prev><![CDATA[ExceptionCommand]]></prev>
-    <pause><![CDATA[12328]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="19" _type="ShellCommand" date="Sun Nov 07 15:53:25 EST 2021" starttimestamp="1636318368216" timestamp="37105" type="ECLIPSE_GAINED_FOCUS" />
-</Events>

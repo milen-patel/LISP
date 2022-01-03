@@ -1,191 +1,0 @@
-<Events startTimestamp="1638398783866" logVersion="1.0.0.202108012048">
-  <Command __id="6" _type="PauseCommand" date="Wed Dec 01 17:46:31 EST 2021" range="2s-5s" starttimestamp="1638398783866" timestamp="7296">
-    <prevType><![CDATA[Debug]]></prevType>
-    <prev><![CDATA[RunCommand]]></prev>
-    <pause><![CDATA[2769]]></pause>
-    <nextType><![CDATA[Debug]]></nextType>
-    <next><![CDATA[RunCommand]]></next>
-  </Command>
-  <Command __id="5" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Wed Dec 01 17:46:31 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638398783866" timestamp="7296" type="Run" />
-  <Command __id="8" _type="PauseCommand" date="Wed Dec 01 17:46:35 EST 2021" range="2s-5s" starttimestamp="1638398783866" timestamp="11959">
-    <prevType><![CDATA[Debug]]></prevType>
-    <prev><![CDATA[RunCommand]]></prev>
-    <pause><![CDATA[4663]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="7" _type="ConsoleInput" date="Wed Dec 01 17:46:35 EST 2021" starttimestamp="1638398783866" timestamp="11959" type="Exception">
-    <outputString><![CDATA[(cons 1 2)
-]]></outputString>
-  </Command>
-  <Command __id="9" _type="ConsoleOutput" date="Wed Dec 01 17:46:35 EST 2021" overflow="false" starttimestamp="1638398783866" timestamp="12023" type="ConsoleOutput">
-    <outputString><![CDATA[(1 . 2)
-]]></outputString>
-    <diff><![CDATA[null]]></diff>
-  </Command>
-  <Command __id="11" _type="PauseCommand" date="Wed Dec 01 17:46:38 EST 2021" range="2s-5s" starttimestamp="1638398783866" timestamp="14467">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[2444]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="10" _type="ConsoleInput" date="Wed Dec 01 17:46:38 EST 2021" starttimestamp="1638398783866" timestamp="14467" type="Exception">
-    <outputString><![CDATA[(cons 1 nil)
-]]></outputString>
-  </Command>
-  <Command __id="12" _type="ConsoleOutput" date="Wed Dec 01 17:46:38 EST 2021" overflow="false" starttimestamp="1638398783866" timestamp="14532" type="ConsoleOutput">
-    <outputString><![CDATA[(1)
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"(1"), Diff(DELETE," . 2"), Diff(EQUAL,")¶")]]]></diff>
-  </Command>
-  <Command __id="14" _type="PauseCommand" date="Wed Dec 01 17:46:45 EST 2021" range="5s-10s" starttimestamp="1638398783866" timestamp="21424">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[6892]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="13" _type="ConsoleInput" date="Wed Dec 01 17:46:45 EST 2021" starttimestamp="1638398783866" timestamp="21424" type="Exception">
-    <outputString><![CDATA[(list 1 2)
-]]></outputString>
-  </Command>
-  <Command __id="15" _type="ConsoleOutput" date="Wed Dec 01 17:46:45 EST 2021" overflow="false" starttimestamp="1638398783866" timestamp="21482" type="ConsoleOutput">
-    <outputString><![CDATA[(1 2)
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"(1"), Diff(INSERT," 2"), Diff(EQUAL,")¶")]]]></diff>
-  </Command>
-  <Command __id="17" _type="PauseCommand" date="Wed Dec 01 17:46:51 EST 2021" range="5s-10s" starttimestamp="1638398783866" timestamp="27766">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[6284]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="16" _type="ConsoleInput" date="Wed Dec 01 17:46:51 EST 2021" starttimestamp="1638398783866" timestamp="27766" type="Exception">
-    <outputString><![CDATA[(cons 1 (cons 2 nil))
-]]></outputString>
-  </Command>
-  <Command __id="18" _type="ConsoleOutput" date="Wed Dec 01 17:46:51 EST 2021" overflow="false" starttimestamp="1638398783866" timestamp="27825" type="ConsoleOutput">
-    <outputString><![CDATA[(1 2)
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"(1 2)¶")]]]></diff>
-  </Command>
-  <Command __id="20" _type="PauseCommand" date="Wed Dec 01 17:46:56 EST 2021" range="2s-5s" starttimestamp="1638398783866" timestamp="32675">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[4850]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="19" _type="ConsoleInput" date="Wed Dec 01 17:46:56 EST 2021" starttimestamp="1638398783866" timestamp="32675" type="Exception">
-    <outputString><![CDATA[(load "test.lisp")
-]]></outputString>
-  </Command>
-  <Command __id="21" _type="ConsoleOutput" date="Wed Dec 01 17:46:56 EST 2021" overflow="false" starttimestamp="1638398783866" timestamp="32759" type="ConsoleOutput">
-    <outputString><![CDATA[29
-42
-42
-42
-42
-42
-LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
-5
-LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
-#<FUNCTION :LAMBDA (Y) (* X Y)>
-LAMBDA (X Y Z) (* X (* Y Z))
-LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)
-LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)
-LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))
-LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))
-LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))
-LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")
-LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))
-LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))
-T
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"(1 2)"), Diff(INSERT,"29¶42¶42¶42¶42¶42¶LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X Y Z) (* X (* Y Z))¶LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)¶LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)¶LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))¶LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))¶LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))¶LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")¶LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))¶LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))¶T"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="23" _type="PauseCommand" date="Wed Dec 01 17:46:59 EST 2021" range="2s-5s" starttimestamp="1638398783866" timestamp="35181">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[2422]]></pause>
-    <nextType><![CDATA[Edit]]></nextType>
-    <next><![CDATA[CopyCommand]]></next>
-  </Command>
-  <Command __id="22" _type="CopyCommand" date="Wed Dec 01 17:46:59 EST 2021" starttimestamp="1638398783866" timestamp="35181" />
-  <Command __id="24" _type="CopyCommand" date="Wed Dec 01 17:46:59 EST 2021" starttimestamp="1638398783866" timestamp="35330" />
-  <Command __id="26" _type="PauseCommand" date="Wed Dec 01 17:47:04 EST 2021" range="5s-10s" starttimestamp="1638398783866" timestamp="40430">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[CopyCommand]]></prev>
-    <pause><![CDATA[5100]]></pause>
-    <nextType><![CDATA[Edit]]></nextType>
-    <next><![CDATA[PasteCommand]]></next>
-  </Command>
-  <Command __id="25" _type="PasteCommand" date="Wed Dec 01 17:47:04 EST 2021" starttimestamp="1638398783866" timestamp="40430" />
-  <Command __id="27" _type="ConsoleInput" date="Wed Dec 01 17:47:04 EST 2021" starttimestamp="1638398783866" timestamp="41055" type="Exception">
-    <outputString><![CDATA[(funcall isList (cons 1 (cons 2 nil)))
-]]></outputString>
-  </Command>
-  <Command __id="28" _type="ConsoleOutput" date="Wed Dec 01 17:47:04 EST 2021" overflow="false" starttimestamp="1638398783866" timestamp="41110" type="ConsoleOutput">
-    <outputString><![CDATA[T
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"29¶42¶42¶42¶42¶42¶LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X Y Z) (* X (* Y Z))¶LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)¶LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)¶LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))¶LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))¶LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))¶LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")¶LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))¶LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))¶"), Diff(EQUAL,"T¶")]]]></diff>
-  </Command>
-  <Command __id="30" _type="PauseCommand" date="Wed Dec 01 17:47:06 EST 2021" range="1s-2s" starttimestamp="1638398783866" timestamp="42702">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[1592]]></pause>
-    <nextType><![CDATA[Edit]]></nextType>
-    <next><![CDATA[PasteCommand]]></next>
-  </Command>
-  <Command __id="29" _type="PasteCommand" date="Wed Dec 01 17:47:06 EST 2021" starttimestamp="1638398783866" timestamp="42702" />
-  <Command __id="32" _type="PauseCommand" date="Wed Dec 01 17:47:13 EST 2021" range="5s-10s" starttimestamp="1638398783866" timestamp="50034">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[PasteCommand]]></prev>
-    <pause><![CDATA[7332]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="31" _type="ConsoleInput" date="Wed Dec 01 17:47:13 EST 2021" starttimestamp="1638398783866" timestamp="50034" type="Exception">
-    <outputString><![CDATA[((cons 1 (cons 2 nil))funcall isList (list 1 2))
-]]></outputString>
-  </Command>
-  <Command __id="33" _type="ConsoleOutput" date="Wed Dec 01 17:47:13 EST 2021" overflow="false" starttimestamp="1638398783866" timestamp="50091" type="ConsoleOutput">
-    <outputString><![CDATA[T
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"T¶")]]]></diff>
-  </Command>
-  <Command __id="34" _type="ShellCommand" date="Wed Dec 01 17:47:14 EST 2021" starttimestamp="1638398783866" timestamp="50923" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="36" _type="PauseCommand" date="Wed Dec 01 17:47:42 EST 2021" range="20s-30s" starttimestamp="1638398783866" timestamp="78747">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[27823]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="35" _type="ShellCommand" date="Wed Dec 01 17:47:42 EST 2021" starttimestamp="1638398783866" timestamp="78746" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="37" _type="ShellCommand" date="Wed Dec 01 17:47:43 EST 2021" starttimestamp="1638398783866" timestamp="79476" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="39" _type="PauseCommand" date="Wed Dec 01 18:46:23 EST 2021" range="30m-1h" starttimestamp="1638398783866" timestamp="3600083">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3520607]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[BalloonCommand]]></next>
-  </Command>
-  <Command __id="38" _type="BalloonCommand" date="Wed Dec 01 18:46:23 EST 2021" message="*******************************************
-Worked 0 minutes(fixed)/1 minutes(context based) from
-Wed Dec 01 17:46:23 EST 2021 to Wed Dec 01 17:47:43 EST 2021
-Edited 0 Projects: 
-Edited 0 Files: 
-Number of insert: 0
-Number of delete: 0
-" starttimestamp="1638398783866" timestamp="3600083">
-    <fineGrainedWorkTime><![CDATA[1]]></fineGrainedWorkTime>
-    <insert><![CDATA[0]]></insert>
-    <startTime><![CDATA[1638398783953]]></startTime>
-    <endTime><![CDATA[1638398863342]]></endTime>
-    <workTime><![CDATA[0]]></workTime>
-    <delete><![CDATA[0]]></delete>
-  </Command>
-</Events>

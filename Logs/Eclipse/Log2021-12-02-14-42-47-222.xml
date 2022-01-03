@@ -1,2057 +1,0 @@
-<Events startTimestamp="1638474167222" logVersion="1.0.0.202108012048">
-  <Command __id="3" _type="PauseCommand" date="Thu Dec 02 14:42:51 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="4036">
-    <prevType><![CDATA[Move Caret]]></prevType>
-    <prev><![CDATA[MoveCaretCommand]]></prev>
-    <pause><![CDATA[3301]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ProgramExecutionEvent]]></next>
-  </Command>
-  <Command __id="2" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 14:42:51 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="4031" type="Run" />
-  <Command __id="4" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 14:42:51 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="4037" type="Run" />
-  <Command __id="6" _type="PauseCommand" date="Thu Dec 02 14:42:53 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="5864">
-    <prevType><![CDATA[Debug]]></prevType>
-    <prev><![CDATA[RunCommand]]></prev>
-    <pause><![CDATA[1827]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="5" _type="ShellCommand" date="Thu Dec 02 14:42:53 EST 2021" starttimestamp="1638474167222" timestamp="5864" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="8" _type="PauseCommand" date="Thu Dec 02 14:44:25 EST 2021" range="1m-2m" starttimestamp="1638474167222" timestamp="97999">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[92135]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="7" _type="ShellCommand" date="Thu Dec 02 14:44:25 EST 2021" starttimestamp="1638474167222" timestamp="97999" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="10" _type="PauseCommand" date="Thu Dec 02 14:44:30 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="103225">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[5226]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="9" _type="ConsoleInput" date="Thu Dec 02 14:44:30 EST 2021" starttimestamp="1638474167222" timestamp="103225" type="Exception">
-    <outputString><![CDATA[(load "test.lisp")
-]]></outputString>
-  </Command>
-  <Command __id="11" _type="ConsoleOutput" date="Thu Dec 02 14:44:30 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="103321" type="ConsoleOutput">
-    <outputString><![CDATA[29
-42
-42
-42
-42
-42
-LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
-5
-LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
-#<FUNCTION :LAMBDA (Y) (* X Y)>
-LAMBDA (X Y Z) (* X (* Y Z))
-LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)
-LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)
-LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))
-LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))
-LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))
-LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")
-LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))
-LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))
-LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))
-T
-]]></outputString>
-    <diff><![CDATA[null]]></diff>
-  </Command>
-  <Command __id="13" _type="PauseCommand" date="Thu Dec 02 14:44:31 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="104441">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[1120]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="12" _type="ShellCommand" date="Thu Dec 02 14:44:31 EST 2021" starttimestamp="1638474167222" timestamp="104441" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="14" _type="ShellCommand" date="Thu Dec 02 14:44:32 EST 2021" starttimestamp="1638474167222" timestamp="105084" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="16" _type="PauseCommand" date="Thu Dec 02 14:44:33 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="106333">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1249]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="15" _type="ShellCommand" date="Thu Dec 02 14:44:33 EST 2021" starttimestamp="1638474167222" timestamp="106333" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="18" _type="PauseCommand" date="Thu Dec 02 14:44:43 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="116106">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[9773]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="17" _type="ShellCommand" date="Thu Dec 02 14:44:43 EST 2021" starttimestamp="1638474167222" timestamp="116106" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="20" _type="PauseCommand" date="Thu Dec 02 14:44:46 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="118981">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2875]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="19" _type="ShellCommand" date="Thu Dec 02 14:44:46 EST 2021" starttimestamp="1638474167222" timestamp="118981" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="22" _type="PauseCommand" date="Thu Dec 02 14:44:47 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="120433">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1452]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="21" _type="ShellCommand" date="Thu Dec 02 14:44:47 EST 2021" starttimestamp="1638474167222" timestamp="120433" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="24" _type="PauseCommand" date="Thu Dec 02 14:44:49 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="122401">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1968]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="23" _type="ConsoleInput" date="Thu Dec 02 14:44:49 EST 2021" starttimestamp="1638474167222" timestamp="122401" type="Exception">
-    <outputString><![CDATA[(funcall numAtoms Nil)
-]]></outputString>
-  </Command>
-  <Command __id="25" _type="ConsoleOutput" date="Thu Dec 02 14:44:49 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="122474" type="ConsoleOutput">
-    <outputString><![CDATA[1
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"29¶42¶42¶42¶42¶42¶LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X Y Z) (* X (* Y Z))¶LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)¶LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)¶LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))¶LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))¶LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))¶LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")¶LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))¶LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))¶LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))¶T"), Diff(INSERT,"1"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="26" _type="ShellCommand" date="Thu Dec 02 14:44:50 EST 2021" starttimestamp="1638474167222" timestamp="123068" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="28" _type="PauseCommand" date="Thu Dec 02 14:44:51 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="124247">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1179]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="27" _type="ShellCommand" date="Thu Dec 02 14:44:51 EST 2021" starttimestamp="1638474167222" timestamp="124247" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="30" _type="PauseCommand" date="Thu Dec 02 14:44:53 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="126744">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2497]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="29" _type="ShellCommand" date="Thu Dec 02 14:44:53 EST 2021" starttimestamp="1638474167222" timestamp="126744" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="32" _type="PauseCommand" date="Thu Dec 02 14:44:55 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="127854">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1110]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="31" _type="ShellCommand" date="Thu Dec 02 14:44:55 EST 2021" starttimestamp="1638474167222" timestamp="127854" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="34" _type="PauseCommand" date="Thu Dec 02 14:44:56 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="129494">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1640]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="33" _type="ShellCommand" date="Thu Dec 02 14:44:56 EST 2021" starttimestamp="1638474167222" timestamp="129494" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="36" _type="PauseCommand" date="Thu Dec 02 14:44:57 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="130549">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1055]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="35" _type="ShellCommand" date="Thu Dec 02 14:44:57 EST 2021" starttimestamp="1638474167222" timestamp="130549" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="38" _type="PauseCommand" date="Thu Dec 02 14:44:59 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="132583">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2034]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="37" _type="ShellCommand" date="Thu Dec 02 14:44:59 EST 2021" starttimestamp="1638474167222" timestamp="132583" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="39" _type="ShellCommand" date="Thu Dec 02 14:45:00 EST 2021" starttimestamp="1638474167222" timestamp="133291" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="41" _type="PauseCommand" date="Thu Dec 02 14:45:02 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="135673">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2382]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="40" _type="ShellCommand" date="Thu Dec 02 14:45:02 EST 2021" starttimestamp="1638474167222" timestamp="135673" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="42" _type="ShellCommand" date="Thu Dec 02 14:45:03 EST 2021" starttimestamp="1638474167222" timestamp="136522" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="43" _type="ShellCommand" date="Thu Dec 02 14:45:04 EST 2021" starttimestamp="1638474167222" timestamp="137473" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="45" _type="PauseCommand" date="Thu Dec 02 14:45:10 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="143403">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[5930]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="44" _type="ShellCommand" date="Thu Dec 02 14:45:10 EST 2021" starttimestamp="1638474167222" timestamp="143403" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="47" _type="PauseCommand" date="Thu Dec 02 14:45:13 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="146524">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3121]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="46" _type="ConsoleInput" date="Thu Dec 02 14:45:13 EST 2021" starttimestamp="1638474167222" timestamp="146524" type="Exception">
-    <outputString><![CDATA[(funcall numAtoms (cons 5 (cons 2 nil)))
-]]></outputString>
-  </Command>
-  <Command __id="48" _type="ConsoleOutput" date="Thu Dec 02 14:45:13 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="146581" type="ConsoleOutput">
-    <outputString><![CDATA[3
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"1"), Diff(INSERT,"3"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="49" _type="ShellCommand" date="Thu Dec 02 14:45:14 EST 2021" starttimestamp="1638474167222" timestamp="147256" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="51" _type="PauseCommand" date="Thu Dec 02 14:45:20 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="152799">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[5542]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="50" _type="ShellCommand" date="Thu Dec 02 14:45:20 EST 2021" starttimestamp="1638474167222" timestamp="152798" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="53" _type="PauseCommand" date="Thu Dec 02 14:45:23 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="156566">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3768]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="52" _type="ShellCommand" date="Thu Dec 02 14:45:23 EST 2021" starttimestamp="1638474167222" timestamp="156566" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="55" _type="PauseCommand" date="Thu Dec 02 14:45:24 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="157576">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1010]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="54" _type="ShellCommand" date="Thu Dec 02 14:45:24 EST 2021" starttimestamp="1638474167222" timestamp="157576" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="57" _type="PauseCommand" date="Thu Dec 02 14:45:26 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="159179">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1603]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="56" _type="ShellCommand" date="Thu Dec 02 14:45:26 EST 2021" starttimestamp="1638474167222" timestamp="159179" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="59" _type="PauseCommand" date="Thu Dec 02 14:45:27 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="160235">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1056]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="58" _type="ShellCommand" date="Thu Dec 02 14:45:27 EST 2021" starttimestamp="1638474167222" timestamp="160235" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="61" _type="PauseCommand" date="Thu Dec 02 14:45:28 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="161423">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1188]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="60" _type="ShellCommand" date="Thu Dec 02 14:45:28 EST 2021" starttimestamp="1638474167222" timestamp="161423" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="63" _type="PauseCommand" date="Thu Dec 02 14:45:29 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="162543">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1120]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="62" _type="ShellCommand" date="Thu Dec 02 14:45:29 EST 2021" starttimestamp="1638474167222" timestamp="162543" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="65" _type="PauseCommand" date="Thu Dec 02 14:45:31 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="164008">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1465]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="64" _type="ShellCommand" date="Thu Dec 02 14:45:31 EST 2021" starttimestamp="1638474167222" timestamp="164008" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="67" _type="PauseCommand" date="Thu Dec 02 14:45:32 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="165060">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1052]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="66" _type="ShellCommand" date="Thu Dec 02 14:45:32 EST 2021" starttimestamp="1638474167222" timestamp="165060" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="69" _type="PauseCommand" date="Thu Dec 02 14:45:35 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="168416">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3356]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="68" _type="ConsoleInput" date="Thu Dec 02 14:45:35 EST 2021" starttimestamp="1638474167222" timestamp="168416" type="Exception">
-    <outputString><![CDATA[(funcall numAtoms (cdr (cons 5 (cons 2 nil))))
-]]></outputString>
-  </Command>
-  <Command __id="70" _type="ConsoleOutput" date="Thu Dec 02 14:45:35 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="168471" type="ConsoleOutput">
-    <outputString><![CDATA[2
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"3"), Diff(INSERT,"2"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="72" _type="PauseCommand" date="Thu Dec 02 14:45:36 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="169684">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[1213]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="71" _type="ShellCommand" date="Thu Dec 02 14:45:36 EST 2021" starttimestamp="1638474167222" timestamp="169684" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="73" _type="ShellCommand" date="Thu Dec 02 14:45:37 EST 2021" starttimestamp="1638474167222" timestamp="170078" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="74" _type="ShellCommand" date="Thu Dec 02 14:45:38 EST 2021" starttimestamp="1638474167222" timestamp="170981" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="76" _type="PauseCommand" date="Thu Dec 02 14:45:39 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="172055">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1074]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="75" _type="ShellCommand" date="Thu Dec 02 14:45:39 EST 2021" starttimestamp="1638474167222" timestamp="172055" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="78" _type="PauseCommand" date="Thu Dec 02 14:45:41 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="174546">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2491]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="77" _type="ShellCommand" date="Thu Dec 02 14:45:41 EST 2021" starttimestamp="1638474167222" timestamp="174546" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="80" _type="PauseCommand" date="Thu Dec 02 14:45:42 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="175605">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1059]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="79" _type="ShellCommand" date="Thu Dec 02 14:45:42 EST 2021" starttimestamp="1638474167222" timestamp="175605" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="82" _type="PauseCommand" date="Thu Dec 02 14:45:44 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="177056">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1451]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="81" _type="ShellCommand" date="Thu Dec 02 14:45:44 EST 2021" starttimestamp="1638474167222" timestamp="177056" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="83" _type="ShellCommand" date="Thu Dec 02 14:45:44 EST 2021" starttimestamp="1638474167222" timestamp="177713" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="85" _type="PauseCommand" date="Thu Dec 02 14:45:46 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="179718">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2005]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="84" _type="ShellCommand" date="Thu Dec 02 14:45:46 EST 2021" starttimestamp="1638474167222" timestamp="179718" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="86" _type="ShellCommand" date="Thu Dec 02 14:45:47 EST 2021" starttimestamp="1638474167222" timestamp="180654" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="88" _type="PauseCommand" date="Thu Dec 02 14:45:50 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="183602">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2948]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="87" _type="ConsoleInput" date="Thu Dec 02 14:45:50 EST 2021" starttimestamp="1638474167222" timestamp="183602" type="Exception">
-    <outputString><![CDATA[(funcall numAtoms (list 5 (list 2 nil) nil))
-]]></outputString>
-  </Command>
-  <Command __id="89" _type="ConsoleOutput" date="Thu Dec 02 14:45:50 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="183715" type="ConsoleOutput">
-    <outputString><![CDATA[6
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"2"), Diff(INSERT,"6"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="91" _type="PauseCommand" date="Thu Dec 02 14:45:54 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="187711">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[3996]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="90" _type="ShellCommand" date="Thu Dec 02 14:45:54 EST 2021" starttimestamp="1638474167222" timestamp="187711" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="93" _type="PauseCommand" date="Thu Dec 02 14:46:12 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="205169">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[17458]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="92" _type="ShellCommand" date="Thu Dec 02 14:46:12 EST 2021" starttimestamp="1638474167222" timestamp="205169" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="95" _type="PauseCommand" date="Thu Dec 02 14:46:16 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="209255">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[4086]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="94" _type="ShellCommand" date="Thu Dec 02 14:46:16 EST 2021" starttimestamp="1638474167222" timestamp="209255" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="97" _type="PauseCommand" date="Thu Dec 02 14:46:50 EST 2021" range="30s-1m" starttimestamp="1638474167222" timestamp="243774">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[34519]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="96" _type="ShellCommand" date="Thu Dec 02 14:46:50 EST 2021" starttimestamp="1638474167222" timestamp="243774" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="99" _type="PauseCommand" date="Thu Dec 02 14:46:58 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="251380">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[7606]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="98" _type="ConsoleInput" date="Thu Dec 02 14:46:58 EST 2021" starttimestamp="1638474167222" timestamp="251380" type="Exception">
-    <outputString><![CDATA[(funcall numAtoms (list 2 nil))
-]]></outputString>
-  </Command>
-  <Command __id="100" _type="ConsoleOutput" date="Thu Dec 02 14:46:58 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="251440" type="ConsoleOutput">
-    <outputString><![CDATA[3
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"6"), Diff(INSERT,"3"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="102" _type="PauseCommand" date="Thu Dec 02 14:47:11 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="264538">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[13098]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="101" _type="ShellCommand" date="Thu Dec 02 14:47:11 EST 2021" starttimestamp="1638474167222" timestamp="264538" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="104" _type="PauseCommand" date="Thu Dec 02 14:51:37 EST 2021" range="2m-5m" starttimestamp="1638474167222" timestamp="530256">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[265718]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="103" _type="ShellCommand" date="Thu Dec 02 14:51:37 EST 2021" starttimestamp="1638474167222" timestamp="530256" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="106" _type="PauseCommand" date="Thu Dec 02 14:51:39 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="532592">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2336]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="105" _type="ShellCommand" date="Thu Dec 02 14:51:39 EST 2021" starttimestamp="1638474167222" timestamp="532592" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="108" _type="PauseCommand" date="Thu Dec 02 14:51:40 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="533600">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1008]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="107" _type="ShellCommand" date="Thu Dec 02 14:51:40 EST 2021" starttimestamp="1638474167222" timestamp="533600" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="110" _type="PauseCommand" date="Thu Dec 02 14:51:44 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="537543">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3943]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="109" _type="ConsoleInput" date="Thu Dec 02 14:51:44 EST 2021" starttimestamp="1638474167222" timestamp="537543" type="Exception">
-    <outputString><![CDATA[(setq A (quote quote))
-]]></outputString>
-  </Command>
-  <Command __id="111" _type="ConsoleOutput" date="Thu Dec 02 14:51:44 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="537596" type="ConsoleOutput">
-    <outputString><![CDATA[QUOTE
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"3"), Diff(INSERT,"QUOTE"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="112" _type="ShellCommand" date="Thu Dec 02 14:51:45 EST 2021" starttimestamp="1638474167222" timestamp="538151" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="114" _type="PauseCommand" date="Thu Dec 02 14:51:49 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="542553">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[4402]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="113" _type="ShellCommand" date="Thu Dec 02 14:51:49 EST 2021" starttimestamp="1638474167222" timestamp="542553" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="116" _type="PauseCommand" date="Thu Dec 02 14:51:52 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="544928">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2375]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="115" _type="ShellCommand" date="Thu Dec 02 14:51:52 EST 2021" starttimestamp="1638474167222" timestamp="544928" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="118" _type="PauseCommand" date="Thu Dec 02 14:51:54 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="547148">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2220]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="117" _type="ShellCommand" date="Thu Dec 02 14:51:54 EST 2021" starttimestamp="1638474167222" timestamp="547148" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="120" _type="PauseCommand" date="Thu Dec 02 14:51:57 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="550599">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3451]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="119" _type="ShellCommand" date="Thu Dec 02 14:51:57 EST 2021" starttimestamp="1638474167222" timestamp="550599" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="121" _type="ShellCommand" date="Thu Dec 02 14:51:58 EST 2021" starttimestamp="1638474167222" timestamp="551423" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="123" _type="PauseCommand" date="Thu Dec 02 14:52:01 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="554332">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2909]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="122" _type="ConsoleInput" date="Thu Dec 02 14:52:01 EST 2021" starttimestamp="1638474167222" timestamp="554332" type="Exception">
-    <outputString><![CDATA[(eval (list A (quote A)))
-]]></outputString>
-  </Command>
-  <Command __id="124" _type="ConsoleOutput" date="Thu Dec 02 14:52:01 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="554384" type="ConsoleOutput">
-    <outputString><![CDATA[A
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"QUOTE"), Diff(INSERT,"A"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="125" _type="ShellCommand" date="Thu Dec 02 14:52:02 EST 2021" starttimestamp="1638474167222" timestamp="555251" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="127" _type="PauseCommand" date="Thu Dec 02 14:52:37 EST 2021" range="30s-1m" starttimestamp="1638474167222" timestamp="590148">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[34897]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="126" _type="ShellCommand" date="Thu Dec 02 14:52:37 EST 2021" starttimestamp="1638474167222" timestamp="590148" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="128" _type="ShellCommand" date="Thu Dec 02 14:52:38 EST 2021" starttimestamp="1638474167222" timestamp="590931" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="130" _type="PauseCommand" date="Thu Dec 02 14:52:40 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="593417">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2486]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="129" _type="ShellCommand" date="Thu Dec 02 14:52:40 EST 2021" starttimestamp="1638474167222" timestamp="593417" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="132" _type="PauseCommand" date="Thu Dec 02 14:52:41 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="594591">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1174]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="131" _type="ShellCommand" date="Thu Dec 02 14:52:41 EST 2021" starttimestamp="1638474167222" timestamp="594591" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="136" _type="PauseCommand" date="Thu Dec 02 14:56:16 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="808859">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2506]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[EclipseCommand]]></next>
-  </Command>
-  <Command __id="135" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="808859" />
-  <Command __id="137" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809066" />
-  <Command __id="138" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809067" />
-  <Command __id="139" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809138" />
-  <Command __id="140" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809138" />
-  <Command __id="141" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809280" />
-  <Command __id="142" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809281" />
-  <Command __id="143" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809346" />
-  <Command __id="144" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809346" />
-  <Command __id="145" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809379" />
-  <Command __id="146" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809379" />
-  <Command __id="147" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809558" />
-  <Command __id="148" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809558" />
-  <Command __id="149" _type="EclipseCommand" commandID="" date="Thu Dec 02 14:56:16 EST 2021" starttimestamp="1638474167222" timestamp="809583" />
-  <Command __id="151" _type="PauseCommand" date="Thu Dec 02 14:56:22 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="815561">
-    <prevType><![CDATA[Other]]></prevType>
-    <prev><![CDATA[EclipseCommand]]></prev>
-    <pause><![CDATA[5978]]></pause>
-    <nextType><![CDATA[Open File]]></nextType>
-    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
-  </Command>
-  <Command __id="152" _type="MoveCaretCommand" caretOffset="0" date="Thu Dec 02 14:56:23 EST 2021" docOffset="0" starttimestamp="1638474167222" timestamp="815817" />
-  <Command __id="154" _type="PauseCommand" date="Thu Dec 02 14:56:47 EST 2021" range="20s-30s" starttimestamp="1638474167222" timestamp="839976">
-    <prevType><![CDATA[Move Caret]]></prevType>
-    <prev><![CDATA[MoveCaretCommand]]></prev>
-    <pause><![CDATA[24159]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="153" _type="ShellCommand" date="Thu Dec 02 14:56:47 EST 2021" starttimestamp="1638474167222" timestamp="839976" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="156" _type="PauseCommand" date="Thu Dec 02 15:00:38 EST 2021" range="2m-5m" starttimestamp="1638474167222" timestamp="1071501">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[231525]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="155" _type="ShellCommand" date="Thu Dec 02 15:00:38 EST 2021" starttimestamp="1638474167222" timestamp="1071501" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="157" _type="ShellCommand" date="Thu Dec 02 15:00:39 EST 2021" starttimestamp="1638474167222" timestamp="1071914" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="159" _type="PauseCommand" date="Thu Dec 02 15:01:04 EST 2021" range="20s-30s" starttimestamp="1638474167222" timestamp="1096945">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[25031]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="158" _type="ShellCommand" date="Thu Dec 02 15:01:04 EST 2021" starttimestamp="1638474167222" timestamp="1096945" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="161" _type="PauseCommand" date="Thu Dec 02 15:01:16 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="1109621">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[12676]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="160" _type="ShellCommand" date="Thu Dec 02 15:01:16 EST 2021" starttimestamp="1638474167222" timestamp="1109621" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="163" _type="PauseCommand" date="Thu Dec 02 15:09:50 EST 2021" range="5m-10m" starttimestamp="1638474167222" timestamp="1623654">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[514033]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="162" _type="ShellCommand" date="Thu Dec 02 15:09:50 EST 2021" starttimestamp="1638474167222" timestamp="1623654" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="165" _type="PauseCommand" date="Thu Dec 02 15:09:52 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="1625403">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1749]]></pause>
-    <nextType><![CDATA[IO]]></nextType>
-    <next><![CDATA[ConsoleOutput]]></next>
-  </Command>
-  <Command __id="164" _type="ConsoleOutput" date="Thu Dec 02 15:09:52 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="1625403" type="ConsoleOutput">
-    <outputString><![CDATA[(setq f1 
-   (lambda (L) 
-       (cond         
-          ((eq L Nil) NIL)
-          (T  (cons 
-                (atom (car L)) 
-                (funcall f1 (cdr L))
-              )
-          )
-       )
-    )
- )
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"A"), Diff(INSERT,"(setq f1 ¶   (lambda (L) ¶       (cond         ¶          ((eq L Nil) NIL)¶          (T  (cons ¶                (atom (car L)) ¶                (funcall f1 (cdr L))¶              )¶          )¶       )¶    )¶ )"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="166" _type="PasteCommand" date="Thu Dec 02 15:09:52 EST 2021" starttimestamp="1638474167222" timestamp="1625411" />
-  <Command __id="167" _type="ConsoleOutput" date="Thu Dec 02 15:09:52 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="1625468" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA (L) (COND ((EQ L NIL) NIL) (T (CONS (ATOM (CAR L)) (FUNCALL F1 (CDR L)))))
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"(setq f1 ¶   (lambda (L) ¶       (cond         ¶         "), Diff(INSERT,"LAMBDA (L) (COND"), Diff(EQUAL," (("), Diff(DELETE,"eq"), Diff(INSERT,"EQ"), Diff(EQUAL," L N"), Diff(DELETE,"il"), Diff(INSERT,"IL"), Diff(EQUAL,") NIL)"), Diff(DELETE,"¶         "), Diff(EQUAL," (T "), Diff(DELETE," "), Diff(EQUAL,"("), Diff(DELETE,"cons ¶                (atom (car L)) ¶                (funcall f1 (cdr L))¶              )¶          )¶       )¶    )¶ "), Diff(INSERT,"CONS (ATOM (CAR L)) (FUNCALL F1 (CDR L))))"), Diff(EQUAL,")¶")]]]></diff>
-  </Command>
-  <Command __id="168" _type="ShellCommand" date="Thu Dec 02 15:09:53 EST 2021" starttimestamp="1638474167222" timestamp="1626362" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="170" _type="PauseCommand" date="Thu Dec 02 15:09:56 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="1629605">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3243]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="169" _type="ShellCommand" date="Thu Dec 02 15:09:56 EST 2021" starttimestamp="1638474167222" timestamp="1629605" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="171" _type="PasteCommand" date="Thu Dec 02 15:09:57 EST 2021" starttimestamp="1638474167222" timestamp="1630116" />
-  <Command __id="172" _type="ConsoleOutput" date="Thu Dec 02 15:09:57 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="1630599" type="ConsoleOutput">
-    <outputString><![CDATA[(T NIL T)
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"LAMBDA (L) (COND ((EQ L NIL) NIL) (T (CONS (ATOM (CAR L)) (FUNCALL F1 (CDR L))))"), Diff(INSERT,"(T NIL T"), Diff(EQUAL,")¶")]]]></diff>
-  </Command>
-  <Command __id="174" _type="PauseCommand" date="Thu Dec 02 15:10:03 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="1635821">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[5222]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="173" _type="ShellCommand" date="Thu Dec 02 15:10:03 EST 2021" starttimestamp="1638474167222" timestamp="1635821" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="176" _type="PauseCommand" date="Thu Dec 02 15:12:27 EST 2021" range="2m-5m" starttimestamp="1638474167222" timestamp="1779947">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[144126]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="175" _type="ShellCommand" date="Thu Dec 02 15:12:27 EST 2021" starttimestamp="1638474167222" timestamp="1779947" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="178" _type="PauseCommand" date="Thu Dec 02 15:12:28 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="1781255">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1307]]></pause>
-    <nextType><![CDATA[IO]]></nextType>
-    <next><![CDATA[ConsoleOutput]]></next>
-  </Command>
-  <Command __id="177" _type="ConsoleOutput" date="Thu Dec 02 15:12:28 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="1781254" type="ConsoleOutput">
-    <outputString><![CDATA[(setq f2 
-   (lambda (L) 
-       (cond         
-          ((eq L Nil) NIL)
-          (T  (cons 
-                (not (car L)) 
-                (funcall f2 (cdr L))
-              )
-          )
-       )
-    )
-)
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"("), Diff(DELETE,"T NIL T"), Diff(INSERT,"setq f2 ¶   (lambda (L) ¶       (cond         ¶          ((eq L Nil) NIL)¶          (T  (cons ¶                (not (car L)) ¶                (funcall f2 (cdr L))¶              )¶          )¶       )¶    )¶"), Diff(EQUAL,")¶")]]]></diff>
-  </Command>
-  <Command __id="179" _type="PasteCommand" date="Thu Dec 02 15:12:28 EST 2021" starttimestamp="1638474167222" timestamp="1781258" />
-  <Command __id="180" _type="ConsoleOutput" date="Thu Dec 02 15:12:28 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="1781363" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA (L) (COND ((EQ L NIL) NIL) (T (CONS (NOT (CAR L)) (FUNCALL F2 (CDR L)))))
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"(setq f2 ¶   (lambda (L) ¶       (cond         ¶         "), Diff(INSERT,"LAMBDA (L) (COND"), Diff(EQUAL," (("), Diff(DELETE,"eq"), Diff(INSERT,"EQ"), Diff(EQUAL," L N"), Diff(DELETE,"il"), Diff(INSERT,"IL"), Diff(EQUAL,") NIL)"), Diff(DELETE,"¶          (T  (cons ¶                (not (car L)) ¶                (funcall f2 (cdr L))¶              )¶          )¶       )¶    )¶"), Diff(INSERT," (T (CONS (NOT (CAR L)) (FUNCALL F2 (CDR L))))"), Diff(EQUAL,")¶")]]]></diff>
-  </Command>
-  <Command __id="182" _type="PauseCommand" date="Thu Dec 02 15:12:29 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="1782381">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[1018]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="181" _type="ShellCommand" date="Thu Dec 02 15:12:29 EST 2021" starttimestamp="1638474167222" timestamp="1782381" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="184" _type="PauseCommand" date="Thu Dec 02 15:12:32 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="1785448">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3067]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="183" _type="ShellCommand" date="Thu Dec 02 15:12:32 EST 2021" starttimestamp="1638474167222" timestamp="1785448" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="185" _type="ConsoleOutput" date="Thu Dec 02 15:12:33 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="1786139" type="ConsoleOutput">
-    <outputString><![CDATA[(funcall f2 (list T T NIL))
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"LAMBDA (L) (COND ((EQ L NIL) NIL) (T (CONS (NOT (CAR L)) (FUNCALL F2 (CDR L)))"), Diff(INSERT,"(funcall f2 (list T T NIL"), Diff(EQUAL,"))¶")]]]></diff>
-  </Command>
-  <Command __id="186" _type="PasteCommand" date="Thu Dec 02 15:12:33 EST 2021" starttimestamp="1638474167222" timestamp="1786141" />
-  <Command __id="187" _type="ConsoleOutput" date="Thu Dec 02 15:12:33 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="1786195" type="ConsoleOutput">
-    <outputString><![CDATA[(NIL NIL T)
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"("), Diff(DELETE,"funcall f2 (list T T"), Diff(INSERT,"NIL"), Diff(EQUAL," NIL"), Diff(DELETE,")"), Diff(INSERT," T"), Diff(EQUAL,")¶")]]]></diff>
-  </Command>
-  <Command __id="189" _type="PauseCommand" date="Thu Dec 02 15:12:46 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="1799517">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[13322]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="188" _type="ShellCommand" date="Thu Dec 02 15:12:46 EST 2021" starttimestamp="1638474167222" timestamp="1799517" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="191" _type="PauseCommand" date="Thu Dec 02 15:16:59 EST 2021" range="2m-5m" starttimestamp="1638474167222" timestamp="2052534">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[253016]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="190" _type="ShellCommand" date="Thu Dec 02 15:16:59 EST 2021" starttimestamp="1638474167222" timestamp="2052533" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="192" _type="PasteCommand" date="Thu Dec 02 15:17:00 EST 2021" starttimestamp="1638474167222" timestamp="2053035" />
-  <Command __id="193" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:17:00 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2053536" type="Run" />
-  <Command __id="194" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:17:00 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2053537" type="Run" />
-  <Command __id="195" _type="ExceptionCommand" date="Thu Dec 02 15:17:00 EST 2021" starttimestamp="1638474167222" timestamp="2053610" type="Exception">
-    <exceptionString><![CDATA[Exception in thread "main" java.lang.ClassCastException: class mainPackage.IdentifierAtomImplementation cannot be cast to class main.lisp.evaluator.function.Lambda (mainPackage.IdentifierAtomImplementation and main.lisp.evaluator.function.Lambda are in unnamed module of loader 'app')
-	at mainPackage.Functional.FuncallEvaluator.eval(FuncallEvaluator.java:30)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
-	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
-	at main.Main.main(Main.java:31)
-	at mainPackage.Runner.main(Runner.java:11)
-]]></exceptionString>
-    <language><![CDATA[java]]></language>
-  </Command>
-  <Command __id="197" _type="PauseCommand" date="Thu Dec 02 15:17:03 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2056196">
-    <prevType><![CDATA[Exception]]></prevType>
-    <prev><![CDATA[ExceptionCommand]]></prev>
-    <pause><![CDATA[2586]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="196" _type="ShellCommand" date="Thu Dec 02 15:17:03 EST 2021" starttimestamp="1638474167222" timestamp="2056196" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="199" _type="PauseCommand" date="Thu Dec 02 15:21:37 EST 2021" range="2m-5m" starttimestamp="1638474167222" timestamp="2330746">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[274550]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="198" _type="ShellCommand" date="Thu Dec 02 15:21:37 EST 2021" starttimestamp="1638474167222" timestamp="2330746" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="201" _type="PauseCommand" date="Thu Dec 02 15:21:41 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2334543">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3797]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="200" _type="ShellCommand" date="Thu Dec 02 15:21:41 EST 2021" starttimestamp="1638474167222" timestamp="2334543" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="205" _type="PauseCommand" date="Thu Dec 02 15:23:13 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2426301">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1728]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ProgramExecutionEvent]]></next>
-  </Command>
-  <Command __id="204" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:23:13 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2426301" type="Run" />
-  <Command __id="206" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:23:13 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2426301" type="Run" />
-  <Command __id="208" _type="PauseCommand" date="Thu Dec 02 15:23:18 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2431296">
-    <prevType><![CDATA[Debug]]></prevType>
-    <prev><![CDATA[RunCommand]]></prev>
-    <pause><![CDATA[4995]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="207" _type="ConsoleInput" date="Thu Dec 02 15:23:18 EST 2021" starttimestamp="1638474167222" timestamp="2431296" type="Exception">
-    <outputString><![CDATA[(load "test.lisp")
-]]></outputString>
-  </Command>
-  <Command __id="209" _type="ConsoleOutput" date="Thu Dec 02 15:23:18 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="2431380" type="ConsoleOutput">
-    <outputString><![CDATA[29
-42
-42
-42
-42
-42
-LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
-5
-LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
-#<FUNCTION :LAMBDA (Y) (* X Y)>
-LAMBDA (X Y Z) (* X (* Y Z))
-LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)
-LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)
-LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))
-LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))
-LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))
-LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")
-LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))
-LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))
-LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))
-LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))
-LAMBDA (X) (ATOM X)
-NIL
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"(NIL NIL T)"), Diff(INSERT,"29¶42¶42¶42¶42¶42¶LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X Y Z) (* X (* Y Z))¶LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)¶LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)¶LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))¶LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))¶LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))¶LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")¶LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))¶LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))¶LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))¶LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))¶LAMBDA (X) (ATOM X)¶NIL"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="210" _type="ShellCommand" date="Thu Dec 02 15:23:19 EST 2021" starttimestamp="1638474167222" timestamp="2432145" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="212" _type="PauseCommand" date="Thu Dec 02 15:23:21 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2434279">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2134]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="211" _type="ShellCommand" date="Thu Dec 02 15:23:21 EST 2021" starttimestamp="1638474167222" timestamp="2434279" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="214" _type="PauseCommand" date="Thu Dec 02 15:23:23 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2436562">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2283]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="213" _type="ConsoleInput" date="Thu Dec 02 15:23:23 EST 2021" starttimestamp="1638474167222" timestamp="2436562" type="Exception">
-    <outputString><![CDATA[f1clone
-]]></outputString>
-  </Command>
-  <Command __id="215" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:23:23 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2436572" type="Run" />
-  <Command __id="216" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:23:23 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2436572" type="Run" />
-  <Command __id="217" _type="ExceptionCommand" date="Thu Dec 02 15:23:23 EST 2021" starttimestamp="1638474167222" timestamp="2436616" type="Exception">
-    <exceptionString><![CDATA[Exception in thread "main" java.lang.RuntimeException: Undefined Variable
-	at mainPackage.IdentifierAtomImplementation.eval(IdentifierAtomImplementation.java:26)
-	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
-	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
-	at main.Main.main(Main.java:31)
-	at mainPackage.Runner.main(Runner.java:11)
-]]></exceptionString>
-    <language><![CDATA[java]]></language>
-  </Command>
-  <Command __id="219" _type="PauseCommand" date="Thu Dec 02 15:23:25 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2438231">
-    <prevType><![CDATA[Exception]]></prevType>
-    <prev><![CDATA[ExceptionCommand]]></prev>
-    <pause><![CDATA[1615]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="218" _type="ShellCommand" date="Thu Dec 02 15:23:25 EST 2021" starttimestamp="1638474167222" timestamp="2438231" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="221" _type="PauseCommand" date="Thu Dec 02 15:23:29 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2442043">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3812]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="220" _type="ShellCommand" date="Thu Dec 02 15:23:29 EST 2021" starttimestamp="1638474167222" timestamp="2442043" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="223" _type="PauseCommand" date="Thu Dec 02 15:23:31 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2444291">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2248]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="222" _type="ShellCommand" date="Thu Dec 02 15:23:31 EST 2021" starttimestamp="1638474167222" timestamp="2444291" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="224" _type="ShellCommand" date="Thu Dec 02 15:23:32 EST 2021" starttimestamp="1638474167222" timestamp="2444784" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="226" _type="PauseCommand" date="Thu Dec 02 15:23:33 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2446467">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1683]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="225" _type="ShellCommand" date="Thu Dec 02 15:23:33 EST 2021" starttimestamp="1638474167222" timestamp="2446467" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="230" _type="PauseCommand" date="Thu Dec 02 15:23:40 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2453373">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3493]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ProgramExecutionEvent]]></next>
-  </Command>
-  <Command __id="229" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:23:40 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2453373" type="Run" />
-  <Command __id="231" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:23:40 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2453373" type="Run" />
-  <Command __id="233" _type="PauseCommand" date="Thu Dec 02 15:23:45 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2457797">
-    <prevType><![CDATA[Debug]]></prevType>
-    <prev><![CDATA[RunCommand]]></prev>
-    <pause><![CDATA[4424]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="232" _type="ConsoleInput" date="Thu Dec 02 15:23:45 EST 2021" starttimestamp="1638474167222" timestamp="2457797" type="Exception">
-    <outputString><![CDATA[(load "test.lisp")
-]]></outputString>
-  </Command>
-  <Command __id="234" _type="ConsoleOutput" date="Thu Dec 02 15:23:45 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="2457880" type="ConsoleOutput">
-    <outputString><![CDATA[29
-42
-42
-42
-42
-42
-LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
-5
-LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
-#<FUNCTION :LAMBDA (Y) (* X Y)>
-LAMBDA (X Y Z) (* X (* Y Z))
-LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)
-LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)
-LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))
-LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))
-LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))
-LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")
-LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))
-LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))
-LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))
-LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))
-LAMBDA (X) (ATOM X)
-NIL
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶42¶42¶42¶LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X Y Z) (* X (* Y Z))¶LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)¶LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)¶LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))¶LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))¶LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))¶LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")¶LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))¶LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))¶LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))¶LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))¶LAMBDA (X) (ATOM X)¶NIL¶")]]]></diff>
-  </Command>
-  <Command __id="236" _type="PauseCommand" date="Thu Dec 02 15:23:46 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2459175">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[1295]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="235" _type="ShellCommand" date="Thu Dec 02 15:23:46 EST 2021" starttimestamp="1638474167222" timestamp="2459175" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="238" _type="PauseCommand" date="Thu Dec 02 15:23:47 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2460328">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1153]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="237" _type="ShellCommand" date="Thu Dec 02 15:23:47 EST 2021" starttimestamp="1638474167222" timestamp="2460328" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="240" _type="PauseCommand" date="Thu Dec 02 15:23:49 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2462764">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2436]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="239" _type="ConsoleInput" date="Thu Dec 02 15:23:49 EST 2021" starttimestamp="1638474167222" timestamp="2462764" type="Exception">
-    <outputString><![CDATA[filterList
-]]></outputString>
-  </Command>
-  <Command __id="241" _type="ConsoleOutput" date="Thu Dec 02 15:23:50 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="2462824" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"29¶42¶42¶42¶42¶42¶LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X Y Z) (* X (* Y Z))¶LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)¶LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)¶LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))¶LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))¶LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))¶LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")¶LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))¶LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))¶LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))¶"), Diff(EQUAL,"LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))¶"), Diff(DELETE,"LAMBDA (X) (ATOM X)¶NIL¶")]]]></diff>
-  </Command>
-  <Command __id="242" _type="ShellCommand" date="Thu Dec 02 15:23:50 EST 2021" starttimestamp="1638474167222" timestamp="2463603" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="244" _type="PauseCommand" date="Thu Dec 02 15:23:54 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2467277">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3674]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="243" _type="ShellCommand" date="Thu Dec 02 15:23:54 EST 2021" starttimestamp="1638474167222" timestamp="2467277" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="246" _type="PauseCommand" date="Thu Dec 02 15:23:55 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2468715">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1438]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="245" _type="ConsoleInput" date="Thu Dec 02 15:23:55 EST 2021" starttimestamp="1638474167222" timestamp="2468715" type="Exception">
-    <outputString><![CDATA[f1Handler
-]]></outputString>
-  </Command>
-  <Command __id="247" _type="ConsoleOutput" date="Thu Dec 02 15:23:55 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="2468769" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA (X) (ATOM X)
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"LAMBDA ("), Diff(DELETE,"HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L))))"), Diff(INSERT,"X) (ATOM X"), Diff(EQUAL,")¶")]]]></diff>
-  </Command>
-  <Command __id="248" _type="ShellCommand" date="Thu Dec 02 15:23:56 EST 2021" starttimestamp="1638474167222" timestamp="2469573" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="250" _type="PauseCommand" date="Thu Dec 02 15:24:02 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="2475717">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[6144]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="249" _type="ShellCommand" date="Thu Dec 02 15:24:02 EST 2021" starttimestamp="1638474167222" timestamp="2475717" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="252" _type="PauseCommand" date="Thu Dec 02 15:24:07 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2480213">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[4496]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="251" _type="ConsoleInput" date="Thu Dec 02 15:24:07 EST 2021" starttimestamp="1638474167222" timestamp="2480213" type="Exception">
-    <outputString><![CDATA[(load "test.lisp")
-]]></outputString>
-  </Command>
-  <Command __id="253" _type="ConsoleOutput" date="Thu Dec 02 15:24:07 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="2480272" type="ConsoleOutput">
-    <outputString><![CDATA[29
-42
-42
-42
-42
-42
-LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
-5
-LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
-#<FUNCTION :LAMBDA (Y) (* X Y)>
-LAMBDA (X Y Z) (* X (* Y Z))
-LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)
-LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)
-LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))
-LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))
-LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))
-LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")
-LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))
-LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))
-LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))
-LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))
-LAMBDA (X) (ATOM X)
-LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (ATOM X)) L)
-T
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"LAMBDA (X) (ATOM X)"), Diff(INSERT,"29¶42¶42¶42¶42¶42¶LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X Y Z) (* X (* Y Z))¶LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)¶LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)¶LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))¶LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))¶LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))¶LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")¶LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))¶LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))¶LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))¶LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))¶LAMBDA (X) (ATOM X)¶LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (ATOM X)) L)¶T"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="255" _type="PauseCommand" date="Thu Dec 02 15:24:09 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2482064">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[1792]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="254" _type="ShellCommand" date="Thu Dec 02 15:24:09 EST 2021" starttimestamp="1638474167222" timestamp="2482064" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="256" _type="ShellCommand" date="Thu Dec 02 15:24:10 EST 2021" starttimestamp="1638474167222" timestamp="2482932" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="258" _type="PauseCommand" date="Thu Dec 02 15:24:11 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2483970">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1038]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="257" _type="ConsoleInput" date="Thu Dec 02 15:24:11 EST 2021" starttimestamp="1638474167222" timestamp="2483970" type="Exception">
-    <outputString><![CDATA[f1Clone
-]]></outputString>
-  </Command>
-  <Command __id="259" _type="ConsoleOutput" date="Thu Dec 02 15:24:11 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="2484024" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (ATOM X)) L)
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"29¶42¶42¶42¶42¶42¶LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X Y Z) (* X (* Y Z))¶LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)¶LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)¶LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))¶LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))¶LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))¶LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")¶LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))¶LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))¶LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))¶LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))¶LAMBDA (X) (ATOM X)¶"), Diff(EQUAL,"LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (ATOM X)) L)¶"), Diff(DELETE,"T¶")]]]></diff>
-  </Command>
-  <Command __id="261" _type="PauseCommand" date="Thu Dec 02 15:24:13 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2486577">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[2553]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="260" _type="ShellCommand" date="Thu Dec 02 15:24:13 EST 2021" starttimestamp="1638474167222" timestamp="2486577" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="263" _type="PauseCommand" date="Thu Dec 02 15:24:15 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2488216">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1639]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="262" _type="ShellCommand" date="Thu Dec 02 15:24:15 EST 2021" starttimestamp="1638474167222" timestamp="2488216" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="265" _type="PauseCommand" date="Thu Dec 02 15:24:17 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2489940">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1724]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="264" _type="ShellCommand" date="Thu Dec 02 15:24:17 EST 2021" starttimestamp="1638474167222" timestamp="2489940" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="267" _type="PauseCommand" date="Thu Dec 02 15:24:23 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="2496559">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[6619]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="266" _type="ShellCommand" date="Thu Dec 02 15:24:23 EST 2021" starttimestamp="1638474167222" timestamp="2496559" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="269" _type="PauseCommand" date="Thu Dec 02 15:24:24 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2497641">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1082]]></pause>
-    <nextType><![CDATA[Edit]]></nextType>
-    <next><![CDATA[PasteCommand]]></next>
-  </Command>
-  <Command __id="268" _type="PasteCommand" date="Thu Dec 02 15:24:24 EST 2021" starttimestamp="1638474167222" timestamp="2497641" />
-  <Command __id="271" _type="PauseCommand" date="Thu Dec 02 15:24:26 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2499738">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[PasteCommand]]></prev>
-    <pause><![CDATA[2097]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="270" _type="ConsoleInput" date="Thu Dec 02 15:24:26 EST 2021" starttimestamp="1638474167222" timestamp="2499738" type="Exception">
-    <outputString><![CDATA[(funcall f1 (list 1 (cons 2 3) 4))Clone
-]]></outputString>
-  </Command>
-  <Command __id="272" _type="ConsoleOutput" date="Thu Dec 02 15:24:27 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="2499860" type="ConsoleOutput">
-    <outputString><![CDATA[(T NIL T)
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (ATOM X)) L"), Diff(INSERT,"(T NIL T"), Diff(EQUAL,")¶")]]]></diff>
-  </Command>
-  <Command __id="274" _type="PauseCommand" date="Thu Dec 02 15:24:38 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="2511611">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[11751]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="273" _type="ShellCommand" date="Thu Dec 02 15:24:38 EST 2021" starttimestamp="1638474167222" timestamp="2511611" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="276" _type="PauseCommand" date="Thu Dec 02 15:25:09 EST 2021" range="30s-1m" starttimestamp="1638474167222" timestamp="2542725">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[31114]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="275" _type="ShellCommand" date="Thu Dec 02 15:25:09 EST 2021" starttimestamp="1638474167222" timestamp="2542725" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="278" _type="PauseCommand" date="Thu Dec 02 15:25:14 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2546963">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[4238]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="277" _type="ConsoleInput" date="Thu Dec 02 15:25:14 EST 2021" starttimestamp="1638474167222" timestamp="2546963" type="Exception">
-    <outputString><![CDATA[(load "test.lisp")
-]]></outputString>
-  </Command>
-  <Command __id="279" _type="ConsoleOutput" date="Thu Dec 02 15:25:14 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="2547071" type="ConsoleOutput">
-    <outputString><![CDATA[29
-42
-42
-42
-42
-42
-LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
-5
-LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
-#<FUNCTION :LAMBDA (Y) (* X Y)>
-LAMBDA (X Y Z) (* X (* Y Z))
-LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)
-LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)
-LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))
-LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))
-LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))
-LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")
-LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))
-LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))
-LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))
-LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))
-LAMBDA (X) (ATOM X)
-LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (ATOM X)) L)
-LAMBDA (X) (NIL X)
-LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (NIL X)) L)
-T
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"(T NIL T)"), Diff(INSERT,"29¶42¶42¶42¶42¶42¶LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X Y Z) (* X (* Y Z))¶LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)¶LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)¶LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))¶LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))¶LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))¶LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")¶LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))¶LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))¶LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))¶LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))¶LAMBDA (X) (ATOM X)¶LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (ATOM X)) L)¶LAMBDA (X) (NIL X)¶LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (NIL X)) L)¶T"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="280" _type="ShellCommand" date="Thu Dec 02 15:25:15 EST 2021" starttimestamp="1638474167222" timestamp="2547789" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="282" _type="PauseCommand" date="Thu Dec 02 15:25:16 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2549301">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1512]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="281" _type="ShellCommand" date="Thu Dec 02 15:25:16 EST 2021" starttimestamp="1638474167222" timestamp="2549301" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="283" _type="ShellCommand" date="Thu Dec 02 15:25:17 EST 2021" starttimestamp="1638474167222" timestamp="2549891" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="285" _type="PauseCommand" date="Thu Dec 02 15:25:21 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2554407">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[4516]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="284" _type="ShellCommand" date="Thu Dec 02 15:25:21 EST 2021" starttimestamp="1638474167222" timestamp="2554407" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="286" _type="PasteCommand" date="Thu Dec 02 15:25:22 EST 2021" starttimestamp="1638474167222" timestamp="2554781" />
-  <Command __id="288" _type="PauseCommand" date="Thu Dec 02 15:25:24 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2556786">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[PasteCommand]]></prev>
-    <pause><![CDATA[2005]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="287" _type="ConsoleInput" date="Thu Dec 02 15:25:24 EST 2021" starttimestamp="1638474167222" timestamp="2556786" type="Exception">
-    <outputString><![CDATA[(funcall f2 (list T T NIL))Clone
-]]></outputString>
-  </Command>
-  <Command __id="289" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:25:24 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2556798" type="Run" />
-  <Command __id="290" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:25:24 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2556799" type="Run" />
-  <Command __id="291" _type="ExceptionCommand" date="Thu Dec 02 15:25:24 EST 2021" starttimestamp="1638474167222" timestamp="2556842" type="Exception">
-    <exceptionString><![CDATA[Exception in thread "main" java.lang.IllegalStateException: Expression does not start with an operator
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:18)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
-	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
-	at mainPackage.LambdaApplicationEvaluator.helper(LambdaApplicationEvaluator.java:20)
-	at mainPackage.Functional.FuncallEvaluator.eval(FuncallEvaluator.java:31)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.evaluator.basic.ConsEvaluator.eval(ConsEvaluator.java:27)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at mainPackage.Expression.CondEvaluator.eval(CondEvaluator.java:34)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
-	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
-	at mainPackage.LambdaApplicationEvaluator.helper(LambdaApplicationEvaluator.java:20)
-	at mainPackage.Functional.FuncallEvaluator.eval(FuncallEvaluator.java:31)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
-	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
-	at mainPackage.LambdaApplicationEvaluator.helper(LambdaApplicationEvaluator.java:20)
-	at mainPackage.Functional.FuncallEvaluator.eval(FuncallEvaluator.java:31)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
-	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
-	at main.Main.main(Main.java:31)
-	at mainPackage.Runner.main(Runner.java:11)
-]]></exceptionString>
-    <language><![CDATA[java]]></language>
-  </Command>
-  <Command __id="293" _type="PauseCommand" date="Thu Dec 02 15:25:32 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="2565025">
-    <prevType><![CDATA[Exception]]></prevType>
-    <prev><![CDATA[ExceptionCommand]]></prev>
-    <pause><![CDATA[8183]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="292" _type="ShellCommand" date="Thu Dec 02 15:25:32 EST 2021" starttimestamp="1638474167222" timestamp="2565025" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="295" _type="PauseCommand" date="Thu Dec 02 15:25:33 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2566095">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1070]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="294" _type="ShellCommand" date="Thu Dec 02 15:25:33 EST 2021" starttimestamp="1638474167222" timestamp="2566095" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="296" _type="ShellCommand" date="Thu Dec 02 15:25:34 EST 2021" starttimestamp="1638474167222" timestamp="2566813" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="300" _type="PauseCommand" date="Thu Dec 02 15:25:49 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2582585">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[1034]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ProgramExecutionEvent]]></next>
-  </Command>
-  <Command __id="299" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:25:49 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2582585" type="Run" />
-  <Command __id="301" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 15:25:49 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="2582585" type="Run" />
-  <Command __id="303" _type="PauseCommand" date="Thu Dec 02 15:25:56 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="2589464">
-    <prevType><![CDATA[Debug]]></prevType>
-    <prev><![CDATA[RunCommand]]></prev>
-    <pause><![CDATA[6879]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="302" _type="ConsoleInput" date="Thu Dec 02 15:25:56 EST 2021" starttimestamp="1638474167222" timestamp="2589464" type="Exception">
-    <outputString><![CDATA[(load "test.lisp")
-]]></outputString>
-  </Command>
-  <Command __id="304" _type="ConsoleOutput" date="Thu Dec 02 15:25:56 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="2589568" type="ConsoleOutput">
-    <outputString><![CDATA[29
-42
-42
-42
-42
-42
-LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
-5
-LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
-#<FUNCTION :LAMBDA (Y) (* X Y)>
-LAMBDA (X Y Z) (* X (* Y Z))
-LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)
-LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)
-LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))
-LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))
-LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))
-LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")
-LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))
-LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))
-LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))
-LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))
-LAMBDA (X) (ATOM X)
-LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (ATOM X)) L)
-LAMBDA (X) (NOT X)
-LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (NOT X)) L)
-T
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶42¶42¶42¶LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X Y Z) (* X (* Y Z))¶LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)¶LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)¶LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))¶LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))¶LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))¶LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")¶LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))¶LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))¶LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))¶LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))¶LAMBDA (X) (ATOM X)¶LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (ATOM X)) L)¶LAMBDA (X) (N"), Diff(DELETE,"IL"), Diff(INSERT,"OT"), Diff(EQUAL," X)¶LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (N"), Diff(DELETE,"IL"), Diff(INSERT,"OT"), Diff(EQUAL," X)) L)¶T¶")]]]></diff>
-  </Command>
-  <Command __id="306" _type="PauseCommand" date="Thu Dec 02 15:25:59 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="2591907">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[2339]]></pause>
-    <nextType><![CDATA[Edit]]></nextType>
-    <next><![CDATA[PasteCommand]]></next>
-  </Command>
-  <Command __id="305" _type="PasteCommand" date="Thu Dec 02 15:25:59 EST 2021" starttimestamp="1638474167222" timestamp="2591907" />
-  <Command __id="308" _type="PauseCommand" date="Thu Dec 02 15:26:04 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="2597505">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[PasteCommand]]></prev>
-    <pause><![CDATA[5598]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="307" _type="ConsoleInput" date="Thu Dec 02 15:26:04 EST 2021" starttimestamp="1638474167222" timestamp="2597505" type="Exception">
-    <outputString><![CDATA[(funcall f2 (list T T NIL))Clone
-]]></outputString>
-  </Command>
-  <Command __id="309" _type="ConsoleOutput" date="Thu Dec 02 15:26:04 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="2597618" type="ConsoleOutput">
-    <outputString><![CDATA[(NIL NIL T)
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"29¶42¶42¶42¶42¶42¶LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X Y Z) (* X (* Y Z))¶LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)¶LAMBDA (Z) (FUNCALL (QUOTE LAMBDA (Y Z) (FUNCALL (QUOTE LAMBDA (X Y Z) (* X (* Y Z))) (QUOTE 1) Y Z)) (QUOTE 1) Z)¶LAMBDA (X) (COND ((EQ X NIL) NIL) (T (FUNCALL ISLISTHELPER X)))¶LAMBDA (X) (COND ((ATOM X) (EQ X NIL)) (T (FUNCALL ISLISTHELPER (CDR X))))¶LAMBDA (X) (COND ((ATOM X) (WRITE-TO-STRING X)) (T (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRING (CAR X)) " . " (FUNCALL TOSTRING (CDR X)) ")")))¶LAMBDA (X) (CONCATENATE (QUOTE STRING) "(" (FUNCALL TOSTRINGASLISTHELPER X 1) ")")¶LAMBDA (X M) (COND ((ATOM (CDR X)) (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)))) (T (CONCATENATE (QUOTE STRING) (COND ((EQ M 1) "") (T " ")) (FUNCALL TOSTRING (CAR X)) (FUNCALL TOSTRINGASLISTHELPER (CDR X) 0))))¶LAMBDA (X) (COND ((FUNCALL ISLIST X) (FUNCALL TOSTRINGASLIST X)) (T (FUNCALL TOSTRINGASSEXPRESSION X)))¶LAMBDA (X) (COND ((ATOM X) 1) (T (+ (FUNCALL NUMATOMS (CAR X)) (FUNCALL NUMATOMS (CDR X)))))¶LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))¶LAMBDA (X) (ATOM X)¶LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (ATOM X)) L)¶LAMBDA (X) (NOT X)¶LAMBDA (L) (FUNCALL (QUOTE LAMBDA (HANDLER L) (COND ((EQ L NIL) NIL) (T (CONS (FUNCALL HANDLER (CAR L)) (FUNCALL FILTERLIST HANDLER (CDR L)))))) (QUOTE LAMBDA (X) (NOT X)) L)¶T"), Diff(INSERT,"(NIL NIL T)"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="311" _type="PauseCommand" date="Thu Dec 02 15:26:06 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="2598936">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[1318]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="310" _type="ShellCommand" date="Thu Dec 02 15:26:06 EST 2021" starttimestamp="1638474167222" timestamp="2598936" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="313" _type="PauseCommand" date="Thu Dec 02 15:37:16 EST 2021" range="10m-20m" starttimestamp="1638474167222" timestamp="3268792">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[669856]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="312" _type="ShellCommand" date="Thu Dec 02 15:37:16 EST 2021" starttimestamp="1638474167222" timestamp="3268792" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="314" _type="ConsoleOutput" date="Thu Dec 02 15:37:16 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="3269760" type="ConsoleOutput">
-    <outputString><![CDATA[(setq x 10)
-(setq y 20)
-(setq lambdaPrint 
-     (lambda (deltaX deltaY)
-           (print (+ x deltaX))
-           (print (+ y deltaY))
-       )
- )
-(setq functionPrint
-   (function 
-     (lambda (deltaX deltaY)
-           (print (+ x deltaX))
-           (print (+ y deltaY))
-      )
-    )     
- )
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"("), Diff(DELETE,"NIL NIL T"), Diff(INSERT,"setq x 10)¶(setq y 20)¶(setq lambdaPrint ¶     (lambda (deltaX deltaY)¶           (print (+ x deltaX))¶           (print (+ y deltaY))¶       )¶ )¶(setq functionPrint¶   (function ¶     (lambda (deltaX deltaY)¶           (print (+ x deltaX))¶           (print (+ y deltaY))¶      )¶    )     ¶ "), Diff(EQUAL,")¶")]]]></diff>
-  </Command>
-  <Command __id="315" _type="PasteCommand" date="Thu Dec 02 15:37:16 EST 2021" starttimestamp="1638474167222" timestamp="3269763" />
-  <Command __id="316" _type="ConsoleOutput" date="Thu Dec 02 15:37:17 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="3269838" type="ConsoleOutput">
-    <outputString><![CDATA[10
-20
-LAMBDA (DELTAX DELTAY) (PRINT (+ X DELTAX)) (PRINT (+ Y DELTAY))
-#<FUNCTION :LAMBDA (DELTAX DELTAY) (PRINT (+ X DELTAX)) (PRINT (+ Y DELTAY))>
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"(setq x "), Diff(EQUAL,"10"), Diff(DELETE,")"), Diff(EQUAL,"¶"), Diff(DELETE,"(setq y "), Diff(EQUAL,"20"), Diff(DELETE,")"), Diff(EQUAL,"¶"), Diff(DELETE,"(setq lambdaPrint ¶     (lambda (deltaX deltaY)¶           (print (+ x deltaX))¶           (print (+ y deltaY))¶       )¶ )¶(setq functionPrint¶   (function ¶     (lambda (deltaX deltaY)¶           (print (+ x deltaX))¶           (print (+ y deltaY))¶      )¶    )     ¶ )"), Diff(INSERT,"LAMBDA (DELTAX DELTAY) (PRINT (+ X DELTAX)) (PRINT (+ Y DELTAY))¶#<FUNCTION :LAMBDA (DELTAX DELTAY) (PRINT (+ X DELTAX)) (PRINT (+ Y DELTAY))>"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="318" _type="PauseCommand" date="Thu Dec 02 15:37:18 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="3270934">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[1096]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="317" _type="ShellCommand" date="Thu Dec 02 15:37:18 EST 2021" starttimestamp="1638474167222" timestamp="3270934" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="320" _type="PauseCommand" date="Thu Dec 02 15:37:23 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="3276139">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[5205]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="319" _type="ShellCommand" date="Thu Dec 02 15:37:23 EST 2021" starttimestamp="1638474167222" timestamp="3276139" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="322" _type="PauseCommand" date="Thu Dec 02 15:37:25 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="3278331">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2192]]></pause>
-    <nextType><![CDATA[IO]]></nextType>
-    <next><![CDATA[ConsoleOutput]]></next>
-  </Command>
-  <Command __id="321" _type="ConsoleOutput" date="Thu Dec 02 15:37:25 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="3278331" type="ConsoleOutput">
-    <outputString><![CDATA[(setq x 20)
-(setq y 40)
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"10¶20¶LAMBDA (DELTAX DELTAY) (PRINT (+ X DELTAX)) (PRINT (+ Y DELTAY))¶#<FUNCTION :LAMBDA (DELTAX DELTAY) (PRINT (+ X DELTAX)) (PRINT (+ Y DELTAY))>"), Diff(INSERT,"(setq x 20)¶(setq y 40)"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="323" _type="PasteCommand" date="Thu Dec 02 15:37:25 EST 2021" starttimestamp="1638474167222" timestamp="3278334" />
-  <Command __id="324" _type="ConsoleOutput" date="Thu Dec 02 15:37:25 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="3278434" type="ConsoleOutput">
-    <outputString><![CDATA[20
-40
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"(setq x "), Diff(EQUAL,"20"), Diff(DELETE,")"), Diff(EQUAL,"¶"), Diff(DELETE,"(setq y "), Diff(EQUAL,"40"), Diff(DELETE,")"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="325" _type="ShellCommand" date="Thu Dec 02 15:37:26 EST 2021" starttimestamp="1638474167222" timestamp="3279014" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="327" _type="PauseCommand" date="Thu Dec 02 15:37:28 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="3281278">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2264]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="326" _type="ShellCommand" date="Thu Dec 02 15:37:28 EST 2021" starttimestamp="1638474167222" timestamp="3281278" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="328" _type="PasteCommand" date="Thu Dec 02 15:37:29 EST 2021" starttimestamp="1638474167222" timestamp="3281798" />
-  <Command __id="329" _type="ConsoleOutput" date="Thu Dec 02 15:37:29 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="3282565" type="ConsoleOutput">
-    <outputString><![CDATA[21
-42
-42
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"2"), Diff(DELETE,"0"), Diff(INSERT,"1"), Diff(EQUAL,"¶4"), Diff(DELETE,"0"), Diff(INSERT,"2¶42"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="331" _type="PauseCommand" date="Thu Dec 02 15:37:31 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="3284675">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[2110]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="330" _type="ShellCommand" date="Thu Dec 02 15:37:31 EST 2021" starttimestamp="1638474167222" timestamp="3284675" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="333" _type="PauseCommand" date="Thu Dec 02 15:37:37 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="3289968">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[5293]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="332" _type="ShellCommand" date="Thu Dec 02 15:37:37 EST 2021" starttimestamp="1638474167222" timestamp="3289968" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="334" _type="PasteCommand" date="Thu Dec 02 15:37:37 EST 2021" starttimestamp="1638474167222" timestamp="3290423" />
-  <Command __id="335" _type="ConsoleOutput" date="Thu Dec 02 15:37:38 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="3290955" type="ConsoleOutput">
-    <outputString><![CDATA[21
-42
-42
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"21¶42¶42¶")]]]></diff>
-  </Command>
-  <Command __id="336" _type="ShellCommand" date="Thu Dec 02 15:37:38 EST 2021" starttimestamp="1638474167222" timestamp="3291521" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="338" _type="PauseCommand" date="Thu Dec 02 15:42:47 EST 2021" range="5m-10m" starttimestamp="1638474167222" timestamp="3600086">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[308565]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[BalloonCommand]]></next>
-  </Command>
-  <Command __id="337" _type="BalloonCommand" date="Thu Dec 02 15:42:47 EST 2021" message="*******************************************
-Worked 0 minutes(fixed)/35 minutes(context based) from
-Thu Dec 02 14:42:47 EST 2021 to Thu Dec 02 15:37:38 EST 2021
-Edited 0 Projects: 
-Edited 0 Files: 
-Number of insert: 0
-Number of delete: 0
-" starttimestamp="1638474167222" timestamp="3600086">
-    <fineGrainedWorkTime><![CDATA[35]]></fineGrainedWorkTime>
-    <insert><![CDATA[0]]></insert>
-    <startTime><![CDATA[1638474167394]]></startTime>
-    <endTime><![CDATA[1638477458743]]></endTime>
-    <workTime><![CDATA[0]]></workTime>
-    <delete><![CDATA[0]]></delete>
-  </Command>
-  <Command __id="340" _type="PauseCommand" date="Thu Dec 02 15:43:00 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="3613725">
-    <prevType><![CDATA[Other]]></prevType>
-    <prev><![CDATA[BalloonCommand]]></prev>
-    <pause><![CDATA[13639]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="339" _type="ShellCommand" date="Thu Dec 02 15:43:00 EST 2021" starttimestamp="1638474167222" timestamp="3613725" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="341" _type="ShellCommand" date="Thu Dec 02 15:43:01 EST 2021" starttimestamp="1638474167222" timestamp="3614569" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="343" _type="PauseCommand" date="Thu Dec 02 15:43:06 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="3619334">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[4765]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="342" _type="ShellCommand" date="Thu Dec 02 15:43:06 EST 2021" starttimestamp="1638474167222" timestamp="3619334" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="345" _type="PauseCommand" date="Thu Dec 02 15:43:08 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="3621653">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[2319]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="344" _type="ShellCommand" date="Thu Dec 02 15:43:08 EST 2021" starttimestamp="1638474167222" timestamp="3621653" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="347" _type="PauseCommand" date="Thu Dec 02 20:55:05 EST 2021" range=">1h" starttimestamp="1638474167222" timestamp="22337824">
-    <prevType><![CDATA[Lost Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[18716171]]></pause>
-    <nextType><![CDATA[Gained Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="346" _type="ShellCommand" date="Thu Dec 02 20:55:05 EST 2021" starttimestamp="1638474167222" timestamp="22337824" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="349" _type="PauseCommand" date="Thu Dec 02 20:55:13 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="22346287">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[8463]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="348" _type="ConsoleInput" date="Thu Dec 02 20:55:13 EST 2021" starttimestamp="1638474167222" timestamp="22346287" type="Exception">
-    <outputString><![CDATA[(funcall lambdaPrint 1 2)(funcall functionPrint 1 2)(print 5)
-]]></outputString>
-  </Command>
-  <Command __id="350" _type="ConsoleOutput" date="Thu Dec 02 20:55:13 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22346396" type="ConsoleOutput">
-    <outputString><![CDATA[5
-5
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"21¶42¶42"), Diff(INSERT,"5¶5"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="352" _type="PauseCommand" date="Thu Dec 02 20:55:26 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="22358870">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[12474]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="351" _type="ConsoleInput" date="Thu Dec 02 20:55:26 EST 2021" starttimestamp="1638474167222" timestamp="22358870" type="Exception">
-    <outputString><![CDATA[(setq x "global")
-]]></outputString>
-  </Command>
-  <Command __id="353" _type="ConsoleOutput" date="Thu Dec 02 20:55:26 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22358928" type="ConsoleOutput">
-    <outputString><![CDATA["global"
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"5¶5"), Diff(INSERT,""global""), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="360" _type="PauseCommand" date="Thu Dec 02 20:55:34 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="22367108">
-    <prevType><![CDATA[Exception]]></prevType>
-    <prev><![CDATA[ExceptionCommand]]></prev>
-    <pause><![CDATA[4680]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ProgramExecutionEvent]]></next>
-  </Command>
-  <Command __id="359" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:55:34 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22367108" type="Run" />
-  <Command __id="361" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:55:34 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22367109" type="Run" />
-  <Command __id="370" _type="PauseCommand" date="Thu Dec 02 20:55:44 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="22377501">
-    <prevType><![CDATA[Exception]]></prevType>
-    <prev><![CDATA[ExceptionCommand]]></prev>
-    <pause><![CDATA[2101]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ProgramExecutionEvent]]></next>
-  </Command>
-  <Command __id="369" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:55:44 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22377501" type="Run" />
-  <Command __id="371" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:55:44 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22377501" type="Run" />
-  <Command __id="378" _type="PauseCommand" date="Thu Dec 02 20:55:51 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="22384618">
-    <prevType><![CDATA[Exception]]></prevType>
-    <prev><![CDATA[ExceptionCommand]]></prev>
-    <pause><![CDATA[3556]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ProgramExecutionEvent]]></next>
-  </Command>
-  <Command __id="377" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:55:51 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22384618" type="Run" />
-  <Command __id="379" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:55:51 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22384618" type="Run" />
-  <Command __id="381" _type="PauseCommand" date="Thu Dec 02 20:55:55 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="22387873">
-    <prevType><![CDATA[Debug]]></prevType>
-    <prev><![CDATA[RunCommand]]></prev>
-    <pause><![CDATA[3254]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="380" _type="ConsoleInput" date="Thu Dec 02 20:55:55 EST 2021" starttimestamp="1638474167222" timestamp="22387872" type="Exception">
-    <outputString><![CDATA[(setq x 
-]]></outputString>
-  </Command>
-  <Command __id="383" _type="PauseCommand" date="Thu Dec 02 20:55:58 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="22391454">
-    <prevType><![CDATA[Other]]></prevType>
-    <prev><![CDATA[ConsoleInput]]></prev>
-    <pause><![CDATA[3582]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="382" _type="ConsoleInput" date="Thu Dec 02 20:55:58 EST 2021" starttimestamp="1638474167222" timestamp="22391454" type="Exception">
-    <outputString><![CDATA["global")
-]]></outputString>
-  </Command>
-  <Command __id="384" _type="ConsoleOutput" date="Thu Dec 02 20:55:58 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22391558" type="ConsoleOutput">
-    <outputString><![CDATA["global"
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,""global"¶")]]]></diff>
-  </Command>
-  <Command __id="393" _type="PauseCommand" date="Thu Dec 02 20:56:02 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="22395278">
-    <prevType><![CDATA[Exception]]></prevType>
-    <prev><![CDATA[ExceptionCommand]]></prev>
-    <pause><![CDATA[1904]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ProgramExecutionEvent]]></next>
-  </Command>
-  <Command __id="392" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:56:02 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22395278" type="Run" />
-  <Command __id="394" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:56:02 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22395279" type="Run" />
-  <Command __id="396" _type="PauseCommand" date="Thu Dec 02 20:56:08 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="22400990">
-    <prevType><![CDATA[Debug]]></prevType>
-    <prev><![CDATA[RunCommand]]></prev>
-    <pause><![CDATA[5711]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="395" _type="ConsoleInput" date="Thu Dec 02 20:56:08 EST 2021" starttimestamp="1638474167222" timestamp="22400990" type="Exception">
-    <outputString><![CDATA[(setq x "global")
-]]></outputString>
-  </Command>
-  <Command __id="397" _type="ConsoleOutput" date="Thu Dec 02 20:56:08 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22401101" type="ConsoleOutput">
-    <outputString><![CDATA["global"
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,""global"¶")]]]></diff>
-  </Command>
-  <Command __id="399" _type="PauseCommand" date="Thu Dec 02 20:56:57 EST 2021" range="30s-1m" starttimestamp="1638474167222" timestamp="22449779">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[48678]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="398" _type="ConsoleInput" date="Thu Dec 02 20:56:57 EST 2021" starttimestamp="1638474167222" timestamp="22449779" type="Exception">
-    <outputString><![CDATA[(setq f (lambda () (setq x "local") (lambda () (print x))))
-]]></outputString>
-  </Command>
-  <Command __id="400" _type="ConsoleOutput" date="Thu Dec 02 20:56:57 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22449892" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA () (SETQ X "local") (LAMBDA NIL (PRINT X))
-]]></outputString>
-    <diff><![CDATA[[Diff(INSERT,"LAMBDA () (SETQ X "), Diff(EQUAL,"""), Diff(DELETE,"g"), Diff(EQUAL,"lo"), Diff(DELETE,"b"), Diff(INSERT,"c"), Diff(EQUAL,"al""), Diff(INSERT,") (LAMBDA NIL (PRINT X))"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="402" _type="PauseCommand" date="Thu Dec 02 20:57:03 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="22456089">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[6197]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="401" _type="ConsoleInput" date="Thu Dec 02 20:57:03 EST 2021" starttimestamp="1638474167222" timestamp="22456089" type="Exception">
-    <outputString><![CDATA[f
-]]></outputString>
-  </Command>
-  <Command __id="403" _type="ConsoleOutput" date="Thu Dec 02 20:57:03 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22456145" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA () (SETQ X "local") (LAMBDA NIL (PRINT X))
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"LAMBDA () (SETQ X "local") (LAMBDA NIL (PRINT X))¶")]]]></diff>
-  </Command>
-  <Command __id="405" _type="PauseCommand" date="Thu Dec 02 20:57:16 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="22469279">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[13134]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="404" _type="ConsoleInput" date="Thu Dec 02 20:57:16 EST 2021" starttimestamp="1638474167222" timestamp="22469279" type="Exception">
-    <outputString><![CDATA[(setq g (funcall f))
-]]></outputString>
-  </Command>
-  <Command __id="406" _type="ConsoleOutput" date="Thu Dec 02 20:57:16 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22469382" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA () (PRINT X)
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"LAMBDA ()"), Diff(DELETE," (SETQ X "local") (LAMBDA NIL"), Diff(EQUAL," (PRINT X)"), Diff(DELETE,")"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="408" _type="PauseCommand" date="Thu Dec 02 20:57:23 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="22475973">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[6591]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="407" _type="ConsoleInput" date="Thu Dec 02 20:57:23 EST 2021" starttimestamp="1638474167222" timestamp="22475973" type="Exception">
-    <outputString><![CDATA[(funcall g)
-]]></outputString>
-  </Command>
-  <Command __id="409" _type="ConsoleOutput" date="Thu Dec 02 20:57:23 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22476030" type="ConsoleOutput">
-    <outputString><![CDATA["global"
-"global"
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"LAMBDA () (PRINT X)"), Diff(INSERT,""global"¶"global""), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="411" _type="PauseCommand" date="Thu Dec 02 20:57:35 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="22488194">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[12164]]></pause>
-    <nextType><![CDATA[Edit]]></nextType>
-    <next><![CDATA[CopyCommand]]></next>
-  </Command>
-  <Command __id="410" _type="CopyCommand" date="Thu Dec 02 20:57:35 EST 2021" starttimestamp="1638474167222" timestamp="22488194" />
-  <Command __id="412" _type="CopyCommand" date="Thu Dec 02 20:57:35 EST 2021" starttimestamp="1638474167222" timestamp="22488380" />
-  <Command __id="413" _type="CopyCommand" date="Thu Dec 02 20:57:35 EST 2021" starttimestamp="1638474167222" timestamp="22488538" />
-  <Command __id="414" _type="CopyCommand" date="Thu Dec 02 20:57:35 EST 2021" starttimestamp="1638474167222" timestamp="22488704" />
-  <Command __id="416" _type="PauseCommand" date="Thu Dec 02 20:57:39 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="22492554">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[CopyCommand]]></prev>
-    <pause><![CDATA[3850]]></pause>
-    <nextType><![CDATA[Edit]]></nextType>
-    <next><![CDATA[CopyCommand]]></next>
-  </Command>
-  <Command __id="415" _type="CopyCommand" date="Thu Dec 02 20:57:39 EST 2021" starttimestamp="1638474167222" timestamp="22492554" />
-  <Command __id="417" _type="CopyCommand" date="Thu Dec 02 20:57:39 EST 2021" starttimestamp="1638474167222" timestamp="22492721" />
-  <Command __id="418" _type="CopyCommand" date="Thu Dec 02 20:57:40 EST 2021" starttimestamp="1638474167222" timestamp="22492858" />
-  <Command __id="419" _type="PasteCommand" date="Thu Dec 02 20:57:40 EST 2021" starttimestamp="1638474167222" timestamp="22493669" />
-  <Command __id="421" _type="PauseCommand" date="Thu Dec 02 20:57:47 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="22500421">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[PasteCommand]]></prev>
-    <pause><![CDATA[6752]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="420" _type="ConsoleInput" date="Thu Dec 02 20:57:47 EST 2021" starttimestamp="1638474167222" timestamp="22500421" type="Exception">
-    <outputString><![CDATA[(setq f (lambda () (setq x "local") (lambda () (print x))))function
-]]></outputString>
-  </Command>
-  <Command __id="422" _type="ConsoleOutput" date="Thu Dec 02 20:57:47 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22500479" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA () (SETQ X "local") (FUNCTION NIL (PRINT X))
-]]></outputString>
-    <diff><![CDATA[[Diff(INSERT,"LAMBDA () (SETQ X "), Diff(EQUAL,"""), Diff(DELETE,"g"), Diff(EQUAL,"lo"), Diff(DELETE,"b"), Diff(INSERT,"c"), Diff(EQUAL,"al""), Diff(DELETE,"¶"global""), Diff(INSERT,") (FUNCTION NIL (PRINT X))"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="424" _type="PauseCommand" date="Thu Dec 02 20:57:51 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="22503918">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[3439]]></pause>
-    <nextType><![CDATA[Edit]]></nextType>
-    <next><![CDATA[CopyCommand]]></next>
-  </Command>
-  <Command __id="423" _type="CopyCommand" date="Thu Dec 02 20:57:51 EST 2021" starttimestamp="1638474167222" timestamp="22503918" />
-  <Command __id="425" _type="CopyCommand" date="Thu Dec 02 20:57:51 EST 2021" starttimestamp="1638474167222" timestamp="22504076" />
-  <Command __id="426" _type="CopyCommand" date="Thu Dec 02 20:57:51 EST 2021" starttimestamp="1638474167222" timestamp="22504260" />
-  <Command __id="428" _type="PauseCommand" date="Thu Dec 02 20:57:54 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="22507153">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[CopyCommand]]></prev>
-    <pause><![CDATA[2893]]></pause>
-    <nextType><![CDATA[Edit]]></nextType>
-    <next><![CDATA[PasteCommand]]></next>
-  </Command>
-  <Command __id="427" _type="PasteCommand" date="Thu Dec 02 20:57:54 EST 2021" starttimestamp="1638474167222" timestamp="22507153" />
-  <Command __id="429" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:57:55 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22508034" type="Run" />
-  <Command __id="430" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:57:55 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22508034" type="Run" />
-  <Command __id="431" _type="ExceptionCommand" date="Thu Dec 02 20:57:55 EST 2021" starttimestamp="1638474167222" timestamp="22508079" type="Exception">
-    <exceptionString><![CDATA[Exception in thread "main" java.lang.ClassCastException: class main.lisp.parser.terms.NilAtom cannot be cast to class main.lisp.evaluator.function.Lambda (main.lisp.parser.terms.NilAtom and main.lisp.evaluator.function.Lambda are in unnamed module of loader 'app')
-	at mainPackage.FunctionEvaluator.eval(FunctionEvaluator.java:17)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
-	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
-	at mainPackage.LambdaApplicationEvaluator.helper(LambdaApplicationEvaluator.java:20)
-	at mainPackage.Functional.FuncallEvaluator.eval(FuncallEvaluator.java:31)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at mainPackage.Functional.SetqEvaluator.eval(SetqEvaluator.java:30)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
-	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
-	at main.Main.main(Main.java:31)
-	at mainPackage.Runner.main(Runner.java:11)
-]]></exceptionString>
-    <language><![CDATA[java]]></language>
-  </Command>
-  <Command __id="439" _type="PauseCommand" date="Thu Dec 02 20:58:10 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="22523761">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[CopyCommand]]></prev>
-    <pause><![CDATA[1168]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ProgramExecutionEvent]]></next>
-  </Command>
-  <Command __id="438" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:58:10 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22523761" type="Run" />
-  <Command __id="440" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:58:10 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22523762" type="Run" />
-  <Command __id="442" _type="PauseCommand" date="Thu Dec 02 20:58:16 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="22528903">
-    <prevType><![CDATA[Debug]]></prevType>
-    <prev><![CDATA[RunCommand]]></prev>
-    <pause><![CDATA[5141]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="441" _type="ConsoleInput" date="Thu Dec 02 20:58:16 EST 2021" starttimestamp="1638474167222" timestamp="22528903" type="Exception">
-    <outputString><![CDATA[(setq x "global")
-]]></outputString>
-  </Command>
-  <Command __id="443" _type="ConsoleOutput" date="Thu Dec 02 20:58:16 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22529011" type="ConsoleOutput">
-    <outputString><![CDATA["global"
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"LAMBDA () (SETQ X "), Diff(EQUAL,"""), Diff(INSERT,"g"), Diff(EQUAL,"lo"), Diff(DELETE,"c"), Diff(INSERT,"b"), Diff(EQUAL,"al""), Diff(DELETE,") (FUNCTION NIL (PRINT X))"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="444" _type="PasteCommand" date="Thu Dec 02 20:58:16 EST 2021" starttimestamp="1638474167222" timestamp="22529305" />
-  <Command __id="446" _type="PauseCommand" date="Thu Dec 02 20:58:36 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="22548879">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[PasteCommand]]></prev>
-    <pause><![CDATA[19574]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="445" _type="ConsoleInput" date="Thu Dec 02 20:58:36 EST 2021" starttimestamp="1638474167222" timestamp="22548879" type="Exception">
-    <outputString><![CDATA[LAMBDA () (SETQ X "local") (FUNCTION NIL (PRINT X))()((setq f ))
-]]></outputString>
-  </Command>
-  <Command __id="447" _type="ConsoleOutput" date="Thu Dec 02 20:58:36 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22548938" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA () (SETQ X "local") (FUNCTION NIL (PRINT X))
-]]></outputString>
-    <diff><![CDATA[[Diff(INSERT,"LAMBDA () (SETQ X "), Diff(EQUAL,"""), Diff(DELETE,"g"), Diff(EQUAL,"lo"), Diff(DELETE,"b"), Diff(INSERT,"c"), Diff(EQUAL,"al""), Diff(INSERT,") (FUNCTION NIL (PRINT X))"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="449" _type="PauseCommand" date="Thu Dec 02 20:58:38 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="22551459">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[2521]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="448" _type="ConsoleInput" date="Thu Dec 02 20:58:38 EST 2021" starttimestamp="1638474167222" timestamp="22551459" type="Exception">
-    <outputString><![CDATA[f
-]]></outputString>
-  </Command>
-  <Command __id="450" _type="ConsoleOutput" date="Thu Dec 02 20:58:38 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22551515" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA () (SETQ X "local") (FUNCTION NIL (PRINT X))
-]]></outputString>
-    <diff><![CDATA[[Diff(EQUAL,"LAMBDA () (SETQ X "local") (FUNCTION NIL (PRINT X))¶")]]]></diff>
-  </Command>
-  <Command __id="452" _type="PauseCommand" date="Thu Dec 02 20:58:43 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="22556587">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[5072]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="451" _type="ConsoleInput" date="Thu Dec 02 20:58:43 EST 2021" starttimestamp="1638474167222" timestamp="22556587" type="Exception">
-    <outputString><![CDATA[(setq g (funcall f))
-]]></outputString>
-  </Command>
-  <Command __id="453" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:58:43 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22556614" type="Run" />
-  <Command __id="454" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:58:43 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22556614" type="Run" />
-  <Command __id="455" _type="ExceptionCommand" date="Thu Dec 02 20:58:43 EST 2021" starttimestamp="1638474167222" timestamp="22556644" type="Exception">
-    <exceptionString><![CDATA[Exception in thread "main" java.lang.ClassCastException: class main.lisp.parser.terms.NilAtom cannot be cast to class main.lisp.evaluator.function.Lambda (main.lisp.parser.terms.NilAtom and main.lisp.evaluator.function.Lambda are in unnamed module of loader 'app')
-	at mainPackage.FunctionEvaluator.eval(FunctionEvaluator.java:17)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
-	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
-	at mainPackage.LambdaApplicationEvaluator.helper(LambdaApplicationEvaluator.java:20)
-	at mainPackage.Functional.FuncallEvaluator.eval(FuncallEvaluator.java:31)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at mainPackage.Functional.SetqEvaluator.eval(SetqEvaluator.java:30)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
-	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
-	at main.Main.main(Main.java:31)
-	at mainPackage.Runner.main(Runner.java:11)
-]]></exceptionString>
-    <language><![CDATA[java]]></language>
-  </Command>
-  <Command __id="457" _type="PauseCommand" date="Thu Dec 02 20:58:53 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="22566265">
-    <prevType><![CDATA[Exception]]></prevType>
-    <prev><![CDATA[ExceptionCommand]]></prev>
-    <pause><![CDATA[9621]]></pause>
-    <nextType><![CDATA[Edit]]></nextType>
-    <next><![CDATA[CopyCommand]]></next>
-  </Command>
-  <Command __id="456" _type="CopyCommand" date="Thu Dec 02 20:58:53 EST 2021" starttimestamp="1638474167222" timestamp="22566265" />
-  <Command __id="458" _type="CopyCommand" date="Thu Dec 02 20:58:53 EST 2021" starttimestamp="1638474167222" timestamp="22566421" />
-  <Command __id="459" _type="CopyCommand" date="Thu Dec 02 20:58:53 EST 2021" starttimestamp="1638474167222" timestamp="22566580" />
-  <Command __id="460" _type="CopyCommand" date="Thu Dec 02 20:58:53 EST 2021" starttimestamp="1638474167222" timestamp="22566730" />
-  <Command __id="461" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:58:54 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22567585" type="Run" />
-  <Command __id="462" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:58:54 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22567585" type="Run" />
-  <Command __id="464" _type="PauseCommand" date="Thu Dec 02 20:59:00 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="22573700">
-    <prevType><![CDATA[Debug]]></prevType>
-    <prev><![CDATA[RunCommand]]></prev>
-    <pause><![CDATA[6115]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="463" _type="ConsoleInput" date="Thu Dec 02 20:59:00 EST 2021" starttimestamp="1638474167222" timestamp="22573700" type="Exception">
-    <outputString><![CDATA[(setq x "global")
-]]></outputString>
-  </Command>
-  <Command __id="465" _type="ConsoleOutput" date="Thu Dec 02 20:59:01 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22573807" type="ConsoleOutput">
-    <outputString><![CDATA["global"
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"LAMBDA () (SETQ X "), Diff(EQUAL,"""), Diff(INSERT,"g"), Diff(EQUAL,"lo"), Diff(DELETE,"c"), Diff(INSERT,"b"), Diff(EQUAL,"al""), Diff(DELETE,") (FUNCTION NIL (PRINT X))"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="467" _type="PauseCommand" date="Thu Dec 02 20:59:02 EST 2021" range="1s-2s" starttimestamp="1638474167222" timestamp="22575133">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[1326]]></pause>
-    <nextType><![CDATA[Edit]]></nextType>
-    <next><![CDATA[PasteCommand]]></next>
-  </Command>
-  <Command __id="466" _type="PasteCommand" date="Thu Dec 02 20:59:02 EST 2021" starttimestamp="1638474167222" timestamp="22575133" />
-  <Command __id="469" _type="PauseCommand" date="Thu Dec 02 20:59:13 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="22586557">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[PasteCommand]]></prev>
-    <pause><![CDATA[11424]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="468" _type="ConsoleInput" date="Thu Dec 02 20:59:13 EST 2021" starttimestamp="1638474167222" timestamp="22586557" type="Exception">
-    <outputString><![CDATA[(setq f (LAMBDA () (SETQ X "local") (FUNCTION () (PRINT X))))YP
-]]></outputString>
-  </Command>
-  <Command __id="470" _type="ConsoleOutput" date="Thu Dec 02 20:59:13 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22586617" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA (P) (SETQ X "local") (FUNCTION (Y) (PRINT X))
-]]></outputString>
-    <diff><![CDATA[[Diff(INSERT,"LAMBDA (P) (SETQ X "), Diff(EQUAL,"""), Diff(DELETE,"g"), Diff(EQUAL,"lo"), Diff(DELETE,"b"), Diff(INSERT,"c"), Diff(EQUAL,"al""), Diff(INSERT,") (FUNCTION (Y) (PRINT X))"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="472" _type="PauseCommand" date="Thu Dec 02 20:59:23 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="22596321">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[9704]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="471" _type="ConsoleInput" date="Thu Dec 02 20:59:23 EST 2021" starttimestamp="1638474167222" timestamp="22596321" type="Exception">
-    <outputString><![CDATA[(setq g (funcall f 2))
-]]></outputString>
-  </Command>
-  <Command __id="473" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:59:23 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22596350" type="Run" />
-  <Command __id="474" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:59:23 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22596351" type="Run" />
-  <Command __id="475" _type="ExceptionCommand" date="Thu Dec 02 20:59:23 EST 2021" starttimestamp="1638474167222" timestamp="22596429" type="Exception">
-    <exceptionString><![CDATA[Exception in thread "main" java.lang.IllegalStateException: No evaluator registered for operator 'Y'
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:14)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at mainPackage.FunctionEvaluator.eval(FunctionEvaluator.java:17)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
-	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
-	at mainPackage.LambdaApplicationEvaluator.helper(LambdaApplicationEvaluator.java:20)
-	at mainPackage.Functional.FuncallEvaluator.eval(FuncallEvaluator.java:31)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at mainPackage.Functional.SetqEvaluator.eval(SetqEvaluator.java:30)
-	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
-	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:14)
-	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
-	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
-	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
-	at main.Main.main(Main.java:31)
-	at mainPackage.Runner.main(Runner.java:11)
-]]></exceptionString>
-    <language><![CDATA[java]]></language>
-  </Command>
-  <Command __id="477" _type="PauseCommand" date="Thu Dec 02 20:59:35 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="22608021">
-    <prevType><![CDATA[Exception]]></prevType>
-    <prev><![CDATA[ExceptionCommand]]></prev>
-    <pause><![CDATA[11592]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="476" _type="ShellCommand" date="Thu Dec 02 20:59:35 EST 2021" starttimestamp="1638474167222" timestamp="22608021" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="481" _type="PauseCommand" date="Thu Dec 02 20:59:53 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="22626513">
-    <prevType><![CDATA[Gained Focus]]></prevType>
-    <prev><![CDATA[ShellCommand]]></prev>
-    <pause><![CDATA[3558]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ProgramExecutionEvent]]></next>
-  </Command>
-  <Command __id="480" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:59:53 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22626513" type="Run" />
-  <Command __id="482" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Thu Dec 02 20:59:53 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638474167222" timestamp="22626514" type="Run" />
-  <Command __id="484" _type="PauseCommand" date="Thu Dec 02 20:59:58 EST 2021" range="2s-5s" starttimestamp="1638474167222" timestamp="22631439">
-    <prevType><![CDATA[Debug]]></prevType>
-    <prev><![CDATA[RunCommand]]></prev>
-    <pause><![CDATA[4925]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="483" _type="ConsoleInput" date="Thu Dec 02 20:59:58 EST 2021" starttimestamp="1638474167222" timestamp="22631439" type="Exception">
-    <outputString><![CDATA[(setq x "global")
-]]></outputString>
-  </Command>
-  <Command __id="485" _type="ConsoleOutput" date="Thu Dec 02 20:59:58 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22631500" type="ConsoleOutput">
-    <outputString><![CDATA["global"
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"LAMBDA (P) (SETQ X "), Diff(EQUAL,"""), Diff(INSERT,"g"), Diff(EQUAL,"lo"), Diff(DELETE,"c"), Diff(INSERT,"b"), Diff(EQUAL,"al""), Diff(DELETE,") (FUNCTION (Y) (PRINT X))"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="486" _type="PasteCommand" date="Thu Dec 02 20:59:59 EST 2021" starttimestamp="1638474167222" timestamp="22632132" />
-  <Command __id="488" _type="PauseCommand" date="Thu Dec 02 21:00:14 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="22647299">
-    <prevType><![CDATA[Edit]]></prevType>
-    <prev><![CDATA[PasteCommand]]></prev>
-    <pause><![CDATA[15167]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="487" _type="ConsoleInput" date="Thu Dec 02 21:00:14 EST 2021" starttimestamp="1638474167222" timestamp="22647299" type="Exception">
-    <outputString><![CDATA[(setq f (LAMBDA () (SETQ X "local") (FUNCTION () (PRINT X))))lambda(function )
-]]></outputString>
-  </Command>
-  <Command __id="489" _type="ConsoleOutput" date="Thu Dec 02 21:00:14 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22647407" type="ConsoleOutput">
-    <outputString><![CDATA[LAMBDA () (SETQ X "local") (FUNCTION (LAMBDA NIL (PRINT X)))
-]]></outputString>
-    <diff><![CDATA[[Diff(INSERT,"LAMBDA () (SETQ X "), Diff(EQUAL,"""), Diff(DELETE,"g"), Diff(EQUAL,"lo"), Diff(DELETE,"b"), Diff(INSERT,"c"), Diff(EQUAL,"al""), Diff(INSERT,") (FUNCTION (LAMBDA NIL (PRINT X)))"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="491" _type="PauseCommand" date="Thu Dec 02 21:00:20 EST 2021" range="5s-10s" starttimestamp="1638474167222" timestamp="22653021">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[5614]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="490" _type="ConsoleInput" date="Thu Dec 02 21:00:20 EST 2021" starttimestamp="1638474167222" timestamp="22653021" type="Exception">
-    <outputString><![CDATA[(setq g (funcall f))
-]]></outputString>
-  </Command>
-  <Command __id="492" _type="ConsoleOutput" date="Thu Dec 02 21:00:20 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22653077" type="ConsoleOutput">
-    <outputString><![CDATA[#<FUNCTION :LAMBDA () (PRINT X)>
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"LAMBDA () (SETQ X "local") ("), Diff(INSERT,"#<"), Diff(EQUAL,"FUNCTION "), Diff(DELETE,"("), Diff(INSERT,":"), Diff(EQUAL,"LAMBDA "), Diff(DELETE,"NIL"), Diff(INSERT,"()"), Diff(EQUAL," (PRINT X)"), Diff(DELETE,"))"), Diff(INSERT,">"), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="494" _type="PauseCommand" date="Thu Dec 02 21:00:31 EST 2021" range="10s-20s" starttimestamp="1638474167222" timestamp="22663885">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[10808]]></pause>
-    <nextType><![CDATA[Other]]></nextType>
-    <next><![CDATA[ConsoleInput]]></next>
-  </Command>
-  <Command __id="493" _type="ConsoleInput" date="Thu Dec 02 21:00:31 EST 2021" starttimestamp="1638474167222" timestamp="22663885" type="Exception">
-    <outputString><![CDATA[(funcall g)
-]]></outputString>
-  </Command>
-  <Command __id="495" _type="ConsoleOutput" date="Thu Dec 02 21:00:31 EST 2021" overflow="false" starttimestamp="1638474167222" timestamp="22663940" type="ConsoleOutput">
-    <outputString><![CDATA["local"
-"local"
-]]></outputString>
-    <diff><![CDATA[[Diff(DELETE,"#<FUNCTION :LAMBDA () (PRINT X)>"), Diff(INSERT,""local"¶"local""), Diff(EQUAL,"¶")]]]></diff>
-  </Command>
-  <Command __id="497" _type="PauseCommand" date="Thu Dec 02 21:00:55 EST 2021" range="20s-30s" starttimestamp="1638474167222" timestamp="22688359">
-    <prevType><![CDATA[IO]]></prevType>
-    <prev><![CDATA[ConsoleOutput]]></prev>
-    <pause><![CDATA[24419]]></pause>
-    <nextType><![CDATA[Lost Focus]]></nextType>
-    <next><![CDATA[ShellCommand]]></next>
-  </Command>
-  <Command __id="496" _type="ShellCommand" date="Thu Dec 02 21:00:55 EST 2021" starttimestamp="1638474167222" timestamp="22688359" type="ECLIPSE_LOST_FOCUS" />
-</Events>
