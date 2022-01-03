@@ -1,22 +1,9 @@
 ( SETQ A 29)
-
-
-
 ( SETQ B (+ A 13))
-
-
-
-
 B
-
-
-
 ((lambda () (+ 41 (+ 0 1))))
-
 ((lambda (X) (* (+ 1 1) X)) 21)
-
 ((lambda (X Y) (+ X (+ Y 0))) 40 2)
-
 (setq LISTDERIVEDSAFE (lambda (Dist Dur Exh) 
 	(or 
 		(and (>= Dist 13) (<= Dur 30) (<= Exh 30)) 
@@ -29,37 +16,30 @@ B
 		(and (>= Dist 6) (<= Dur 15) (<= Exh 30))
 	)
 ))
-
 (setq x 5)
-
 (setq timesGenerator
-     (lambda (x)
+    (lambda (x)
   	(function
                 (lambda (y) (* x y))
             )
     )
 )
-
 (setq twice (funcall timesGenerator 2))
-
 (setq product3 (lambda (x y z) (* x (* y z))))
 (setq product2 (curry product3 1))
 (setq identity (curry product2 1))
-
 (setq isList ( lambda (X) 
 	(cond
 		   ((eq X nil) nil)
 		   (T (funcall isListHelper X))
 	)
 ))
-
 (setq isListHelper ( lambda (X) 
 	(cond
 		   ((atom X) (eq X nil))
 		   (T (funcall isListHelper (cdr X)))
 	)
 ))
-
 (setq toStringAsSExpression 
 	  (lambda (X)
 			(cond 
@@ -68,16 +48,13 @@ B
 			)
 		)
 )
-
 (setq toStringAsList
 	  (lambda (X) (concatenate (quote String) "(" (funcall toStringAsListHelper X 1) ")"))
 )
-
 (setq toStringAsListHelper (lambda (X M)
 	(cond ((atom (cdr X)) (concatenate (quote String) (cond ((eq M 1) "") (T " ")) (funcall toString (car X))))
 			(T (concatenate (quote String) (cond ((eq M 1) "") (T " ")) (funcall toString (car X)) (funcall toStringAsListHelper (cdr x) 0)))
 		  )
-							 ))
 (setq toString (lambda (X) (cond ((funcall isList X) (funcall toStringAsList X)) (T (funcall toStringAsSExpression X)))))
 (setq numAtoms
 	(lambda(X)
@@ -87,7 +64,6 @@ B
 		)
 	)
 )
-
 (setq filterList
 	  (lambda (Handler L)
 		(cond
