@@ -263,5 +263,77 @@ An example is shown below:
 (setq identity (curry product2 1))
 ```
 
+### Code Examples
+Using the language constructs presented above, the following programs can be reduced.
+
+
+`isList` determines if it's evaluated arguement is a list by recursively traversing the arguement's S-Expression true. (A list is a series of composite S-Expressions ending in nil).
+```
+(setq isList ( lambda (X) 
+	(cond
+		   ((eq X nil) nil)
+		   (T (funcall isListHelper X))
+	)
+))
+(setq isListHelper ( lambda (X) 
+	(cond
+		   ((atom X) (eq X nil))
+		   (T (funcall isListHelper (cdr X)))
+	)
+))
+```
+
+`toString` will print out a textual representation of its arguement, identical to the output you get from running the interpreter yourself.
+```
+(setq toStringAsSExpression 
+	  (lambda (X)
+			(cond 
+				((atom X) (write-to-string X))
+				(T (concatenate (quote String) "(" (funcall toString (car X)) " . " (funcall toString (cdr X)) ")"))
+			)
+		)
+)
+(setq toStringAsList
+	  (lambda (X) (concatenate (quote String) "(" (funcall toStringAsListHelper X 1) ")"))
+)
+(setq toStringAsListHelper (lambda (X M)
+	(cond ((atom (cdr X)) (concatenate (quote String) (cond ((eq M 1) "") (T " ")) (funcall toString (car X))))
+			(T (concatenate (quote String) (cond ((eq M 1) "") (T " ")) (funcall toString (car X)) (funcall toStringAsListHelper (cdr x) 0)))
+		  )
+(setq toString (lambda (X) (cond ((funcall isList X) (funcall toStringAsList X)) (T (funcall toStringAsSExpression X)))))
+```
+
+`numAtoms` returns the number of atomic S-Expression nodes in it's input.
+```
+(setq numAtoms
+	(lambda(X)
+		(cond
+			((atom X) 1)
+			(T (+ (funcall numAtoms (car X)) (funcall numAtoms (cdr X))))
+		)
+	)
+)
+```
+
+`filterList` allows you to reduce a list to only its items which match a criterion specified in a handler lambda. This is an example of passing in a lambda as input to a function and this snippet also demonstrates code reusabiliity by having two different filtering criterions.
+```
+(setq filterList
+	  (lambda (Handler L)
+		(cond
+		  ((eq L nil) nil)
+		  (T (cons
+			   (funcall Handler (car L))
+			   (funcall filterList Handler (cdr L))
+			   )
+			 )
+		  )
+		)
+	  )
+(setq f1Handler (lambda (X) (atom X)))
+(setq f1Clone (curry filterList f1Handler))
+(setq f2Handler (lambda (X) (not X)))
+(setq f2Clone (curry filterList f2Handler))
+```
+
 ### Academic Honesty
 This project is used in certain offerings of UNC's undergrauate/graduate course on programming language concepts. This repository is strictly to demonstrate my work and any student enrolled in this course should not copy code from or clone this repository to avoid potential honor court issues.
