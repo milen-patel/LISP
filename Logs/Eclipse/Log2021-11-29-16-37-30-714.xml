@@ -1,0 +1,864 @@
+<Events startTimestamp="1638200531246" logVersion="1.0.0.202108012048">
+  <Command __id="6677" _type="PauseCommand" date="Mon Nov 29 16:37:30 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21318903">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[3748]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ExportCommand]]></next>
+  </Command>
+  <Command __id="6676" _type="ExportCommand" date="Mon Nov 29 16:37:30 EST 2021" project="Assignment5" starttimestamp="1638200531246" timestamp="21318903">
+    <success><![CDATA[true]]></success>
+  </Command>
+  <Command __id="6679" _type="PauseCommand" date="Mon Nov 29 16:37:31 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21320070">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ExportCommand]]></prev>
+    <pause><![CDATA[1167]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6678" _type="ShellCommand" date="Mon Nov 29 16:37:31 EST 2021" starttimestamp="1638200531246" timestamp="21320070" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6681" _type="PauseCommand" date="Mon Nov 29 16:39:08 EST 2021" range="1m-2m" starttimestamp="1638200531246" timestamp="21417533">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[97463]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6680" _type="ShellCommand" date="Mon Nov 29 16:39:08 EST 2021" starttimestamp="1638200531246" timestamp="21417533" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6688" _type="PauseCommand" date="Mon Nov 29 16:39:13 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21421919">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[1840]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="6687" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Mon Nov 29 16:39:13 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638200531246" timestamp="21421919" type="Run" />
+  <Command __id="6690" _type="PauseCommand" date="Mon Nov 29 16:39:16 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21424988">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[3069]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[PasteCommand]]></next>
+  </Command>
+  <Command __id="6689" _type="PasteCommand" date="Mon Nov 29 16:39:16 EST 2021" starttimestamp="1638200531246" timestamp="21424988" />
+  <Command __id="6691" _type="ConsoleOutput" date="Mon Nov 29 16:39:16 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21425514" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: (LIST (COND (NIL 1) (T (+ 1 2))) (CONS 1 3) (QUOTE (AND 1 2 3)))
+Evaluating: (COND (NIL 1) (T (+ 1 2)))
+Evaluating: (+ 1 2)
+Evaluating: (CONS 1 3)
+Evaluating: (QUOTE (AND 1 2 3))
+(3 (1 . 3) (AND 1 2 3))
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):22¶Test execution time (ms):18¶Test execution time (ms):21"), Diff(INSERT,"Evaluating: (LIST (COND (NIL 1) (T (+ 1 2))) (CONS 1 3) (QUOTE (AND 1 2 3)))¶Evaluating: (COND (NIL 1) (T (+ 1 2)))¶Evaluating: (+ 1 2)¶Evaluating: (CONS 1 3)¶Evaluating: (QUOTE (AND 1 2 3))¶(3 (1 . 3) (AND 1 2 3))"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6693" _type="PauseCommand" date="Mon Nov 29 16:39:24 EST 2021" range="5s-10s" starttimestamp="1638200531246" timestamp="21433366">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[7852]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6692" _type="ShellCommand" date="Mon Nov 29 16:39:24 EST 2021" starttimestamp="1638200531246" timestamp="21433366" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6694" _type="ShellCommand" date="Mon Nov 29 16:39:25 EST 2021" starttimestamp="1638200531246" timestamp="21433842" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6696" _type="PauseCommand" date="Mon Nov 29 16:39:26 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21435136">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1294]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6695" _type="ShellCommand" date="Mon Nov 29 16:39:26 EST 2021" starttimestamp="1638200531246" timestamp="21435136" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6698" _type="PauseCommand" date="Mon Nov 29 16:39:31 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21439888">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4752]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6697" _type="ShellCommand" date="Mon Nov 29 16:39:31 EST 2021" starttimestamp="1638200531246" timestamp="21439888" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6700" _type="PauseCommand" date="Mon Nov 29 16:39:32 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21441098">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1210]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6699" _type="ShellCommand" date="Mon Nov 29 16:39:32 EST 2021" starttimestamp="1638200531246" timestamp="21441098" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6702" _type="PauseCommand" date="Mon Nov 29 16:40:30 EST 2021" range="30s-1m" starttimestamp="1638200531246" timestamp="21499712">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[58614]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6701" _type="ShellCommand" date="Mon Nov 29 16:40:30 EST 2021" starttimestamp="1638200531246" timestamp="21499712" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6704" _type="PauseCommand" date="Mon Nov 29 16:40:38 EST 2021" range="5s-10s" starttimestamp="1638200531246" timestamp="21507697">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[7985]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6703" _type="ShellCommand" date="Mon Nov 29 16:40:38 EST 2021" starttimestamp="1638200531246" timestamp="21507697" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6706" _type="PauseCommand" date="Mon Nov 29 16:40:42 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21510891">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3194]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6705" _type="ShellCommand" date="Mon Nov 29 16:40:42 EST 2021" starttimestamp="1638200531246" timestamp="21510891" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6708" _type="PauseCommand" date="Mon Nov 29 16:40:43 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21512517">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1626]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6707" _type="ShellCommand" date="Mon Nov 29 16:40:43 EST 2021" starttimestamp="1638200531246" timestamp="21512517" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6710" _type="PauseCommand" date="Mon Nov 29 16:40:59 EST 2021" range="10s-20s" starttimestamp="1638200531246" timestamp="21528370">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[15853]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6709" _type="ShellCommand" date="Mon Nov 29 16:40:59 EST 2021" starttimestamp="1638200531246" timestamp="21528370" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6712" _type="PauseCommand" date="Mon Nov 29 16:41:00 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21529436">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1066]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[PasteCommand]]></next>
+  </Command>
+  <Command __id="6711" _type="PasteCommand" date="Mon Nov 29 16:41:00 EST 2021" starttimestamp="1638200531246" timestamp="21529436" />
+  <Command __id="6713" _type="ConsoleOutput" date="Mon Nov 29 16:41:01 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21529899" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: ((LAMBDA NIL (QUOTE (+ 1 2))))
+Evaluating: (LAMBDA NIL (QUOTE (+ 1 2)))
+Evaluating: (QUOTE (+ 1 2))
+(+ 1 2)
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Evaluating: ("), Diff(DELETE,"LIST (COND (NIL 1) (T (+ 1 2))) (CONS 1 3)"), Diff(INSERT,"(LAMBDA NIL"), Diff(EQUAL," (QUOTE ("), Diff(DELETE,"AND"), Diff(INSERT,"+"), Diff(EQUAL," 1 2"), Diff(DELETE," 3"), Diff(INSERT,")"), Diff(EQUAL,")))¶Evaluating: ("), Diff(DELETE,"COND (NIL 1) (T"), Diff(INSERT,"LAMBDA NIL (QUOTE"), Diff(EQUAL," (+ 1 2)))¶"), Diff(DELETE,"Evaluating: (+ 1 2)¶Evaluating: (CONS 1 3)¶"), Diff(EQUAL,"Evaluating: (QUOTE ("), Diff(DELETE,"AND"), Diff(INSERT,"+"), Diff(EQUAL," 1 2"), Diff(DELETE," 3"), Diff(EQUAL,"))¶("), Diff(DELETE,"3 (1 . 3) (AND"), Diff(INSERT,"+"), Diff(EQUAL," 1 2"), Diff(DELETE," 3)"), Diff(EQUAL,")¶")]]]></diff>
+  </Command>
+  <Command __id="6715" _type="PauseCommand" date="Mon Nov 29 16:41:02 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21531495">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1596]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6714" _type="ShellCommand" date="Mon Nov 29 16:41:02 EST 2021" starttimestamp="1638200531246" timestamp="21531495" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6717" _type="PauseCommand" date="Mon Nov 29 16:41:04 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21533509">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2014]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6716" _type="ShellCommand" date="Mon Nov 29 16:41:04 EST 2021" starttimestamp="1638200531246" timestamp="21533509" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6718" _type="ShellCommand" date="Mon Nov 29 16:41:05 EST 2021" starttimestamp="1638200531246" timestamp="21534457" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6720" _type="PauseCommand" date="Mon Nov 29 16:41:23 EST 2021" range="10s-20s" starttimestamp="1638200531246" timestamp="21551926">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[17469]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6719" _type="ShellCommand" date="Mon Nov 29 16:41:23 EST 2021" starttimestamp="1638200531246" timestamp="21551926" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6722" _type="PauseCommand" date="Mon Nov 29 16:41:24 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21553183">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1257]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[PasteCommand]]></next>
+  </Command>
+  <Command __id="6721" _type="PasteCommand" date="Mon Nov 29 16:41:24 EST 2021" starttimestamp="1638200531246" timestamp="21553183" />
+  <Command __id="6723" _type="ConsoleOutput" date="Mon Nov 29 16:41:24 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21553649" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: (AND (LIST 1 2 3 4) (NOT (/= 1 1)) (EVAL (QUOTE (+ 1 2))) (CONS 1 2))
+Evaluating: (LIST 1 2 3 4)
+Evaluating: (NOT (/= 1 1))
+Evaluating: (/= 1 1)
+Evaluating: (EVAL (QUOTE (+ 1 2)))
+Evaluating: (QUOTE (+ 1 2))
+Evaluating: (+ 1 2)
+Evaluating: (CONS 1 2)
+(1 . 2)
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Evaluating: ("), Diff(DELETE,"(LAMBDA NI"), Diff(INSERT,"AND (LIST 1 2 3 4) (NOT (/= 1 1)) (EVA"), Diff(EQUAL,"L (QUOTE (+ 1 2)))"), Diff(INSERT," (CONS 1 2)"), Diff(EQUAL,")¶Evaluating: (L"), Diff(DELETE,"AMBDA NIL (QUOTE (+ 1 2)))¶Evaluating: (QUOTE (+ 1 2))¶(+ 1"), Diff(INSERT,"IST 1 2 3 4)¶Evaluating: (NOT (/= 1 1))¶Evaluating: (/= 1 1)¶Evaluating: (EVAL (QUOTE (+ 1 2)))¶Evaluating: (QUOTE (+ 1 2))¶Evaluating: (+ 1 2)¶Evaluating: (CONS 1 2)¶(1 ."), Diff(EQUAL," 2)¶")]]]></diff>
+  </Command>
+  <Command __id="6725" _type="PauseCommand" date="Mon Nov 29 16:41:26 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21555276">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1627]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6724" _type="ShellCommand" date="Mon Nov 29 16:41:26 EST 2021" starttimestamp="1638200531246" timestamp="21555276" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6727" _type="PauseCommand" date="Mon Nov 29 16:41:28 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21557228">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1952]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6726" _type="ShellCommand" date="Mon Nov 29 16:41:28 EST 2021" starttimestamp="1638200531246" timestamp="21557228" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6728" _type="ShellCommand" date="Mon Nov 29 16:41:29 EST 2021" starttimestamp="1638200531246" timestamp="21557929" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6730" _type="PauseCommand" date="Mon Nov 29 16:42:01 EST 2021" range="30s-1m" starttimestamp="1638200531246" timestamp="21590290">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[32361]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6729" _type="ShellCommand" date="Mon Nov 29 16:42:01 EST 2021" starttimestamp="1638200531246" timestamp="21590290" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6732" _type="PauseCommand" date="Mon Nov 29 16:42:03 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21592049">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1759]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[PasteCommand]]></next>
+  </Command>
+  <Command __id="6731" _type="PasteCommand" date="Mon Nov 29 16:42:03 EST 2021" starttimestamp="1638200531246" timestamp="21592049" />
+  <Command __id="6733" _type="ConsoleOutput" date="Mon Nov 29 16:42:03 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21592500" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: (EVAL (QUOTE (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2)))))))
+Evaluating: (QUOTE (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2))))))
+Evaluating: (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2)))))
+Evaluating: (AND 1 2)
+NIL
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Evaluating: ("), Diff(DELETE,"AND (LIST 1 2 3 4) (NOT (/="), Diff(INSERT,"EVAL (QUOTE (COND ((AND"), Diff(EQUAL," 1 "), Diff(DELETE,"1)"), Diff(INSERT,"2"), Diff(EQUAL,") (EVAL (QUOTE ("), Diff(DELETE,"+"), Diff(INSERT,"LIST (QUOTE +)"), Diff(EQUAL," 1 2)))"), Diff(INSERT,")"), Diff(DELETE," (CONS 1 2"), Diff(INSERT,")"), Diff(EQUAL,"))¶Evaluating: ("), Diff(DELETE,"LIST 1 2 3 4)¶Evaluating: (NOT (/= 1 1))¶Evaluating: (/= 1 1)¶Evaluating: (EVAL (QUOTE (+ 1 2)))¶Evaluating:"), Diff(INSERT,"QUOTE (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2))))))¶Evaluating: (COND ((AND 1 2) (EVAL (QUOTE (LIST"), Diff(EQUAL," (QUOTE "), Diff(DELETE,"("), Diff(EQUAL,"+"), Diff(INSERT,")"), Diff(EQUAL," 1 2))"), Diff(DELETE,"¶Evaluating: (+ 1 2"), Diff(INSERT,"))"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"CONS"), Diff(INSERT,"AND"), Diff(EQUAL," 1 2)¶"), Diff(DELETE,"(1 . 2)"), Diff(INSERT,"NIL"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6735" _type="PauseCommand" date="Mon Nov 29 16:42:08 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21596925">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[4425]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6734" _type="ShellCommand" date="Mon Nov 29 16:42:08 EST 2021" starttimestamp="1638200531246" timestamp="21596925" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6737" _type="PauseCommand" date="Mon Nov 29 16:42:14 EST 2021" range="5s-10s" starttimestamp="1638200531246" timestamp="21603043">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[6118]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6736" _type="ShellCommand" date="Mon Nov 29 16:42:14 EST 2021" starttimestamp="1638200531246" timestamp="21603043" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6739" _type="PauseCommand" date="Mon Nov 29 16:42:21 EST 2021" range="5s-10s" starttimestamp="1638200531246" timestamp="21609838">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[6795]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6738" _type="ShellCommand" date="Mon Nov 29 16:42:21 EST 2021" starttimestamp="1638200531246" timestamp="21609838" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6741" _type="PauseCommand" date="Mon Nov 29 16:43:14 EST 2021" range="30s-1m" starttimestamp="1638200531246" timestamp="21662815">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[52977]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6740" _type="ShellCommand" date="Mon Nov 29 16:43:14 EST 2021" starttimestamp="1638200531246" timestamp="21662815" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6742" _type="PasteCommand" date="Mon Nov 29 16:43:14 EST 2021" starttimestamp="1638200531246" timestamp="21663179" />
+  <Command __id="6743" _type="ConsoleOutput" date="Mon Nov 29 16:43:14 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21663577" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: (AND 1 2)
+2
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Evaluating: ("), Diff(DELETE,"EVAL (QUOTE (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2)))))))¶Evaluating: (QUOTE (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2))))))¶Evaluating: (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2)))))¶Evaluating: (AND 1 2)¶NIL"), Diff(INSERT,"AND 1 2)¶2"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6745" _type="PauseCommand" date="Mon Nov 29 16:43:17 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21665796">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2219]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6744" _type="ShellCommand" date="Mon Nov 29 16:43:17 EST 2021" starttimestamp="1638200531246" timestamp="21665796" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6747" _type="PauseCommand" date="Mon Nov 29 16:43:19 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21668027">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2231]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6746" _type="ShellCommand" date="Mon Nov 29 16:43:19 EST 2021" starttimestamp="1638200531246" timestamp="21668027" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6749" _type="PauseCommand" date="Mon Nov 29 16:43:20 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21669455">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1428]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6748" _type="ShellCommand" date="Mon Nov 29 16:43:20 EST 2021" starttimestamp="1638200531246" timestamp="21669455" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6751" _type="PauseCommand" date="Mon Nov 29 16:43:34 EST 2021" range="10s-20s" starttimestamp="1638200531246" timestamp="21682918">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[13463]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6750" _type="ShellCommand" date="Mon Nov 29 16:43:34 EST 2021" starttimestamp="1638200531246" timestamp="21682918" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6753" _type="PauseCommand" date="Mon Nov 29 16:43:42 EST 2021" range="5s-10s" starttimestamp="1638200531246" timestamp="21691218">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[8300]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="6754" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 16:43:43 EST 2021" docOffset="0" starttimestamp="1638200531246" timestamp="21691852" />
+  <Command __id="6756" _type="PauseCommand" date="Mon Nov 29 16:43:56 EST 2021" range="10s-20s" starttimestamp="1638200531246" timestamp="21705008">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[13156]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="6755" _type="MoveCaretCommand" caretOffset="853" date="Mon Nov 29 16:43:56 EST 2021" docOffset="1010" starttimestamp="1638200531246" timestamp="21705008" />
+  <Command __id="6757" _type="MoveCaretCommand" caretOffset="844" date="Mon Nov 29 16:43:56 EST 2021" docOffset="1001" starttimestamp="1638200531246" timestamp="21705583" />
+  <Command __id="6758" _type="SelectTextCommand" caretOffset="848" date="Mon Nov 29 16:43:56 EST 2021" end="848" start="838" starttimestamp="1638200531246" timestamp="21705717" />
+  <Command __id="6760" _type="PauseCommand" date="Mon Nov 29 16:43:58 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21706985">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1267]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="6759" _type="MoveCaretCommand" caretOffset="850" date="Mon Nov 29 16:43:58 EST 2021" docOffset="1007" starttimestamp="1638200531246" timestamp="21706984" />
+  <Command __id="6761" _type="SelectTextCommand" caretOffset="854" date="Mon Nov 29 16:43:58 EST 2021" end="854" start="849" starttimestamp="1638200531246" timestamp="21707103" />
+  <Command __id="6763" _type="InsertStringCommand" date="Mon Nov 29 16:43:58 EST 2021" starttimestamp="1638200531246" timestamp="21707579" timestamp2="21707579">
+    <data><![CDATA[N]]></data>
+  </Command>
+  <Command __id="6765" _type="InsertStringCommand" date="Mon Nov 29 16:43:58 EST 2021" starttimestamp="1638200531246" timestamp="21707745" timestamp2="21707745">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="6767" _type="InsertStringCommand" date="Mon Nov 29 16:43:59 EST 2021" starttimestamp="1638200531246" timestamp="21707966" timestamp2="21707966">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="6769" _type="InsertStringCommand" date="Mon Nov 29 16:43:59 EST 2021" starttimestamp="1638200531246" timestamp="21708107" timestamp2="21708107">
+    <data><![CDATA[A]]></data>
+  </Command>
+  <Command __id="6771" _type="InsertStringCommand" date="Mon Nov 29 16:43:59 EST 2021" starttimestamp="1638200531246" timestamp="21708364" timestamp2="21708364">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="6773" _type="InsertStringCommand" date="Mon Nov 29 16:43:59 EST 2021" starttimestamp="1638200531246" timestamp="21708424" timestamp2="21708424">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="6775" _type="InsertStringCommand" date="Mon Nov 29 16:43:59 EST 2021" starttimestamp="1638200531246" timestamp="21708487" timestamp2="21708487">
+    <data><![CDATA[m]]></data>
+  </Command>
+  <Command __id="6777" _type="PauseCommand" date="Mon Nov 29 16:44:00 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21709651">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[1164]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="6776" _type="MoveCaretCommand" caretOffset="820" date="Mon Nov 29 16:44:00 EST 2021" docOffset="977" starttimestamp="1638200531246" timestamp="21709651" />
+  <Command __id="6778" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Mon Nov 29 16:44:01 EST 2021" starttimestamp="1638200531246" timestamp="21710129" />
+  <Command __id="6780" _type="InsertStringCommand" date="Mon Nov 29 16:44:01 EST 2021" starttimestamp="1638200531246" timestamp="21710479" timestamp2="21710479">
+    <data><![CDATA[!]]></data>
+  </Command>
+  <Command __id="6781" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Mon Nov 29 16:44:02 EST 2021" starttimestamp="1638200531246" timestamp="21711098" />
+  <Command __id="6782" _type="EclipseCommand" commandID="" date="Mon Nov 29 16:44:02 EST 2021" starttimestamp="1638200531246" timestamp="21711197" />
+  <Command __id="6783" _type="EclipseCommand" commandID="" date="Mon Nov 29 16:44:02 EST 2021" starttimestamp="1638200531246" timestamp="21711211" />
+  <Command __id="6785" _type="PauseCommand" date="Mon Nov 29 16:44:04 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21713471">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2260]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Insert]]></next>
+  </Command>
+  <Command __id="6786" _type="InsertStringCommand" date="Mon Nov 29 16:44:04 EST 2021" starttimestamp="1638200531246" timestamp="21713473" timestamp2="21713473">
+    <data><![CDATA[(]]></data>
+  </Command>
+  <Command __id="6796" _type="PauseCommand" date="Mon Nov 29 16:44:08 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21717431">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1001]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="6795" _type="RunCommand" className="/Assignment5/src/mainPackage/Runner.java" date="Mon Nov 29 16:44:08 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638200531246" timestamp="21717431" type="Run" />
+  <Command __id="6798" _type="PauseCommand" date="Mon Nov 29 16:44:10 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21718899">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[1468]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[PasteCommand]]></next>
+  </Command>
+  <Command __id="6797" _type="PasteCommand" date="Mon Nov 29 16:44:10 EST 2021" starttimestamp="1638200531246" timestamp="21718899" />
+  <Command __id="6799" _type="ConsoleOutput" date="Mon Nov 29 16:44:10 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21719341" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: (AND 1 2)
+2
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Evaluating: (AND 1 2)¶2¶")]]]></diff>
+  </Command>
+  <Command __id="6801" _type="PauseCommand" date="Mon Nov 29 16:44:11 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21720640">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1299]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6800" _type="ShellCommand" date="Mon Nov 29 16:44:11 EST 2021" starttimestamp="1638200531246" timestamp="21720640" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6803" _type="PauseCommand" date="Mon Nov 29 16:44:13 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21722016">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1376]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6802" _type="ShellCommand" date="Mon Nov 29 16:44:13 EST 2021" starttimestamp="1638200531246" timestamp="21722016" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6804" _type="PasteCommand" date="Mon Nov 29 16:44:13 EST 2021" starttimestamp="1638200531246" timestamp="21722710" />
+  <Command __id="6805" _type="ConsoleOutput" date="Mon Nov 29 16:44:14 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21723144" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: (EVAL (QUOTE (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2)))))))
+Evaluating: (QUOTE (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2))))))
+Evaluating: (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2)))))
+Evaluating: (AND 1 2)
+Evaluating: (EVAL (QUOTE (LIST (QUOTE +) 1 2)))
+Evaluating: (QUOTE (LIST (QUOTE +) 1 2))
+Evaluating: (LIST (QUOTE +) 1 2)
+Evaluating: (QUOTE +)
+(+ 1 2)
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Evaluating: ("), Diff(DELETE,"AND 1 2)¶2"), Diff(INSERT,"EVAL (QUOTE (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2)))))))¶Evaluating: (QUOTE (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2))))))¶Evaluating: (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2)))))¶Evaluating: (AND 1 2)¶Evaluating: (EVAL (QUOTE (LIST (QUOTE +) 1 2)))¶Evaluating: (QUOTE (LIST (QUOTE +) 1 2))¶Evaluating: (LIST (QUOTE +) 1 2)¶Evaluating: (QUOTE +)¶(+ 1 2)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6807" _type="PauseCommand" date="Mon Nov 29 16:44:19 EST 2021" range="5s-10s" starttimestamp="1638200531246" timestamp="21728508">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[5364]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="6806" _type="MoveCaretCommand" caretOffset="231" date="Mon Nov 29 16:44:19 EST 2021" docOffset="388" starttimestamp="1638200531246" timestamp="21728508" />
+  <Command __id="6809" _type="PauseCommand" date="Mon Nov 29 16:44:22 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21730903">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2395]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="6810" _type="MoveCaretCommand" caretOffset="22" date="Mon Nov 29 16:44:22 EST 2021" docOffset="22" starttimestamp="1638200531246" timestamp="21731347" />
+  <Command __id="6811" _type="RunCommand" className="/Assignment5/src/mainPackage/Grader.java" date="Mon Nov 29 16:44:23 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1638200531246" timestamp="21731848" type="Run" />
+  <Command __id="6812" _type="ShellCommand" date="Mon Nov 29 16:44:23 EST 2021" starttimestamp="1638200531246" timestamp="21732258" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6814" _type="PauseCommand" date="Mon Nov 29 16:44:28 EST 2021" range="5s-10s" starttimestamp="1638200531246" timestamp="21737265">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5007]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="6813" _type="ConsoleOutput" date="Mon Nov 29 16:44:28 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21737265" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):53
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Evaluating: (EVAL (QUOTE (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2)))))))¶Evaluating: (QUOTE (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2))))))¶Evaluating: (COND ((AND 1 2) (EVAL (QUOTE (LIST (QUOTE +) 1 2)))))¶Evaluating: (AND 1 2)¶Evaluating: (EVAL (QUOTE (LIST (QUOTE +) 1 2)))¶Evaluating: (QUOTE (LIST (QUOTE +) 1 2))¶Evaluating: (LIST (QUOTE +) 1 2)¶Evaluating: (QUOTE +)¶(+ 1 2)"), Diff(INSERT,"Test execution time (ms):53¶Test execution time (ms):0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6815" _type="ConsoleOutput" date="Mon Nov 29 16:44:28 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21737369" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):10
+Test execution time (ms):12
+Evaluating: (LOAD "/Users/milenpatel/Desktop/COMP524-Workspace/Assignment5/test.lisp")
+Evaluating: (SETQ A 29)
+Evaluating: (SETQ B (+ A 13))
+Evaluating: (+ A 13)
+Evaluating: ((LAMBDA NIL (+ 41 (+ 0 1))))
+Evaluating: (LAMBDA NIL (+ 41 (+ 0 1)))
+Evaluating: (+ 41 (+ 0 1))
+Evaluating: (+ 0 1)
+Evaluating: ((LAMBDA (X) (* (+ 1 1) X)) 21)
+Evaluating: (LAMBDA (X) (* (+ 1 1) X))
+Evaluating: (* (+ 1 1) X)
+Evaluating: (+ 1 1)
+Number of traces > 600  turning tracing off
+Evaluating: ((LAMBDA (X Y) (+ X (+ Y 0))) 40 2)
+Evaluating: (LAMBDA (X Y) (+ X (+ Y 0)))
+Evaluating: (+ X (+ Y 0))
+Evaluating: (+ Y 0)
+Evaluating: (SETQ LISTDERIVEDSAFE (LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))))
+Evaluating: (LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30))))
+Evaluating: (SETQ X 5)
+Evaluating: (SETQ TIMESGENERATOR (LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))))
+Evaluating: (LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y))))
+Evaluating: (SETQ TWICE (FUNCALL TIMESGENERATOR 2))
+Evaluating: (FUNCALL TIMESGENERATOR 2)
+Evaluating: (FUNCTION (LAMBDA (Y) (* X Y)))
+Evaluating: (LAMBDA (Y) (* X Y))
+Test execution time (ms):50
+Evaluating: (SETQ C 8)
+Test execution time (ms):52
+Number of traces > 600  turning tracing off
+Evaluating: (SETQ D (CONS C 3))
+Evaluating: (CONS C 3)
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):0
+Building symbol table and running first pass checks:Mon Nov 29 16:44:28 EST 2021
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"53¶Test execution time (ms):0"), Diff(INSERT,"10¶Test execution time (ms):12¶Evaluating: (LOAD "/Users/milenpatel/Desktop/COMP524-Workspace/Assignment5/test.lisp")¶Evaluating: (SETQ A 29)¶Evaluating: (SETQ B (+ A 13))¶Evaluating: (+ A 13)¶Evaluating: ((LAMBDA NIL (+ 41 (+ 0 1))))¶Evaluating: (LAMBDA NIL (+ 41 (+ 0 1)))¶Evaluating: (+ 41 (+ 0 1))¶Evaluating: (+ 0 1)¶Evaluating: ((LAMBDA (X) (* (+ 1 1) X)) 21)¶Evaluating: (LAMBDA (X) (* (+ 1 1) X))¶Evaluating: (* (+ 1 1) X)¶Evaluating: (+ 1 1)¶Number of traces > 600  turning tracing off¶Evaluating: ((LAMBDA (X Y) (+ X (+ Y 0))) 40 2)¶Evaluating: (LAMBDA (X Y) (+ X (+ Y 0)))¶Evaluating: (+ X (+ Y 0))¶Evaluating: (+ Y 0)¶Evaluating: (SETQ LISTDERIVEDSAFE (LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))))¶Evaluating: (LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30))))¶Evaluating: (SETQ X 5)¶Evaluating: (SETQ TIMESGENERATOR (LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))))¶Evaluating: (LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y))))¶Evaluating: (SETQ TWICE (FUNCALL TIMESGENERATOR 2))¶Evaluating: (FUNCALL TIMESGENERATOR 2)¶Evaluating: (FUNCTION (LAMBDA (Y) (* X Y)))¶Evaluating: (LAMBDA (Y) (* X Y))¶Test execution time (ms):50¶Evaluating: (SETQ C 8)¶Test execution time (ms):52¶Number of traces > 600  turning tracing off¶Evaluating: (SETQ D (CONS C 3))¶Evaluating: (CONS C 3)¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0¶Building symbol table and running first pass checks:Mon Nov 29 16:44:28 EST 2021"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6817" _type="PauseCommand" date="Mon Nov 29 16:44:30 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21739573">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2204]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="6816" _type="ConsoleOutput" date="Mon Nov 29 16:44:30 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21739573" type="ConsoleOutput">
+    <outputString><![CDATA[Symbol table size:47
+Running second pass checks Mon Nov 29 16:44:30 EST 2021
+Start O(n2) inter- and intra class method calls:Mon Nov 29 16:44:30 EST 2021
+End O(n2) inter- and intra class method calls:Mon Nov 29 16:44:30 EST 2021
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):10¶Test execution time (ms):12¶Evaluating: (LOAD "/Users/milenpatel/Desktop/COMP524-Workspace/Assignment5/test.lisp")¶Evaluating: (SETQ A 29)¶Evaluating: (SETQ B (+ A 13))¶Evaluating: (+ A 13)¶Evaluating: ((LAMBDA NIL (+ 41 (+ 0 1))))¶Evaluating: (LAMBDA NIL (+ 41 (+ 0 1)))¶Evaluating: (+ 41 (+ 0 1))¶Evaluating: (+ 0 1)¶Evaluating: ((LAMBDA (X) (* (+ 1 1) X)) 21)¶Evaluating: (LAMBDA (X) (* (+ 1 1) X))¶Evaluating: (* (+ 1 1) X)¶Evaluating: (+ 1 1)¶Number of traces > 600  turning tracing off¶Evaluating: ((LAMBDA (X Y) (+ X (+ Y 0))) 40 2)¶Evaluating: (LAMBDA (X Y) (+ X (+ Y 0)))¶Evaluating: (+ X (+ Y 0))¶Evaluating: (+ Y 0)¶Evaluating: (SETQ LISTDERIVEDSAFE (LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))))¶Evaluating: (LAMBDA (DIST DUR EXH) (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30))))¶Evaluating: (SETQ X 5)¶Evaluating: (SETQ TIMESGENERATOR (LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))))¶Evaluating: (LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y))))¶Evaluating: (SETQ TWICE (FUNCALL TIMESGENERATOR 2))¶Evaluating: (FUNCALL TIMESGENERATOR 2)¶Evaluating: (FUNCTION (LAMBDA (Y) (* X Y)))¶Evaluating: (LAMBDA (Y) (* X Y))¶Test execution time (ms):50¶Evaluating: (SETQ C 8)¶Test execution time (ms):52¶Number of traces > 600  turning tracing off¶Evaluating: (SETQ D (CONS C 3))¶Evaluating: (CONS C 3)¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0¶Building symbol table and running first pass check"), Diff(INSERT,"Symbol table size:47¶Running second pass checks Mon Nov 29 16:44:30 EST 2021¶Start O(n2) inter- and intra class method calls:Mon Nov 29 16:44:30 EST 2021¶End O(n2) inter- and intra class method call"), Diff(EQUAL,"s:Mon Nov 29 16:44:"), Diff(DELETE,"28"), Diff(INSERT,"30"), Diff(EQUAL," EST 2021¶")]]]></diff>
+  </Command>
+  <Command __id="6819" _type="PauseCommand" date="Mon Nov 29 16:44:32 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21740852">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1279]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="6818" _type="ConsoleOutput" date="Mon Nov 29 16:44:32 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21740852" type="ConsoleOutput">
+    <outputString><![CDATA[Finished second pass checks:Mon Nov 29 16:44:32 EST 2021
+Generating checks:Mon Nov 29 16:44:32 EST 2021
+Finished Generating checks:Mon Nov 29 16:44:32 EST 2021
+Generating externals:Mon Nov 29 16:44:32 EST 2021
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Symbol table size:47¶Running"), Diff(INSERT,"Finished"), Diff(EQUAL," second pass checks"), Diff(DELETE," "), Diff(INSERT,":"), Diff(EQUAL,"Mon Nov 29 16:44:3"), Diff(DELETE,"0"), Diff(INSERT,"2"), Diff(EQUAL," EST 2021¶"), Diff(DELETE,"Start O(n2) inter- and intra class method call"), Diff(INSERT,"Generating checks:Mon Nov 29 16:44:32 EST 2021¶Finished Generating check"), Diff(EQUAL,"s:Mon Nov 29 16:44:3"), Diff(DELETE,"0"), Diff(INSERT,"2"), Diff(EQUAL," EST 2021¶"), Diff(DELETE,"End O(n2) inter- and intra class method cal"), Diff(INSERT,"Generating externa"), Diff(EQUAL,"ls:Mon Nov 29 16:44:3"), Diff(DELETE,"0"), Diff(INSERT,"2"), Diff(EQUAL," EST 2021¶")]]]></diff>
+  </Command>
+  <Command __id="6820" _type="ConsoleOutput" date="Mon Nov 29 16:44:32 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21740966" type="ConsoleOutput">
+    <outputString><![CDATA[Finished Generating externals:Mon Nov 29 16:44:32 EST 2021
+Test execution time (ms):3611
+Test execution time (ms):18
+Evaluating: ((LAMBDA (A B) (+ A B)) 1 2)
+Evaluating: (LAMBDA (A B) (+ A B))
+Evaluating: (+ A B)
+Test execution time (ms):0
+Evaluating: ((LAMBDA (X) (EVAL X)) 1)
+Evaluating: (LAMBDA (X) (EVAL X))
+Evaluating: (EVAL X)
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Finished "), Diff(DELETE,"second pass check"), Diff(INSERT,"Generating external"), Diff(EQUAL,"s:Mon Nov 29 16:44:32 EST 2021¶"), Diff(DELETE,"Generating checks:Mon Nov 29 16:44:32 EST 2021¶Finished Generating checks:Mon Nov 29 16:44:32 EST 2021¶Generating externals:Mon Nov 29 16:44:32 EST 2021"), Diff(INSERT,"Test execution time (ms):3611¶Test execution time (ms):18¶Evaluating: ((LAMBDA (A B) (+ A B)) 1 2)¶Evaluating: (LAMBDA (A B) (+ A B))¶Evaluating: (+ A B)¶Test execution time (ms):0¶Evaluating: ((LAMBDA (X) (EVAL X)) 1)¶Evaluating: (LAMBDA (X) (EVAL X))¶Evaluating: (EVAL X)¶Test execution time (ms):0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6821" _type="ConsoleOutput" date="Mon Nov 29 16:44:32 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21741029" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: ((LAMBDA NIL (EVAL 25)))
+Evaluating: (LAMBDA NIL (EVAL 25))
+Evaluating: (EVAL 25)
+Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):21
+Test execution time (ms):18
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Finished Generating externals:Mon Nov 29 16:44:32 EST 2021¶Test execution time (ms):3611¶Test execution time (ms):18¶"), Diff(EQUAL,"Evaluating: ((LAMBDA "), Diff(DELETE,"(A B) (+ A B)) 1 2"), Diff(INSERT,"NIL (EVAL 25))"), Diff(EQUAL,")¶Evaluating: (LAMBDA "), Diff(DELETE,"(A B) (+ A B"), Diff(INSERT,"NIL (EVAL 25"), Diff(EQUAL,"))¶Evaluating: ("), Diff(DELETE,"+ A B"), Diff(INSERT,"EVAL 25"), Diff(EQUAL,")¶Test execution time (ms):"), Diff(DELETE,"0"), Diff(INSERT,"1"), Diff(EQUAL,"¶"), Diff(DELETE,"Evaluating: ((LAMBDA (X) (EVAL X)) 1)¶Evaluating: (LAMBDA (X) (EVAL X))¶Evaluating: (EVAL X)"), Diff(INSERT,"Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):21"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"0"), Diff(INSERT,"18"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6822" _type="ConsoleOutput" date="Mon Nov 29 16:44:32 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21741130" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):17
+Test execution time (ms):20
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Evaluating: ((LAMBDA NIL (EVAL 25)))¶Evaluating: (LAMBDA NIL (EVAL 25))¶Evaluating: (EVAL 25)¶"), Diff(EQUAL,"Test execution time (ms):1"), Diff(INSERT,"7"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(INSERT,"2"), Diff(EQUAL,"0¶"), Diff(DELETE,"Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):21¶Test execution time (ms):18¶")]]]></diff>
+  </Command>
+  <Command __id="6824" _type="PauseCommand" date="Mon Nov 29 16:44:34 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21742923">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1793]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="6823" _type="ConsoleOutput" date="Mon Nov 29 16:44:34 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21742923" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: (FUNCALL TWICE 4)
+Evaluating: (* X Y)
+Test execution time (ms):1
+Evaluating: (FUNCALL ((LAMBDA (X) (FUNCTION (LAMBDA (Y) (+ X Y)))) 2) 3)
+Evaluating: ((LAMBDA (X) (FUNCTION (LAMBDA (Y) (+ X Y)))) 2)
+Evaluating: (LAMBDA (X) (FUNCTION (LAMBDA (Y) (+ X Y))))
+Evaluating: (FUNCTION (LAMBDA (Y) (+ X Y)))
+Evaluating: (LAMBDA (Y) (+ X Y))
+Evaluating: (+ X Y)
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):17"), Diff(INSERT,"Evaluating: (FUNCALL TWICE 4)¶Evaluating: (* X Y)¶Test execution time (ms):1¶Evaluating: (FUNCALL ((LAMBDA (X) (FUNCTION (LAMBDA (Y) (+ X Y)))) 2) 3)¶Evaluating: ((LAMBDA (X) (FUNCTION (LAMBDA (Y) (+ X Y)))) 2)¶Evaluating: (LAMBDA (X) (FUNCTION (LAMBDA (Y) (+ X Y))))¶Evaluating: (FUNCTION (LAMBDA (Y) (+ X Y)))¶Evaluating: (LAMBDA (Y) (+ X Y))¶Evaluating: (+ X Y)"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"20"), Diff(INSERT,"1"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6825" _type="ConsoleOutput" date="Mon Nov 29 16:44:34 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21743538" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: (COND (T (+ 2 1)) (T (+1)) (T (= 1 +)))
+Evaluating: (+ 2 1)
+Test execution time (ms):1
+Evaluating: (COND)
+Evaluating: (COND (T NIL))
+Evaluating: (COND (T))
+Evaluating: (COND (NIL) ((+ 11 12)))
+Evaluating: (+ 11 12)
+Evaluating: (COND (NIL))
+Test execution time (ms):1
+Evaluating: (QUOTE (QUOTE (+ 3 4)))
+Test execution time (ms):1
+Evaluating: (EVAL (EVAL (QUOTE (QUOTE (+ 3 4)))))
+Evaluating: (EVAL (QUOTE (QUOTE (+ 3 4))))
+Evaluating: (QUOTE (QUOTE (+ 3 4)))
+Evaluating: (QUOTE (+ 3 4))
+Evaluating: (+ 3 4)
+Test execution time (ms):0
+Evaluating: (LIST (+ 2 3) 3 (- 2 1))
+Evaluating: (+ 2 3)
+Evaluating: (- 2 1)
+Test execution time (ms):1
+Evaluating: (LIST (+ 3 3) (LIST (+ 1 2) (CONS 4 3)) (- 2 1))
+Evaluating: (+ 3 3)
+Evaluating: (LIST (+ 1 2) (CONS 4 3))
+Evaluating: (+ 1 2)
+Evaluating: (CONS 4 3)
+Evaluating: (- 2 1)
+Test execution time (ms):1
+Evaluating: (EVAL (EVAL (LIST (QUOTE COND) (LIST (QUOTE (OR (/= 1 1) (AND NIL 3))) (CONS 1 2)) (LIST (QUOTE (< 3 2)) 3) (LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2)))))))
+Evaluating: (EVAL (LIST (QUOTE COND) (LIST (QUOTE (OR (/= 1 1) (AND NIL 3))) (CONS 1 2)) (LIST (QUOTE (< 3 2)) 3) (LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2))))))
+Evaluating: (LIST (QUOTE COND) (LIST (QUOTE (OR (/= 1 1) (AND NIL 3))) (CONS 1 2)) (LIST (QUOTE (< 3 2)) 3) (LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2)))))
+Evaluating: (QUOTE COND)
+Evaluating: (LIST (QUOTE (OR (/= 1 1) (AND NIL 3))) (CONS 1 2))
+Evaluating: (QUOTE (OR (/= 1 1) (AND NIL 3)))
+Evaluating: (CONS 1 2)
+Evaluating: (LIST (QUOTE (< 3 2)) 3)
+Evaluating: (QUOTE (< 3 2))
+Evaluating: (LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2))))
+Evaluating: (QUOTE (AND 2 T))
+Evaluating: (QUOTE (QUOTE (+ 2 2)))
+Evaluating: (COND ((OR (/= 1 1) (AND NIL 3)) (1 . 2)) ((< 3 2) 3) ((AND 2 T) (QUOTE (+ 2 2))))
+Evaluating: (OR (/= 1 1) (AND NIL 3))
+Evaluating: (/= 1 1)
+Evaluating: (AND NIL 3)
+Evaluating: (< 3 2)
+Evaluating: (AND 2 T)
+Evaluating: (QUOTE (+ 2 2))
+Evaluating: (+ 2 2)
+Test execution time (ms):2
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Evaluating: ("), Diff(DELETE,"FUNCALL TWICE 4)¶Evaluating: (* X Y)¶Test execution time (ms):1¶Evaluating: (FUNCALL ((LAMBDA (X) (FUNCTION (LAMBDA (Y) (+ X Y)))) 2) 3)¶Evaluating: ((LAMBDA (X) (FUNCTION (LAMBDA (Y) (+ X Y)))) 2)¶Evaluating: (LAMBDA (X) (FUNCTION (LAMBDA (Y) (+ X Y))))¶Evaluating: (FUNCTI"), Diff(INSERT,"COND (T (+ 2 1)) (T (+1)) (T (= 1 +)))¶Evaluating: (+ 2 1)¶Test execution time (ms):1¶Evaluating: (COND)¶Evaluating: (COND (T NIL))¶Evaluating: (COND (T))¶Evaluating: (COND (NIL) ((+ 11 12)))¶Evaluating: (+ 11 12)¶Evaluating: (COND (NIL))¶Test execution time (ms):1¶Evaluating: (QUOTE (QUOTE (+ 3 4)))¶Test execution time (ms):1¶Evaluating: (EVAL (EVAL (QUOTE (QUOTE (+ 3 4)))))¶Evaluating: (EVAL (QUOTE (QUOTE (+ 3 4))))¶Evaluating: (QUOTE (QUOTE (+ 3 4)))¶Evaluating: (QUOTE (+ 3 4))¶Evaluating: (+ 3 4)¶Test execution time (ms):0¶Evaluating: (LIST (+ 2 3) 3 (- 2 1))¶Evaluating: (+ 2 3)¶Evaluating: (- 2 1)¶Test execution time (ms):1¶Evaluating: (LIST (+ 3 3) (LIST (+ 1 2) (CONS 4 3)) (- 2 1))¶Evaluating: (+ 3 3)¶Evaluating: (LIST (+ 1 2) (CONS 4 3))¶Evaluating: (+ 1 2)¶Evaluating: (CONS 4 3)¶Evaluating: (- 2 1)¶Test execution time (ms):1¶Evaluating: (EVAL (EVAL (LIST (QUOTE COND) (LIST (QUOTE (OR (/= 1 1) (AND NIL 3))) (CONS 1 2)) (LIST (QUOTE (< 3 2)) 3) (LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2)))))))¶Evaluating: (EVAL (LIST (QUOTE COND) (LIST (QUOTE (OR (/= 1 1) (AND NIL 3))) (CONS 1 2)) (LIST (QUOTE (< 3 2)) 3) (LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2))))))¶Evaluating: (LIST (QUOTE COND) (LIST (QUOTE (OR (/= 1 1) (AND NIL 3))) (CONS 1 2)) (LIST (QUOTE (< 3 2)) 3) (LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2)))))¶Evaluating: (QUOTE COND)¶Evaluating: (LIST (QUOTE (OR (/= 1 1) (AND NIL 3))) (CONS 1 2))¶Evaluating: (QUOTE (OR (/= 1 1) (AND NIL 3)))¶Evaluating: (CONS 1 2)¶Evaluating: (LIST (QUOTE (< 3 2)) 3)¶Evaluating: (QUOTE (< 3 2))¶Evaluating: (LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2))))¶Evaluating: (QUOTE (AND 2 T))¶Evaluating: (QUOTE (QUOTE (+ 2 2)))¶Evaluating: (C"), Diff(EQUAL,"ON"), Diff(INSERT,"D"), Diff(EQUAL," ("), Diff(DELETE,"LAMBDA (Y) (+ X Y)))¶Evaluating: (LAMBDA (Y)"), Diff(INSERT,"(OR (/= 1 1) (AND NIL 3)) (1 . 2)) ((< 3 2) 3) ((AND 2 T) (QUOTE (+ 2 2))))¶Evaluating: (OR (/= 1 1) (AND NIL 3))¶Evaluating: (/= 1 1)¶Evaluating: (AND NIL 3)¶Evaluating: (< 3 2)¶Evaluating: (AND 2 T)¶Evaluating: (QUOTE"), Diff(EQUAL," (+ "), Diff(DELETE,"X Y"), Diff(INSERT,"2 2"), Diff(EQUAL,"))¶Evaluating: (+ "), Diff(DELETE,"X Y"), Diff(INSERT,"2 2"), Diff(EQUAL,")¶Test execution time (ms):"), Diff(DELETE,"1"), Diff(INSERT,"2"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6826" _type="ConsoleOutput" date="Mon Nov 29 16:44:35 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21744289" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: (FUNCALL LISTDERIVEDSAFE 13 30 30)
+Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
+Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))
+Evaluating: (>= DIST 13)
+Evaluating: (<= DUR 30)
+Evaluating: (<= EXH 30)
+Evaluating: (FUNCALL LISTDERIVEDSAFE 6 30 10)
+Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
+Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))
+Evaluating: (>= DIST 13)
+Evaluating: (AND (>= DIST 6) (<= DUR 30) (<= EXH 10))
+Evaluating: (>= DIST 6)
+Evaluating: (<= DUR 30)
+Evaluating: (<= EXH 10)
+Evaluating: (FUNCALL LISTDERIVEDSAFE 27 30 50)
+Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
+Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))
+Evaluating: (>= DIST 13)
+Evaluating: (<= DUR 30)
+Evaluating: (<= EXH 30)
+Evaluating: (AND (>= DIST 6) (<= DUR 30) (<= EXH 10))
+Evaluating: (>= DIST 6)
+Evaluating: (<= DUR 30)
+Evaluating: (<= EXH 10)
+Evaluating: (AND (>= DIST 27) (<= DUR 30) (<= EXH 50))
+Evaluating: (>= DIST 27)
+Evaluating: (<= DUR 30)
+Evaluating: (<= EXH 50)
+Evaluating: (FUNCALL LISTDERIVEDSAFE 13 15 50)
+Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
+Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))
+Evaluating: (>= DIST 13)
+Evaluating: (<= DUR 30)
+Evaluating: (<= EXH 30)
+Evaluating: (AND (>= DIST 6) (<= DUR 30) (<= EXH 10))
+Evaluating: (>= DIST 6)
+Evaluating: (<= DUR 30)
+Evaluating: (<= EXH 10)
+Evaluating: (AND (>= DIST 27) (<= DUR 30) (<= EXH 50))
+Evaluating: (>= DIST 27)
+Evaluating: (AND (>= DIST 13) (<= DUR 15) (<= EXH 50))
+Evaluating: (>= DIST 13)
+Evaluating: (<= DUR 15)
+Evaluating: (<= EXH 50)
+Evaluating: (FUNCALL LISTDERIVEDSAFE 13 120 10)
+Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))
+Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))
+Evaluating: (>= DIST 13)
+Evaluating: (<= DUR 30)
+Evaluating: (AND (>= DIST 6) (<= DUR 30) (<= EXH 10))
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Evaluating: ("), Diff(DELETE,"COND (T (+ 2 1)) (T (+1)) (T"), Diff(INSERT,"FUNCALL LISTDERIVEDSAFE 13 30 30)¶Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13)"), Diff(EQUAL," ("), Diff(INSERT,"<"), Diff(EQUAL,"= "), Diff(DELETE,"1 +)))¶Evaluating: (+ 2 1)¶Test execution time (ms):1"), Diff(INSERT,"DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))¶Evaluating: (>= DIST 13)"), Diff(EQUAL,"¶Evaluating: ("), Diff(DELETE,"COND"), Diff(INSERT,"<= DUR 30"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"COND (T NIL)"), Diff(INSERT,"<= EXH 30"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"COND (T))¶Evaluating: (COND (NIL) ((+ 11 12)))¶Evaluating: (+ 11 12)¶Evaluating: (COND (NIL))¶Test execution time (ms):1¶Evaluating: (QUOTE (QUOTE (+ 3 4)))¶Test execution time (ms):1¶Evaluating: (EVAL (EVAL (QUOTE (QUOTE (+ 3 4)))))¶Evaluating: (EVAL (QUOTE (QUOTE (+ 3 4))))¶Evaluating: (QUOTE (QUOTE (+ 3 4)))¶Evaluating: (QUOTE (+ 3 4))¶Evaluating: (+ 3 4)¶Test execution time (ms):0¶Evaluating: (LIST (+ 2"), Diff(INSERT,"FUNCALL LISTDERIVEDSAFE 6 30 10)¶Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))¶Evaluating: (>= DIST 13)¶Evaluating: (AND (>= DIST 6) (<= DUR 30) (<= EXH 10))¶Evaluating: (>= DIST 6)¶Evaluating: (<= DUR 30)¶Evaluating: (<= EXH 10)¶Evaluating: (FUNCALL LISTDERIVEDSAFE 27 30 50)¶Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶Evaluating: (AND (>= DIST 13) (<= DUR"), Diff(EQUAL," 3"), Diff(INSERT,"0"), Diff(EQUAL,") "), Diff(DELETE,"3 (- 2 1"), Diff(INSERT,"(<= EXH 30"), Diff(EQUAL,"))¶Evaluating: ("), Diff(DELETE,"+ 2 "), Diff(INSERT,">= DIST 1"), Diff(EQUAL,"3)¶Evaluating: ("), Diff(DELETE,"- 2 1)¶Test execution time (ms):1"), Diff(INSERT,"<= DUR 30)¶Evaluating: (<= EXH 30)"), Diff(EQUAL,"¶Evaluating: ("), Diff(DELETE,"LIST (+ 3"), Diff(INSERT,"AND (>= DIST 6) (<= DUR"), Diff(EQUAL," 3"), Diff(INSERT,"0"), Diff(EQUAL,") ("), Diff(DELETE,"LIST (+ 1 2) (CONS 4 3)) (- 2 1)"), Diff(INSERT,"<= EXH 10))¶Evaluating: (>= DIST 6)¶Evaluating: (<= DUR 30"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"+ 3 3"), Diff(INSERT,"<= EXH 10"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"LIST (+ 1 2) (CONS 4 3"), Diff(INSERT,"AND (>= DIST 27) (<= DUR 30) (<= EXH 50"), Diff(EQUAL,"))¶Evaluating: ("), Diff(DELETE,"+ 1"), Diff(INSERT,">= DIST"), Diff(EQUAL," 2"), Diff(INSERT,"7"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"CONS 4"), Diff(INSERT,"<= DUR"), Diff(EQUAL," 3"), Diff(INSERT,"0"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"- 2 1)¶Test execution time (ms):1¶Evaluating: (EVAL (EVAL (LIST (QUOTE CO"), Diff(INSERT,"<= EXH 50)¶Evaluating: (FUNCALL LISTDERIVEDSAFE 13 15 50)¶Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (A"), Diff(EQUAL,"ND"), Diff(DELETE,")"), Diff(EQUAL," ("), Diff(DELETE,"LIST (QUOTE (OR"), Diff(INSERT,">= DIST 6) (<= DUR 30)"), Diff(EQUAL," ("), Diff(DELETE,"/"), Diff(INSERT,"<"), Diff(EQUAL,"= "), Diff(DELETE,"1 1) (AND NIL 3))) (CONS 1 2)) (LIST (QUOTE (< 3 2))"), Diff(INSERT,"EXH 10)) (AND (>= DIST 27) (<= DUR"), Diff(EQUAL," 3"), Diff(INSERT,"0"), Diff(EQUAL,") ("), Diff(DELETE,"LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2)))))))¶Evaluating: (EVAL (LIST (QUOTE COND) (LIST (QUOTE (OR (/= 1 1) (AND NIL 3))) (CONS 1 2)) (LIST (QUOTE (< 3 2)) 3) (LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2)))"), Diff(INSERT,"<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30"), Diff(EQUAL,")))¶Evaluating: ("), Diff(DELETE,"LIST (QUOTE CO"), Diff(INSERT,"A"), Diff(EQUAL,"ND"), Diff(DELETE,")"), Diff(EQUAL," ("), Diff(DELETE,"LIST (QUOTE (OR"), Diff(INSERT,">= DIST 13)"), Diff(EQUAL," ("), Diff(DELETE,"/"), Diff(INSERT,"<"), Diff(EQUAL,"= "), Diff(DELETE,"1 1) (AND NIL"), Diff(INSERT,"DUR 30) (<= EXH"), Diff(EQUAL," 3"), Diff(DELETE,")"), Diff(INSERT,"0"), Diff(EQUAL,"))"), Diff(DELETE," (CONS 1 2)) (LIST (QUOTE (< 3 2)) 3) (LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2)))"), Diff(INSERT,"¶Evaluating: (>= DIST 13)¶Evaluating: (<= DUR 30)¶Evaluating: (<= EXH 30)¶Evaluating: (AND (>= DIST 6) (<= DUR 30) (<= EXH 10"), Diff(EQUAL,"))¶Evaluating: ("), Diff(DELETE,"QUOTE COND"), Diff(INSERT,">= DIST 6"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"LIST (QUOTE (OR (/= 1 1) (AND NIL 3))) (CONS 1 2)"), Diff(INSERT,"<= DUR 30)¶Evaluating: (<= EXH 10"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"QUOTE (OR"), Diff(INSERT,"AND"), Diff(EQUAL," ("), Diff(DELETE,"/"), Diff(INSERT,">"), Diff(EQUAL,"= "), Diff(DELETE,"1 1) (AND NIL 3)"), Diff(INSERT,"DIST 27) (<= DUR 30) (<= EXH 50"), Diff(EQUAL,"))¶Evaluating: ("), Diff(DELETE,"CONS 1"), Diff(INSERT,">= DIST"), Diff(EQUAL," 2"), Diff(INSERT,"7"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"LIST (QUOTE (< 3 2)) 3"), Diff(INSERT,"AND (>= DIST 13) (<= DUR 15) (<= EXH 50)"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"QUOTE (< 3 2)"), Diff(INSERT,">= DIST 13"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"LIST (QUOTE (AND 2 T)) (QUOTE (QUOTE (+ 2 2)))"), Diff(INSERT,"<= DUR 15"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"QUOTE (AND 2 T)"), Diff(INSERT,"<= EXH 50"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"QUOTE (QUOTE (+ 2 2)))¶Evaluating: (COND ((OR (/= 1 1) (AND NIL"), Diff(INSERT,"FUNCALL LISTDERIVEDSAFE 13 120 10)¶Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR"), Diff(EQUAL," 3"), Diff(DELETE,")"), Diff(INSERT,"0"), Diff(EQUAL,") ("), Diff(DELETE,"1 . 2)) ((< 3"), Diff(INSERT,"<= EXH 10)) (AND (>= DIST"), Diff(EQUAL," 2"), Diff(INSERT,"7"), Diff(EQUAL,") "), Diff(DELETE,"3) ((AND 2 T) (QUOTE (+ 2 2))))¶Evaluating: (OR"), Diff(INSERT,"(<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND"), Diff(EQUAL," ("), Diff(DELETE,"/"), Diff(INSERT,">"), Diff(EQUAL,"= "), Diff(DELETE,"1 1) (AND NIL"), Diff(INSERT,"DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH"), Diff(EQUAL," 3"), Diff(INSERT,"0"), Diff(EQUAL,"))"), Diff(DELETE,"¶Evaluating: (/= 1 1)¶Evaluating: (AND NIL 3)¶Evaluating: (< 3 2"), Diff(INSERT," (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"AND 2 T"), Diff(INSERT,">= DIST 13"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"QUOTE (+ 2 2)"), Diff(INSERT,"<= DUR 30"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"+ 2 2)¶Test execution time (ms):2"), Diff(INSERT,"AND (>= DIST 6) (<= DUR 30) (<= EXH 10))"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6827" _type="ConsoleOutput" date="Mon Nov 29 16:44:36 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21745025" type="ConsoleOutput">
+    <outputString><![CDATA[Number of traces > 600  turning tracing off
+Evaluating: (SETQ LETTESTVAR1 10)
+Evaluating: (SETQ LETTESTVAR2 42)
+Evaluating: (LET ((LETTESTVAR1 5) (LETTESTVAR2 3)) ((LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))))
+Evaluating: ((LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2)))
+Evaluating: (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))
+Evaluating: (+ LETTESTVAR1 LETTESTVAR2)
+Evaluating: (FUNCALL (LET ((LETTESTVAR1 5) (LETTESTVAR2 3)) (FUNCTION (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2)))))
+Evaluating: (LET ((LETTESTVAR1 5) (LETTESTVAR2 3)) (FUNCTION (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))))
+Evaluating: (FUNCTION (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2)))
+Evaluating: (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))
+Evaluating: (+ LETTESTVAR1 LETTESTVAR2)
+Test execution time (ms):2
+Evaluating: (SETQ LETTESTVAR1 10)
+Evaluating: (LET ((LETTESTVAR1 42)) LETTESTVAR1)
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Evaluating: (FUNCALL LISTDERIVEDSAFE 13 30 30)¶Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))¶Evaluating: (>= DIST 13)¶Evaluating: (<= DUR 30)¶Evaluating: (<= EXH 30)¶Evaluating: (FUNCALL LISTDERIVEDSAFE 6 30 10)¶Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR"), Diff(INSERT,"Number of traces > 600  turning tracing off¶Evaluating: (SETQ LETTESTVAR1 10)¶Evaluating: (SETQ LETTESTVAR2 42)¶Evaluating: (LET ((LETTESTVAR1 5) (LETTESTVAR2"), Diff(EQUAL," 3"), Diff(DELETE,"0"), Diff(INSERT,")"), Diff(EQUAL,") ("), Diff(DELETE,"<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))¶Evaluating: (>= DIST 13)¶Evaluating: (AND (>= DIST 6) (<= DUR 30) (<= EXH 10))¶Evaluating: (>= DIST 6)¶Evaluating: (<= DUR 30)¶Evaluating: (<= EXH 10)¶Evaluating: (FUNCALL LISTDERIVEDSAFE 27 30 50)¶Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))¶Evaluating: (>= DIST 13)¶Evaluating: (<= DUR 30)¶Evaluating: (<= EXH 30)¶Evaluating: (AND (>= DIST 6) (<= DUR 30) (<= EXH 10))¶Evaluating: (>= DIST 6)¶Evaluating: (<= DUR 30)¶Evaluating: (<= EXH 10)¶Evaluating: (AND (>= DIST 27) (<= DUR 30) (<= EXH 50))¶Evaluating: (>= DIST 27)¶Evaluating: (<= DUR 30)¶Evaluating: (<= EXH 50)¶Evaluating: (FUNCALL LISTDERIVEDSAFE 13 15 50)¶Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))¶Evaluating: (>= DIST 13)¶Evaluating: (<= DUR 30)¶Evaluating: (<= EXH 30)¶Evaluating: (AND (>= DIST 6) (<= DUR 30) (<= EXH 10))¶Evaluating: (>= DIST 6)¶Evaluating: (<= DUR 30)¶Evaluating: (<= EXH 10)¶Evaluating: (AND (>= DIST 27) (<= DUR 30) (<= EXH 50))¶Evaluating: (>= DIST 27)¶Evaluating: (AND (>= DIST 13) (<= DUR 15) (<= EXH 50))¶Evaluating: (>= DIST 13)¶Evaluating: (<= DUR 15)¶Evaluating: (<= EXH 50)¶Evaluating: (FUNCALL LISTDERIVEDSAFE 13 120 10)¶Evaluating: (OR (AND (>= DIST 13) (<= DUR 30) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 30) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 30) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 15) (<= EXH 50)) (AND (>= DIST 13) (<= DUR 120) (<= EXH 10)) (AND (>= DIST 27) (<= DUR 120) (<= EXH 30)) (AND (>= DIST 6) (<= DUR 15) (<= EXH 30)))¶Evaluating: (AND (>= DIST 13) (<= DUR 30) (<= EXH 30))¶Evaluating: (>= DIST 13)¶Evaluating: (<= DUR 30)¶Evaluating: (AND (>= DIST 6) (<= DUR 30) (<= EXH 10))"), Diff(INSERT,"(LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))))¶Evaluating: ((LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2)))¶Evaluating: (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))¶Evaluating: (+ LETTESTVAR1 LETTESTVAR2)¶Evaluating: (FUNCALL (LET ((LETTESTVAR1 5) (LETTESTVAR2 3)) (FUNCTION (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2)))))¶Evaluating: (LET ((LETTESTVAR1 5) (LETTESTVAR2 3)) (FUNCTION (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))))¶Evaluating: (FUNCTION (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2)))¶Evaluating: (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))¶Evaluating: (+ LETTESTVAR1 LETTESTVAR2)¶Test execution time (ms):2¶Evaluating: (SETQ LETTESTVAR1 10)¶Evaluating: (LET ((LETTESTVAR1 42)) LETTESTVAR1)¶Test execution time (ms):0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6828" _type="ConsoleOutput" date="Mon Nov 29 16:44:37 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21745930" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: (> (+ 1 1) (- 2 1))
+Evaluating: (+ 1 1)
+Evaluating: (- 2 1)
+Test execution time (ms):1
+Evaluating: (>= 1 (+ 1 1))
+Evaluating: (+ 1 1)
+Test execution time (ms):1
+Evaluating: (< (+ 3 2) 3)
+Evaluating: (+ 3 2)
+Test execution time (ms):0
+Evaluating: (<= (+ 1 2) (EVAL 5))
+Evaluating: (+ 1 2)
+Evaluating: (EVAL 5)
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Number of traces > 600  turning tracing off¶Evaluating: (SETQ LETTESTVAR1 10)¶Evaluating: (SETQ LETTESTVAR2 42)¶Evaluating: (LET ((LETTESTVAR1 5) (LETTESTVAR2 3)) ((LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))))¶Evaluating: ((LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2)))¶Evaluating: (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))¶Evaluating: (+ LETTESTVAR1 LETTESTVAR2)¶Evaluating: (FUNCALL (LET ((LETTESTVAR1 5) (LETTESTVAR2 3)) (FUNCTION (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2)))))¶Evaluating: (LET ((LETTESTVAR1 5) (LETTESTVAR2 3)) (FUNCTION (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))))¶Evaluating: (FUNCTION (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2)))¶Evaluating: (LAMBDA NIL (+ LETTESTVAR1 LETTESTVAR2))¶Evaluating: (+ LETTESTVAR1 LETTESTVAR"), Diff(INSERT,"Evaluating: (> (+ 1 1) (- 2 1))¶Evaluating: (+ 1 1)¶Evaluating: (- 2 1)¶Test execution time (ms):1¶Evaluating: (>= 1 (+ 1 1))¶Evaluating: (+ 1 1)¶Test execution time (ms):1¶Evaluating: (< (+ 3 2) 3)¶Evaluating: (+ 3 "), Diff(EQUAL,"2)¶Test execution time (ms):"), Diff(DELETE,"2"), Diff(INSERT,"0"), Diff(EQUAL,"¶Evaluating: ("), Diff(DELETE,"SETQ LETTESTVAR1 10)¶Evaluating: (LET ((LETTESTVAR"), Diff(INSERT,"<= (+ 1 2) (EVAL 5))¶Evaluating: (+ "), Diff(EQUAL,"1 "), Diff(DELETE,"4"), Diff(EQUAL,"2)"), Diff(DELETE,") LETTESTVAR1"), Diff(INSERT,"¶Evaluating: (EVAL 5"), Diff(EQUAL,")¶Test execution time (ms):"), Diff(DELETE,"0"), Diff(INSERT,"1"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6829" _type="ExceptionCommand" date="Mon Nov 29 16:44:37 EST 2021" starttimestamp="1638200531246" timestamp="21746669" type="Exception">
+    <exceptionString><![CDATA[Evaluating: (FUNCALL ISLIST (CONS 5 NIL))
+java.lang.RuntimeException: Undefined Variable
+	at mainPackage.IdentifierAtomImplementation.eval(IdentifierAtomImplementation.java:26)
+	at mainPackage.Functional.FuncallEvaluator.eval(FuncallEvaluator.java:24)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at mainPackage.GeneralExpressionEvaluator.eval(GeneralExpressionEvaluator.java:15)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="6830" _type="ConsoleOutput" date="Mon Nov 29 16:44:38 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21747666" type="ConsoleOutput">
+    <outputString><![CDATA[Evaluating: (AND T 2)
+Test execution time (ms):0
+Evaluating: (OR (= 1 2) (+ 3 3))
+Evaluating: (= 1 2)
+Evaluating: (+ 3 3)
+Test execution time (ms):1
+Evaluating: (NOT (+ 1 8))
+Evaluating: (+ 1 8)
+Test execution time (ms):0
+Evaluating: (AND (/= 3 4) (> 3 2) (+ 8 9) (- 3 1))
+Evaluating: (/= 3 4)
+Evaluating: (> 3 2)
+Evaluating: (+ 8 9)
+Evaluating: (- 3 1)
+Test execution time (ms):1
+Evaluating: (OR (/= 1 1) (> 3 3) (>= 2 2) 9)
+Evaluating: (/= 1 1)
+Evaluating: (> 3 3)
+Evaluating: (>= 2 2)
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Evaluating: ("), Diff(DELETE,"> (+"), Diff(INSERT,"AND T 2)¶Test execution time (ms):0¶Evaluating: (OR (="), Diff(EQUAL," 1 "), Diff(DELETE,"1"), Diff(INSERT,"2"), Diff(EQUAL,") ("), Diff(DELETE,"- 2 1"), Diff(INSERT,"+ 3 3"), Diff(EQUAL,"))¶Evaluating: ("), Diff(DELETE,"+"), Diff(INSERT,"="), Diff(EQUAL," 1 "), Diff(DELETE,"1"), Diff(INSERT,"2"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"- 2 1"), Diff(INSERT,"+ 3 3"), Diff(EQUAL,")¶Test execution time (ms):1¶Evaluating: ("), Diff(DELETE,">= 1"), Diff(INSERT,"NOT"), Diff(EQUAL," (+ 1 "), Diff(DELETE,"1"), Diff(INSERT,"8"), Diff(EQUAL,"))¶Evaluating: (+ 1 "), Diff(DELETE,"1"), Diff(INSERT,"8"), Diff(EQUAL,")¶Test execution time (ms):"), Diff(DELETE,"1"), Diff(INSERT,"0"), Diff(EQUAL,"¶Evaluating: ("), Diff(DELETE,"< (+ 3 2) 3)¶Evaluating: (+"), Diff(INSERT,"AND (/= 3 4) (> 3 2) (+ 8 9) (- 3 1))¶Evaluating: (/= 3 4)¶Evaluating: (> 3 2)¶Evaluating: (+ 8 9)¶Evaluating: (-"), Diff(EQUAL," 3 "), Diff(DELETE,"2"), Diff(INSERT,"1"), Diff(EQUAL,")¶Test execution time (ms):"), Diff(DELETE,"0"), Diff(INSERT,"1"), Diff(EQUAL,"¶Evaluating: ("), Diff(DELETE,"<= (+"), Diff(INSERT,"OR (/="), Diff(EQUAL," 1 "), Diff(DELETE,"2"), Diff(INSERT,"1"), Diff(EQUAL,") ("), Diff(DELETE,"EVAL 5)"), Diff(INSERT,"> 3 3) (>= 2 2) 9"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"+"), Diff(INSERT,"/="), Diff(EQUAL," 1 "), Diff(DELETE,"2"), Diff(INSERT,"1"), Diff(EQUAL,")¶Evaluating: ("), Diff(DELETE,"EVAL 5"), Diff(INSERT,"> 3 3)¶Evaluating: (>= 2 2"), Diff(EQUAL,")¶Test execution time (ms):"), Diff(DELETE,"1"), Diff(INSERT,"0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6831" _type="ConsoleOutput" date="Mon Nov 29 16:44:39 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21748337" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):45
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Evaluating: (AND T 2)¶Test execution time (ms):0¶Evaluating: (OR (= 1 2) (+ 3 3))¶Evaluating: (= 1 2)¶Evaluating: (+ 3 3)¶Test execution time (ms):1¶Evaluating: (NOT (+ 1 8))¶Evaluating: (+ 1 8)¶Test execution time (ms):0¶Evaluating: (AND (/= 3 4) (> 3 2) (+ 8 9) (- 3 1))¶Evaluating: (/= 3 4)¶Evaluating: (> 3 2)¶Evaluating: (+ 8 9)¶Evaluating: (- 3 1)¶Test execution time (ms):1¶Evaluating: (OR (/= 1 1) (> 3 3) (>= 2 2) 9)¶Evaluating: (/= 1 1)¶Evaluating: (> 3 3)¶Evaluating: (>= 2 2)¶Test execution time (ms):0"), Diff(INSERT,"Test execution time (ms):45"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6832" _type="ConsoleOutput" date="Mon Nov 29 16:44:39 EST 2021" overflow="false" starttimestamp="1638200531246" timestamp="21748443" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):15
+Test execution time (ms):3
+Test execution time (ms):2
+A6NonPublicAccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.0
+
+Test execution time (ms):5
+Test execution time (ms):5
+Test execution time (ms):2
+Test execution time (ms):2
+F21A6NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0
+
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"45"), Diff(INSERT,"15¶Test execution time (ms):3¶Test execution time (ms):2¶A6NonPublicAccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.0¶¶Test execution time (ms):5¶Test execution time (ms):5¶Test execution time (ms):2¶Test execution time (ms):2¶F21A6NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0¶¶Test execution time (ms):0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="6834" _type="PauseCommand" date="Mon Nov 29 16:44:44 EST 2021" range="5s-10s" starttimestamp="1638200531246" timestamp="21753443">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[5000]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6833" _type="ShellCommand" date="Mon Nov 29 16:44:44 EST 2021" starttimestamp="1638200531246" timestamp="21753443" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6836" _type="PauseCommand" date="Mon Nov 29 16:44:48 EST 2021" range="2s-5s" starttimestamp="1638200531246" timestamp="21757311">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3868]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="6837" _type="MoveCaretCommand" caretOffset="231" date="Mon Nov 29 16:44:49 EST 2021" docOffset="388" starttimestamp="1638200531246" timestamp="21757795" />
+  <Command __id="6848" _type="PauseCommand" date="Mon Nov 29 16:44:53 EST 2021" range="1s-2s" starttimestamp="1638200531246" timestamp="21762319">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1184]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="6847" _type="EclipseCommand" commandID="" date="Mon Nov 29 16:44:53 EST 2021" starttimestamp="1638200531246" timestamp="21762319" />
+  <Command __id="6849" _type="EclipseCommand" commandID="" date="Mon Nov 29 16:44:53 EST 2021" starttimestamp="1638200531246" timestamp="21762326" />
+  <Command __id="6851" _type="PauseCommand" date="Mon Nov 29 16:45:01 EST 2021" range="5s-10s" starttimestamp="1638200531246" timestamp="21769825">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[7499]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="6852" _type="MoveCaretCommand" caretOffset="275" date="Mon Nov 29 16:45:01 EST 2021" docOffset="440" starttimestamp="1638200531246" timestamp="21770298" />
+</Events>

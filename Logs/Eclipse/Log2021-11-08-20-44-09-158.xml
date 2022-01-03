@@ -1,0 +1,12 @@
+<Events startTimestamp="1636407612604" logVersion="1.0.0.202108012048">
+  <Command __id="7518" _type="PauseCommand" date="Mon Nov 08 20:44:08 EST 2021" range="2s-5s" starttimestamp="1636407612604" timestamp="14636237">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[3221]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ExportCommand]]></next>
+  </Command>
+  <Command __id="7517" _type="ExportCommand" date="Mon Nov 08 20:44:08 EST 2021" project="Assignment5" starttimestamp="1636407612604" timestamp="14636237">
+    <success><![CDATA[true]]></success>
+  </Command>
+</Events>

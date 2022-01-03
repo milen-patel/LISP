@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This configuration file was written by the eclipse-cs plugin configuration 
+	editor -->
+<!-- Checkstyle-Configuration: Test Description: none -->
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+
+<module name="unc.tools.checkstyle.AnExtendibleChecker">
+
+
+	<property name="severity" value="warning" />
+
+
+	<module name="unc.tools.checkstyle.AnExtendibleTreeWalker">
+		<property name="severity" value="info" />
+
+		<module name="STBuilder">
+			<property name="configurationFileName"
+				value="ClassRegistry.csv" />
+			<property name="includeTypeTags" value="*" />
+			<property name="severity" value="info" />
+			<property name="logNoMatches" value="false" />
+			<property name="importsAsExistingClasses" value="true" />
+			<property name="logAggregateStatistics" value="false" />
+
+			<property name="logMethodsDeclared" value="false" />
+			<property name="logVariablesDeclared" value="false" />
+			<property name="logPropertiesDeclared" value="false" />
+			<property name="logAccessModifiersUsed" value="false" />
+			<property name="logSuperTypes" value="false" />
+			<property name="logInnerTypes" value="false" />
+			<property name="logInterfaces" value="false" />
+			<property name="trackTokenTypesUsedInMethods" value="true" />
+			<property name="trackJavaDocComments" value="true" />			
+
+
+			<property name="excludeClassRegularExpressions"
+				value="
+				checkstyle.*,
+				test.simulation.*
+			" />
+			<property name="externalPackagePrefixes"
+				value="								
+								assignments.util,
+								java.io,
+								weka,
+								gradingTools,
+							" />
+			<property name="expectedTypes" value="
+			@NestedLexicalEnvironment,
+			@BasicFuncallEvaluator,
+			@LetEvaluator,
+			@IdentifierAtomWithLookup,
+			@FunctionEvaluator,
+			@SetqEvaluator,
+			@FunctionCallingSExpression,
+			@LambdaEvaluator,
+			@LambdaCallingSExpression,
+		"/>
+							
+
+			</module>
+			
+
+
+	</module>
+
+
+	<module name="unc.tools.checkstyle.ANonCachingTreeWalker">
+		<property name="severity" value="warning" />
+		
+
+	
+	
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@LetEvaluator"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.evaluator.Evaluator,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@LetEvaluator"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.evaluator.Evaluator,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@LetEvaluator"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@LetEvaluator"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@LetEvaluator"/>
+		<property name="expectedCalls" value="
+			main.lisp.parser.terms.SExpression!eval:*->.*,
+			main.lisp.evaluator.Environment!newChild:*->.*,
+			main.lisp.parser.terms.SExpression!getTail:->SExpression,
+			@NestedLexicalEnvironment!assign:*->.*,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@LetEvaluator"/>
+		<property name="expectedCalls" value="
+			main.lisp.parser.terms.SExpression!eval:*->.*,
+			main.lisp.evaluator.Environment!newChild:*->.*,
+			main.lisp.parser.terms.SExpression!getTail:->SExpression,
+			@NestedLexicalEnvironment!assign:*->.*,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@IdentifierAtomWithLookup"/>
+		<property name="expectedSuperTypes" value="
+			main.lisp.parser.terms.IdentifierAtom,
+			main.lisp.parser.terms.AbstractAtom,
+			main.lisp.parser.terms.AbstractSExpression,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@IdentifierAtomWithLookup"/>
+		<property name="expectedSuperTypes" value="
+			main.lisp.parser.terms.IdentifierAtom,
+			main.lisp.parser.terms.AbstractAtom,
+			main.lisp.parser.terms.AbstractSExpression,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@IdentifierAtomWithLookup"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@IdentifierAtomWithLookup"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@IdentifierAtomWithLookup"/>
+		<property name="expectedCalls" value="
+			java.util.Optional!get:->Object,
+			main.lisp.evaluator.Environment!lookup:main.lisp.parser.terms.IdentifierAtom->Optional,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@IdentifierAtomWithLookup"/>
+		<property name="expectedCalls" value="
+			java.util.Optional!get:->Object,
+			main.lisp.evaluator.Environment!lookup:main.lisp.parser.terms.IdentifierAtom->Optional,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@LambdaEvaluator"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.evaluator.Evaluator,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@LambdaEvaluator"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.evaluator.Evaluator,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@LambdaEvaluator"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@LambdaEvaluator"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@LambdaEvaluator"/>
+		<property name="expectedCalls" value="
+			main.lisp.evaluator.function.LambdaFactory!newInstance:main.lisp.parser.terms.IdentifierAtom[];main.lisp.parser.terms.SExpression->Lambda,
+			main.lisp.parser.terms.SExpression!getTail:->SExpression,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@LambdaEvaluator"/>
+		<property name="expectedCalls" value="
+			main.lisp.evaluator.function.LambdaFactory!newInstance:main.lisp.parser.terms.IdentifierAtom[];main.lisp.parser.terms.SExpression->Lambda,
+			main.lisp.parser.terms.SExpression!getTail:->SExpression,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@NestedLexicalEnvironment"/>
+		<property name="expectedSuperTypes" value="
+			main.lisp.evaluator.environment.AbstractEnvironment,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@NestedLexicalEnvironment"/>
+		<property name="expectedSuperTypes" value="
+			main.lisp.evaluator.environment.AbstractEnvironment,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@NestedLexicalEnvironment"/>
+		<property name="expectedSignatures" value="
+			lookupFun:main.lisp.parser.terms.IdentifierAtom->java.util.Optional,
+			assign:main.lisp.parser.terms.IdentifierAtom;main.lisp.parser.terms.SExpression->void,
+			copy:->main.lisp.evaluator.Environment,
+			lookup:main.lisp.parser.terms.IdentifierAtom->java.util.Optional,
+			newChild:->main.lisp.evaluator.Environment,
+			assignFun:main.lisp.parser.terms.IdentifierAtom;main.lisp.evaluator.function.Function->void,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@NestedLexicalEnvironment"/>
+		<property name="expectedSignatures" value="
+			lookupFun:main.lisp.parser.terms.IdentifierAtom->java.util.Optional,
+			assign:main.lisp.parser.terms.IdentifierAtom;main.lisp.parser.terms.SExpression->void,
+			copy:->main.lisp.evaluator.Environment,
+			lookup:main.lisp.parser.terms.IdentifierAtom->java.util.Optional,
+			newChild:->main.lisp.evaluator.Environment,
+			assignFun:main.lisp.parser.terms.IdentifierAtom;main.lisp.evaluator.function.Function->void,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@NestedLexicalEnvironment"/>
+		<property name="expectedCalls" value="
+			main.lisp.evaluator.environment.AbstractEnvironment!getParent:->Environment,
+			main.lisp.evaluator.environment.AbstractEnvironment!get:*->.*,
+			main.lisp.evaluator.environment.AbstractEnvironment!put:main.lisp.parser.terms.IdentifierAtom;main.lisp.parser.terms.SExpression->void,
+			main.lisp.evaluator.environment.AbstractEnvironment!getScope:->CopyableScope,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@NestedLexicalEnvironment"/>
+		<property name="expectedCalls" value="
+			main.lisp.evaluator.environment.AbstractEnvironment!getParent:->Environment,
+			main.lisp.evaluator.environment.AbstractEnvironment!get:*->.*,
+			main.lisp.evaluator.environment.AbstractEnvironment!put:main.lisp.parser.terms.IdentifierAtom;main.lisp.parser.terms.SExpression->void,
+			main.lisp.evaluator.environment.AbstractEnvironment!getScope:->CopyableScope,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@FunctionEvaluator"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.evaluator.Evaluator,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@FunctionEvaluator"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.evaluator.Evaluator,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@FunctionEvaluator"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@FunctionEvaluator"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@FunctionEvaluator"/>
+		<property name="expectedCalls" value="
+			main.lisp.evaluator.function.FunctionFactory!newInstance:main.lisp.evaluator.function.Lambda;main.lisp.evaluator.Environment->Function,
+			main.lisp.parser.terms.SExpression!eval:*->.*,
+			main.lisp.parser.terms.SExpression!getTail:->SExpression,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@FunctionEvaluator"/>
+		<property name="expectedCalls" value="
+			main.lisp.evaluator.function.FunctionFactory!newInstance:main.lisp.evaluator.function.Lambda;main.lisp.evaluator.Environment->Function,
+			main.lisp.parser.terms.SExpression!eval:*->.*,
+			main.lisp.parser.terms.SExpression!getTail:->SExpression,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+		"/>
+	</module>
+		<module name="ExpectedInterfaces">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@BasicFuncallEvaluator"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.evaluator.Evaluator,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@BasicFuncallEvaluator"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.evaluator.Evaluator,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@BasicFuncallEvaluator"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@BasicFuncallEvaluator"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@BasicFuncallEvaluator"/>
+		<property name="expectedCalls" value="
+			main.lisp.parser.terms.SExpression!eval:*->.*,
+			main.lisp.parser.terms.SExpression!getTail:->SExpression,
+			main.lisp.parser.terms.ExpressionFactory!newInstance:main.lisp.parser.terms.SExpression;main.lisp.parser.terms.SExpression->SExpression,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@BasicFuncallEvaluator"/>
+		<property name="expectedCalls" value="
+			main.lisp.parser.terms.SExpression!eval:*->.*,
+			main.lisp.parser.terms.SExpression!getTail:->SExpression,
+			main.lisp.parser.terms.ExpressionFactory!newInstance:main.lisp.parser.terms.SExpression;main.lisp.parser.terms.SExpression->SExpression,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@LambdaCallingSExpression"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@LambdaCallingSExpression"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@LambdaCallingSExpression"/>
+		<property name="expectedSuperTypes" value="
+			@StringFormattingSExpression,
+			main.lisp.parser.terms.BasicExpression,
+			main.lisp.parser.terms.AbstractSExpression,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@LambdaCallingSExpression"/>
+		<property name="expectedSuperTypes" value="
+			@StringFormattingSExpression,
+			main.lisp.parser.terms.BasicExpression,
+			main.lisp.parser.terms.AbstractSExpression,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@LambdaCallingSExpression"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+			isList:->boolean,
+			toString:->String,
+			toStringAsList:->String,
+			toStringAsListHelperPublic:->String,
+			toStringAsSExpression:->String,
+			toStringAsSExpressionDeep:->String,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@LambdaCallingSExpression"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+			isList:->boolean,
+			toString:->String,
+			toStringAsList:->String,
+			toStringAsListHelperPublic:->String,
+			toStringAsSExpression:->String,
+			toStringAsSExpressionDeep:->String,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@LambdaCallingSExpression"/>
+		<property name="expectedCalls" value="
+			@StringFormattingSExpression!toStringAsList:->String,
+			main.lisp.parser.terms.SExpression!eval:*->.*,
+			main.lisp.evaluator.Environment!newChild:*->.*,
+			main.lisp.evaluator.Evaluator!eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->SExpression,
+			main.lisp.parser.terms.BasicExpression!getHead:*->.*,
+			main.lisp.parser.terms.AbstractSExpression!isAtom:*->.*,
+			@StringFormattingSExpression!isList:*->.*,
+			main.lisp.parser.terms.IdentifierAtom!getValue:*->.*,
+			main.lisp.parser.terms.SExpression!getTail:->SExpression,
+			@StringFormattingSExpression!toStringAsListHelperPublic:->String,
+			@StringFormattingSExpression!toStringAsSExpressionDeep:->String,
+			@StringFormattingSExpression!toStringAsSExpression:->String,
+			main.lisp.evaluator.BuiltinOperationManagerSingleton!getEvaluator:*->.*,
+			@FunctionCallingSExpression!eval:*->.*,
+			main.lisp.parser.terms.AbstractSExpression!toStringAsListHelperPublic:->String,
+			main.lisp.evaluator.Environment!assign:*->.*,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+			main.lisp.evaluator.BuiltinOperationManagerSingleton!get:->.*,
+			@StringFormattingSExpression!toString:*->.*,
+			main.lisp.evaluator.function.Lambda!getArgumentNames:->IdentifierAtom[],
+			main.lisp.parser.terms.SExpression!isList:*->.*,
+			main.lisp.parser.terms.BasicExpression!getTail:->SExpression,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@LambdaCallingSExpression"/>
+		<property name="expectedCalls" value="
+			@StringFormattingSExpression!toStringAsList:->String,
+			main.lisp.parser.terms.SExpression!eval:*->.*,
+			main.lisp.evaluator.Environment!newChild:*->.*,
+			main.lisp.evaluator.Evaluator!eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->SExpression,
+			main.lisp.parser.terms.BasicExpression!getHead:*->.*,
+			main.lisp.parser.terms.AbstractSExpression!isAtom:*->.*,
+			@StringFormattingSExpression!isList:*->.*,
+			main.lisp.parser.terms.IdentifierAtom!getValue:*->.*,
+			main.lisp.parser.terms.SExpression!getTail:->SExpression,
+			@StringFormattingSExpression!toStringAsListHelperPublic:->String,
+			@StringFormattingSExpression!toStringAsSExpressionDeep:->String,
+			@StringFormattingSExpression!toStringAsSExpression:->String,
+			main.lisp.evaluator.BuiltinOperationManagerSingleton!getEvaluator:*->.*,
+			@FunctionCallingSExpression!eval:*->.*,
+			main.lisp.parser.terms.AbstractSExpression!toStringAsListHelperPublic:->String,
+			main.lisp.evaluator.Environment!assign:*->.*,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+			main.lisp.evaluator.BuiltinOperationManagerSingleton!get:->.*,
+			@StringFormattingSExpression!toString:*->.*,
+			main.lisp.evaluator.function.Lambda!getArgumentNames:->IdentifierAtom[],
+			main.lisp.parser.terms.SExpression!isList:*->.*,
+			main.lisp.parser.terms.BasicExpression!getTail:->SExpression,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@FunctionCallingSExpression"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@FunctionCallingSExpression"/>
+		<property name="expectedInterfaces" value="
+			main.lisp.parser.terms.SExpression,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@FunctionCallingSExpression"/>
+		<property name="expectedSuperTypes" value="
+			@StringFormattingSExpression,
+			main.lisp.parser.terms.BasicExpression,
+			main.lisp.parser.terms.AbstractSExpression,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@FunctionCallingSExpression"/>
+		<property name="expectedSuperTypes" value="
+			@StringFormattingSExpression,
+			main.lisp.parser.terms.BasicExpression,
+			main.lisp.parser.terms.AbstractSExpression,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@FunctionCallingSExpression"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+			isList:->boolean,
+			toString:->String,
+			toStringAsList:->String,
+			toStringAsListHelperPublic:->String,
+			toStringAsSExpression:->String,
+			toStringAsSExpressionDeep:->String,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@FunctionCallingSExpression"/>
+		<property name="expectedSignatures" value="
+			eval:main.lisp.evaluator.Environment->main.lisp.parser.terms.SExpression,
+			isList:->boolean,
+			toString:->String,
+			toStringAsList:->String,
+			toStringAsListHelperPublic:->String,
+			toStringAsSExpression:->String,
+			toStringAsSExpressionDeep:->String,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@FunctionCallingSExpression"/>
+		<property name="expectedCalls" value="
+			@StringFormattingSExpression!toStringAsList:->String,
+			main.lisp.parser.terms.SExpression!eval:*->.*,
+			main.lisp.evaluator.Environment!newChild:*->.*,
+			main.lisp.evaluator.Evaluator!eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->SExpression,
+			main.lisp.parser.terms.BasicExpression!getHead:*->.*,
+			main.lisp.parser.terms.AbstractSExpression!isAtom:*->.*,
+			@StringFormattingSExpression!isList:*->.*,
+			@StringFormattingSExpression!toStringAsListHelperPublic:->String,
+			main.lisp.evaluator.function.Function!getEnvironment:->Environment,
+			@StringFormattingSExpression!toStringAsSExpressionDeep:->String,
+			@StringFormattingSExpression!toStringAsSExpression:->String,
+			main.lisp.evaluator.BuiltinOperationManagerSingleton!getEvaluator:*->.*,
+			main.lisp.parser.terms.AbstractSExpression!toStringAsListHelperPublic:->String,
+			main.lisp.evaluator.Environment!assign:*->.*,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+			main.lisp.evaluator.BuiltinOperationManagerSingleton!get:->.*,
+			@StringFormattingSExpression!toString:*->.*,
+			main.lisp.evaluator.function.Function!getLambda:->Lambda,
+			main.lisp.evaluator.function.Lambda!getArgumentNames:->IdentifierAtom[],
+			main.lisp.parser.terms.SExpression!isList:*->.*,
+			main.lisp.parser.terms.BasicExpression!getTail:->SExpression,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@FunctionCallingSExpression"/>
+		<property name="expectedCalls" value="
+			@StringFormattingSExpression!toStringAsList:->String,
+			main.lisp.parser.terms.SExpression!eval:*->.*,
+			main.lisp.evaluator.Environment!newChild:*->.*,
+			main.lisp.evaluator.Evaluator!eval:main.lisp.parser.terms.SExpression;main.lisp.evaluator.Environment->SExpression,
+			main.lisp.parser.terms.BasicExpression!getHead:*->.*,
+			main.lisp.parser.terms.AbstractSExpression!isAtom:*->.*,
+			@StringFormattingSExpression!isList:*->.*,
+			@StringFormattingSExpression!toStringAsListHelperPublic:->String,
+			main.lisp.evaluator.function.Function!getEnvironment:->Environment,
+			@StringFormattingSExpression!toStringAsSExpressionDeep:->String,
+			@StringFormattingSExpression!toStringAsSExpression:->String,
+			main.lisp.evaluator.BuiltinOperationManagerSingleton!getEvaluator:*->.*,
+			main.lisp.parser.terms.AbstractSExpression!toStringAsListHelperPublic:->String,
+			main.lisp.evaluator.Environment!assign:*->.*,
+			main.lisp.parser.terms.SExpression!getHead:*->.*,
+			main.lisp.evaluator.BuiltinOperationManagerSingleton!get:->.*,
+			@StringFormattingSExpression!toString:*->.*,
+			main.lisp.evaluator.function.Function!getLambda:->Lambda,
+			main.lisp.evaluator.function.Lambda!getArgumentNames:->IdentifierAtom[],
+			main.lisp.parser.terms.SExpression!isList:*->.*,
+			main.lisp.parser.terms.BasicExpression!getTail:->SExpression,
+		"/>
+	</module>	
+		
+		
+		
+		<module name="DuplicateShortTypeName">
+			<property name="severity" value="warning" />
+			<property name="includeTypeTags" value="*" />
+		</module>
+
+
+
+		<module name="FunctionAssignsGlobal">
+			<property name="severity" value="warning" />
+			<property name="excludeMethodTags"
+				value="
+					next(.*), 
+					pop(.*), 
+					delete(.*), 
+					remove(.*), 
+					read(.*), 					
+					set(.*), 
+					process(.*), 
+					scan(.*), 
+					(.*)create(.*), 					 
+					parse(.*),
+					(.*)actory(.*),
+					fetch(.*),
+					run(.*),
+					update(.*),
+					add(.*),
+					getSingleton(.*),
+					
+					" />
+
+		</module>
+		<module name="SetterAssignsGlobal">
+			<property name="severity" value="warning" />
+		</module>
+		<module name="BulkierThen">
+			<property name="severity" value="warning" />
+			<property name="minThenElseRatio" value="1" />
+			<property name="maxElsePartSize" value="1" />
+		</module>
+		<module name="ThenBranching">
+			<property name="severity" value="warning" />
+
+		</module>
+
+		<module name="LiberalMagicNumber">
+			<property name="severity" value="warning" />
+			<property name="allowedSiblings" value="Math.(.*)" />
+
+		</module>
+		<module name="MethodAccessModifier">
+			<property name="severity" value="info" />
+		</module>
+		<module name="MethodAccessModifier">
+			<property name="severity" value="warning" />
+		</module>
+		<module name="PublicMethodsOverride">
+			<property name="severity" value="warning" />
+		</module>
+		<module name="PublicMethodsOverride">
+			<property name="severity" value="info" />
+		</module>
+		<module name="ClassHasOneInterface">
+			<property name="severity" value="warning" />
+		</module>
+		<module name="VariableHasClassType">
+			<property name="severity" value="warning" />
+		</module>
+		<module name="VariableHasClassType">
+			<property name="severity" value="info" />
+		</module>
+
+
+		<module name="PeerCommonProperties">
+			<property name="severity" value="warning" />
+
+		</module>
+		<module name="PeerCommonProperties">
+			<property name="severity" value="info" />
+		</module>
+		
+		<module name="PeerCommonSignatures">
+			<property name="severity" value="warning" />
+
+		</module>
+		<module name="PeerCommonSignatures">
+			<property name="severity" value="info" />
+		</module>
+
+		<module name="ConstantDefined">
+			<property name="severity" value="info" />
+		</module>
+
+	
+
+
+		<module name="BulkierElse">
+			<property name="severity" value="info" />
+			<property name="minElseThenRatio" value="1" />
+		</module>
+		<module name="ElseBranching">
+			<property name="severity" value="info" />
+		</module>
+		<module name="MnemonicNameCheck">
+			<property name="severity" value="warning" />
+			<property name="processType" value="false" />
+			<property name="processLocals" value="true" />
+			<property name="processParameters" value="true" />
+			<property name="processGlobals" value="true" />
+			<property name="processPublicMethods" value="false" />
+			<property name="processNonPublicMethods" value="true" />
+			<property name="minimumLettersInNameComponent" value="2" />
+			<property name="minimumVowelsInNameComponent" value="1" />
+			<property name="checkNumVowels" value="true" />
+			<property name="checkNumLetters" value="true" />
+			<property name="checkInDictionary" value="true" />
+			<property name="allowedComponents"
+				value="									
+					f,
+					s,
+					cond,
+					eval,
+					evaluator,
+					evaluators,
+					setq,
+					funcall,
+			" />
+
+		</module>
+		
+		<module name="MnemonicNameCheck">
+			<property name="severity" value="info" />
+			<property name="processType" value="false" />
+			<property name="processLocals" value="true" />
+			<property name="processParameters" value="true" />
+			<property name="processGlobals" value="true" />
+			<property name="processPublicMethods" value="false" />
+			<property name="processNonPublicMethods" value="true" />
+			<property name="minimumLettersInNameComponent" value="2" />
+			<property name="minimumVowelsInNameComponent" value="1" />
+			<property name="checkNumVowels" value="true" />
+			<property name="checkNumLetters" value="true" />
+			<property name="checkInDictionary" value="true" />
+			<property name="allowedComponents"
+				value="
+					f,
+					s,
+					cond,
+					eval,
+					evaluator,
+					evaluators,
+					setq,
+					funcall,
+			" />
+
+		</module>
+		
+		<module name="FinalParameterDefined">
+			<property name="severity" value="info" />
+		</module>
+
+		<module name="MethodBlockLimit">
+			<property name="severity" value="warning" />
+			<property name="max" value="1" />
+		</module>
+		<module name="NestedBlockDepth">
+			<property name="severity" value="warning" />
+			<property name="max" value="1" />
+		</module>
+		<module name="EqualsAvoidedNullCheck">
+			<property name="severity" value="info" />
+		</module>
+		<module name="EqualsAvoidedNullCheck">
+			<property name="severity" value="warning" />
+		</module>
+		<module name="ClassDecomposition">
+			<property name="severity" value="warning" />
+		</module>
+
+
+
+
+
+
+
+
+
+
+
+
+	</module>
+	<module name="TreeWalker">
+		<module name="EqualsAvoidNull" />
+		<module name="SimplifyBooleanExpression" />
+		<module name="SimplifyBooleanReturn" />
+		<module name="StringLiteralEquality" />
+		<module name="NestedForDepth">
+			<property name="max" value="1" />
+		</module>
+		<module name="NestedIfDepth">
+			<property name="max" value="1" />
+		</module>
+		<module name="PackageDeclaration" />
+		<module name="HiddenField" />
+
+
+		<module name="VisibilityModifier">
+			<property name="packageAllowed" value="true" />
+			<property name="protectedAllowed" value="true" />
+		</module>
+		<module name="ConstantName" />
+		<module name="TypeName" />
+		<module name="MethodName" />
+		<module name="LocalVariableName" />
+		<module name="MemberName" />
+		<module name="StaticVariableName" />
+		<module name="NeedBraces" />
+		<module name="MultipleStringLiterals" />
+		<module name="OuterTypeFilename" />
+
+
+		<module name="OneTopLevelClass" />
+		<module name="EmptyBlock">
+			<property name="option" value="TEXT" />
+			<property name="tokens"
+				value="LITERAL_TRY, LITERAL_FINALLY, LITERAL_IF, LITERAL_ELSE, LITERAL_SWITCH" />
+		</module>
+		<module name="NeedBraces" />
+		<module name="ArrayTypeStyle" />
+		<module name="MissingSwitchDefault" />
+		<module name="FallThrough" />
+
+		
+		<module name="TypeName">
+
+		</module>
+		<module name="MemberName">
+
+		</module>
+		<module name="ParameterName">
+		</module>
+		<module name="LambdaParameterName"/>
+
+	
+		<module name="LocalVariableName">
+
+		</module>
+		<module name="ClassTypeParameterName">
+
+		</module>
+		<module name="MethodTypeParameterName">
+
+		</module>
+		<module name="InterfaceTypeParameterName"/>
+
+		
+		<module name="AbbreviationAsWordInName">
+			<property name="ignoreFinal" value="false" />
+			<property name="allowedAbbreviationLength" value="1" />
+		</module>
+		<module name="AvoidStarImport" />
+		<module name="RedundantImport" />
+		<module name="UnusedImports" />
+		
+		<module name="MethodName">
+			
+		</module>
+
+		<module name="EmptyCatchBlock">
+			<property name="exceptionVariableName" value="expected" />
+		</module>
+
+		<module name="BooleanExpressionComplexity">
+			<property name="max" value="3" />
+		</module>
+		<module name="ClassDataAbstractionCoupling">
+			<property name="max" value="20" />
+		</module>
+		<module name="ClassFanOutComplexity">
+			<property name="max" value="20" />
+		</module>
+		<module name="CyclomaticComplexity">
+			<property name="max" value="10" />
+		</module>
+		<module name="JavaNCSS">
+			<property name="methodMaximum" value="50" />
+			<property name="classMaximum" value="1500" />
+			<property name="fileMaximum" value="2000" />
+		</module>
+
+		<module name="MissingOverride" />
+		<module name="AvoidNestedBlocks" />
+		
+		<module name="InterfaceIsType" />
+		<module name="ThrowsCount">
+			<property name="max" value="4" />
+		</module>
+		<module name="CovariantEquals" />	
+		<module name="FinalLocalVariable" />
+		<module name="IllegalThrows" />
+		<module name="IllegalType" />
+		<module name="InnerAssignment" />
+		<module name="ModifiedControlVariable" />
+		<module name="NestedTryDepth">
+			<property name="max" value="1" />
+		</module>
+		<module name="ParameterAssignment" />
+		
+		<module name="FinalParameters" />
+
+
+
+	</module>
+</module>
+
+

@@ -1,0 +1,40 @@
+<Events startTimestamp="1637969718546" logVersion="1.0.0.202108012048">
+  <Command __id="3" _type="PauseCommand" date="Fri Nov 26 18:35:45 EST 2021" range="1s-2s" starttimestamp="1637969718546" timestamp="27310">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1536]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="2" _type="ProgramExecutionEvent" className="/Assignment5/src/mainPackage/Grader.java" date="Fri Nov 26 18:35:45 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1637969718546" timestamp="27303" type="Run" />
+  <Command __id="4" _type="RunCommand" className="/Assignment5/src/mainPackage/Grader.java" date="Fri Nov 26 18:35:45 EST 2021" kind="HitBreakPoint" projectName="Assignment5" starttimestamp="1637969718546" timestamp="27310" type="Run" />
+  <Command __id="5" _type="ShellCommand" date="Fri Nov 26 18:35:46 EST 2021" starttimestamp="1637969718546" timestamp="27885" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="30" _type="PauseCommand" date="Fri Nov 26 18:37:43 EST 2021" range="20s-30s" starttimestamp="1637969718546" timestamp="145388">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[22221]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="29" _type="ShellCommand" date="Fri Nov 26 18:37:43 EST 2021" starttimestamp="1637969718546" timestamp="145388" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="31" _type="EclipseCommand" commandID="org.eclipse.ui.window.preferences" date="Fri Nov 26 18:37:43 EST 2021" starttimestamp="1637969718546" timestamp="145392" />
+  <Command __id="33" _type="PauseCommand" date="Fri Nov 26 18:37:48 EST 2021" range="2s-5s" starttimestamp="1637969718546" timestamp="149591">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[4199]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="32" _type="ShellCommand" date="Fri Nov 26 18:37:48 EST 2021" starttimestamp="1637969718546" timestamp="149591" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="35" _type="PauseCommand" date="Fri Nov 26 18:37:54 EST 2021" range="5s-10s" starttimestamp="1637969718546" timestamp="155856">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[6265]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="34" _type="ShellCommand" date="Fri Nov 26 18:37:54 EST 2021" starttimestamp="1637969718546" timestamp="155856" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="36" _type="EclipseCommand" commandID="org.eclipse.ui.file.properties" date="Fri Nov 26 18:37:54 EST 2021" starttimestamp="1637969718546" timestamp="155861" />
+  <Command __id="37" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:37:54 EST 2021" starttimestamp="1637969718546" timestamp="155936" />
+  <Command __id="38" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:37:54 EST 2021" starttimestamp="1637969718546" timestamp="155952" />
+</Events>

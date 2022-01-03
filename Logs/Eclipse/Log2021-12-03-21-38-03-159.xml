@@ -1,0 +1,43 @@
+<Events startTimestamp="1638585483159" logVersion="1.0.0.202108012048">
+  <Command __id="2" _type="PauseCommand" date="Fri Dec 03 21:38:04 EST 2021" range="1s-2s" starttimestamp="1638585483159" timestamp="1601">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[1328]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="1" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:04 EST 2021" starttimestamp="1638585483159" timestamp="1592" />
+  <Command __id="3" _type="MoveCaretCommand" caretOffset="1369" date="Fri Dec 03 21:38:04 EST 2021" docOffset="1451" starttimestamp="1638585483159" timestamp="1791" />
+  <Command __id="4" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="1902" />
+  <Command __id="5" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="1905" />
+  <Command __id="6" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="2045" />
+  <Command __id="7" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="2046" />
+  <Command __id="8" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="2242" />
+  <Command __id="9" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="2244" />
+  <Command __id="10" _type="ShellCommand" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="2331" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="11" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="2395" />
+  <Command __id="12" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="2397" />
+  <Command __id="13" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="2512" />
+  <Command __id="14" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="2515" />
+  <Command __id="15" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="2817" />
+  <Command __id="16" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:05 EST 2021" starttimestamp="1638585483159" timestamp="2819" />
+  <Command __id="17" _type="EclipseCommand" commandID="" date="Fri Dec 03 21:38:06 EST 2021" starttimestamp="1638585483159" timestamp="2878" />
+  <Command __id="19" _type="PauseCommand" date="Fri Dec 03 21:39:01 EST 2021" range="30s-1m" starttimestamp="1638585483159" timestamp="58478">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[55600]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="18" _type="ShellCommand" date="Fri Dec 03 21:39:01 EST 2021" starttimestamp="1638585483159" timestamp="58478" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="20" _type="ShellCommand" date="Fri Dec 03 21:39:01 EST 2021" starttimestamp="1638585483159" timestamp="58750" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="22" _type="PauseCommand" date="Fri Dec 03 21:39:05 EST 2021" range="2s-5s" starttimestamp="1638585483159" timestamp="62670">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3920]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="21" _type="ShellCommand" date="Fri Dec 03 21:39:05 EST 2021" starttimestamp="1638585483159" timestamp="62670" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="23" _type="ShellCommand" date="Fri Dec 03 21:39:05 EST 2021" starttimestamp="1638585483159" timestamp="62759" type="ECLIPSE_GAINED_FOCUS" />
+</Events>

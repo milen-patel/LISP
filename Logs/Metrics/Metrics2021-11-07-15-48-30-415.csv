@@ -1,0 +1,3 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+1,,Sun Nov 07 15:50:51 EST 2021,CondEvaluator.java,1636318251566,4721,4721,(I)21,1.0,0.0,0.0,0.0,0.0,0.0,5.25,0.0,0.0,0.0,0.0,0.0,5.25,0.0,[]
+,/modelData/A0UserStudy2010.arff,Sun Nov 07 15:50:51 EST 2021,CondEvaluator.java, 1636318251566
