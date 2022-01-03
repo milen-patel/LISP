@@ -133,6 +133,68 @@ The quote operator simply returns its arguements unevaluated. For example, `(quo
 
  If you build this project locally, you can execute `(load “test.lisp”)` to execute the test file that has been provided.
 
+### Cond
+The cond operator behaves similarly to a switch statements in a more modern language. cond takes in one or more pairs of the form `(A B)`, each pair must be separated by a space. The `A` of each tuple will be evaluated until the first one returns true. When that happens, cond will return the corresponding evaluation result of `B` for the first pair whose `A` is true. If none of the tuples' `A`'s evaluate to true, then  `Nil` is returned.
+
+Examples:
+```
+(cond (T 1))
+(cond (nil 3) (T 6))
+(cond (nil 4) (T 7))
+(cond (nil 5) (T 9))
+(cond (nil 4) (nil 3) (nil 3) (T 1) (nil 65))
+(cond (nil 5) ((< 4 1) 6) (T 11))
+(cond ((> 2 1) 6) ((< 4 1) 6) (T 9))
+(cond ((< 10 2) 8) ((> 4 2) 8) (nil 10))
+```
+
+### Setq
+
+After implementing the elementary operators but before implementing functions, it was necesary to have a convenient way to save and refer to values: the use of the setq operator.
+
+Now, it is important to note that whenever the interpreter is executing a command, it is executing the command in some environment. Each environment has a scope where we can lookup and store values. The setq operator allows to replace a value in execution environment's scope. Environments can be nested (which will become useful in functions later), so when we lookup a value we check our current environment, if we have a value for that variable name then we can return that. Otherwise, we must recursively check the parent environment.
+
+Thus, setq takes in a variable name and an arguement, evalutes the arguement, and then assigns the resulting value to the variable name in this environment.
+
+A trivial example would be as follows:
+```
+(setq A 5)
+(setq B (+ A 6)))
+(+ A B)
+```
+The first line maps A to 5 in our current environment's scope. The second line is going to assign B a value but while evaluating the arguement, A must be looked up and is evaluted to 5 as a consequence of the previous line. If we had not made that previous call, the second line would have crashed the program since A would not have been declared. The final line then returns 16.
+
+### Lambdas
+The interpreter supports more than basic operations in that there exists functions in the lisp. A function takes in zero or more arguements. The function body is a space separated list of lisp commands (there must be atleast one). Each of the commands will be evaluated in order and then the return value of applying a lambda will be the result of the last expression evaluated in the body.
+
+When you apply a lambda (i.e. call a function), a new scope is created as a child of the caller's scope. All of the arguements are defined in the child scope and mapped to the evaluated values of the formal parameters from the lambda application.
+
+Lambdas may modify environment state using setq and are also capable of returning lambdas themselves.
+
+Here are some examples of defining lambdas and calling them at the same time. There is technically no need to save a function before calling it, and the following snippet demonstrates such behaviour. (All of the lambda applications below will return `42`.)
+```
+((lambda () (+ 41 (+ 0 1))))
+((lambda (X) (* (+ 1 1) X)) 21)
+((lambda (X Y) (+ X (+ Y 0))) 40 2)
+```
+
+In many cases, we will want to reuse lambdas and so we hope for a convient way to save lambdas instead of having to redefine them every time we want to call one. Fortunately, the setq operator discussed above can be used to save lambdas.
+
+Below is an example of such behaviour. Notice that there is no application of the lambda, we are just defining what it is and saving it as a reference.
+```
+(setq LISTDERIVEDSAFE (lambda (Dist Dur Exh) 
+	(or 
+		(and (>= Dist 13) (<= Dur 30) (<= Exh 30)) 
+		(and (>= Dist 6) (<= Dur 30) (<= Exh 10))
+		(and (>= Dist 27) (<= Dur 30) (<= Exh 50))
+		(and (>= Dist 13) (<= Dur 15) (<= Exh 50))
+		(and (>= Dist 13) (<= Dur 15) (<= Exh 50))
+		(and (>= Dist 13) (<= Dur 120) (<= Exh 10))
+		(and (>= Dist 27) (<= Dur 120) (<= Exh 30))
+		(and (>= Dist 6) (<= Dur 15) (<= Exh 30))
+	)
+))
+```
 + Demo Test File
 + Explain project structure
 + Give credit for jar
