@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/milenpatel/Downloads/Comp524All-13.jar"/>
+	<classpathentry kind="lib" path="Parser.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
