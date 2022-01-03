@@ -1,5 +1,5 @@
 # C-LISP Extended Interpreter
-An extension of CLISP that supports functions, lambdas, currying, and more.
+An extension of CLISP that supports lambdas, higher-order functions, currying, static/dynamic scoping, and more!
 ## Getting Started
 To test out this program, clone the repository and build the project. The executable main is found in `src/mainPackage/Runner.java`. 
 
