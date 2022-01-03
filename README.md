@@ -1,6 +1,11 @@
 # C-LISP Extended Interpreter
 An extension of CLISP that supports functions, lambdas, currying, and more.
+## Getting Started
+To test out this program, clone the repository and build the project. The executable main is found in `src/mainPackage/Runner.java`. 
 
+Whenever an input is given to the interpreter, it will be parsed into an S-Expression (read about S-Expressions here: https://en.wikipedia.org/wiki/S-expression). Assuming no structural errors, the instruction will then be parsed and evaluated. I take no credit for the parsing step of this program as that functionality was implemented in the `Parser.jar` included in the repository. My work on this project was to focus on the implementation of operators and functions.
+
+S-Expressions are immutable and each S-Expression is either atomic or composite. An atomic S-Expression contains a single value such as `5`, `"hello"`, or `T`. By constrast, a composite S-Expression contains a head and tail, both of which point to other S-Expressions which themselves may be atomic or composite. This structure allows us to build out trees representing valid instructions to the interpreter. By traversion this (effeectively) binary tree, the interpreter can then recursively evaluate all input.
 ## Operator Support
 
 ### Arithmetic
@@ -165,7 +170,7 @@ A trivial example would be as follows:
 The first line maps A to 5 in our current environment's scope. The second line is going to assign B a value but while evaluating the arguement, A must be looked up and is evaluted to 5 as a consequence of the previous line. If we had not made that previous call, the second line would have crashed the program since A would not have been declared. The final line then returns 16.
 
 ### Lambdas
-The interpreter supports more than basic operations in that there exists functions in the lisp. A function takes in zero or more arguements. The function body is a space separated list of lisp commands (there must be atleast one). Each of the commands will be evaluated in order and then the return value of applying a lambda will be the result of the last expression evaluated in the body.
+The interpreter supports more than basic operations in that there exists functions in the lisp. A function takes in zero or more arguements which are all evaluated left to right prior to any execution of the lambda body. The function body is a space separated list of lisp commands (there must be atleast one). Each of the commands will be evaluated in order and then the return value of applying a lambda will be the result of the last expression evaluated in the body.
 
 When you apply a lambda (i.e. call a function), a new scope is created as a child of the caller's scope. All of the arguements are defined in the child scope and mapped to the evaluated values of the formal parameters from the lambda application.
 
@@ -195,10 +200,68 @@ Below is an example of such behaviour. Notice that there is no application of th
 	)
 ))
 ```
-+ Demo Test File
-+ Explain project structure
-+ Give credit for jar
-+ How to setup and run
-+ Prohibit Copying
-+ Add code snippings
-+ Explain SExpr imutability, atomic vs composite
+
+### Funcall
+If we safe a lambda using setq, that brings up the question of how we then call it? The correct answer is to use the funcall operator.
+
+The funcall operator takes in a function name as its first arguement (which must have been defined using setq as explained above). The resulting arguements must then correspond to the number (and type) of arguements expected by the function. If the number of arguements provided does not match the number of arguements expecvted, a runtime error will occur. Below is a trivial example (which returns 4):
+
+```
+(setq f (lambda (X Y) (+ X Y)))
+(funcall f 1 3)
+```
+
+### Function versus Lambda
+
+The interpeter also supports functions which differ from lambdas. Lambda applications create a new child of the callers environment whereas function applications create a new child of the function definer's environment. Thus, when we define a function we also encapsulate the environment in which it was defined. This will support higher order functions which is discussed in the next section with an example.
+
+### Scoping Concerns
+
+Look at the code below. We define a *global* variable x and then also define x as a parameter of the lambda. In the lambda body when we execute (* x y) which version of x will the interpreter evaluate?
+
+Recall above we said that every time we call a lambda, a new child environment is created and the evaluated formal parameters are stored in that environment.
+
+So in this case, the parent scope maps x to 5, but the child scope maps x to the formal arguement given. So, in the body of the lambda, when we dereference x, we check our current scope (the child scope) and see that x is mapped to the formal parameter so we stop there. If our parameter names didn't contain and x and we still have the same body, then when we derefenced x, there would be no x in the child environment and so we would check the parent environment where x is mapped to 5 and then we would return.
+
+It is also important to note that whenver a function execution ends, our scope goes up one level which is back to the parent scope in this case.
+
+Looking at the same example below, we see that our lambda returns a lambda, so the child scope that is created in a call to timesGenerator is actually preserved and that enables higher order functions!
+```
+(setq x 5)
+(setq timesGenerator
+    (lambda (x)
+  	(function
+                (lambda (y) (* x y))
+            )
+    )
+)
+```
+
+Consider the following commands executed after the above code:
+```
+(setq twice (funcall timesGenerator 2))
+(funcall twice 5)
+```
+What is the result of the last line in this case?
+
+Before we defined timesGenerator, we have our toplevel scope which contains {x -> 5, timesGenerator -> lambda}.
+
+The call `(setq twice (funcall timesGenerator 2))` makes a funcall which as we said earlier makes a new scope.
+
+{x -> 5, timesGenerator -> lambda}
+{x -> 2} (Child scope associated with funcall)
+
+So when we execute `(funcall twice 5)`, we execute timesGenerator again but the child environment has a reference of x to 2 which is discovered before the parent environemtn so x evaluates to 2 and then the overall funcall consequently returns 10.
+
+### Currying
+The intepreter also supports currying as which occurs in Standard ML. This feature, along with the function versus lambda discussion, is an extension of C-LISP and is unique to this interpreter.
+
+An example is shown below:
+```
+(setq product3 (lambda (x y z) (* x (* y z))))
+(setq product2 (curry product3 1))
+(setq identity (curry product2 1))
+```
+
+### Academic Honesty
+This project is used in certain offerings of UNC's undergrauate/graduate course on programming language concepts. This repository is strictly to demonstrate my work and any student enrolled in this course should not copy code from or clone this repository to avoid potential honor court issues.
