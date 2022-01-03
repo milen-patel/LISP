@@ -5,7 +5,7 @@ To test out this program, clone the repository and build the project. The execut
 
 Whenever an input is given to the interpreter, it will be parsed into an S-Expression (read about S-Expressions here: https://en.wikipedia.org/wiki/S-expression). Assuming no structural errors, the instruction will then be parsed and evaluated. I take no credit for the parsing step of this program as that functionality was implemented in the `Parser.jar` included in the repository. My work on this project was to focus on the implementation of operators and functions.
 
-S-Expressions are immutable and each S-Expression is either atomic or composite. An atomic S-Expression contains a single value such as `5`, `"hello"`, or `T`. By constrast, a composite S-Expression contains a head and tail, both of which point to other S-Expressions which themselves may be atomic or composite. This structure allows us to build out trees representing valid instructions to the interpreter. By traversion this (effeectively) binary tree, the interpreter can then recursively evaluate all input.
+S-Expressions are immutable and each S-Expression is either atomic or composite. An atomic S-Expression contains a single value such as `5`, `"hello"`, or `T`. By constrast, a composite S-Expression contains a head and tail, both of which point to other S-Expressions which themselves may be atomic or composite. This structure allows us to build out trees representing valid instructions to the interpreter. By traversing this (effectively) binary tree, the interpreter can then evaluate all input.
 ## Operator Support
 
 ### Arithmetic
